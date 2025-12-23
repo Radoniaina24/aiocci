@@ -3,13 +3,13 @@
 import Footer from "@/components/Layout/footer/Footer";
 import Hero from "@/components/section/Hero";
 
-import Service from "@/components/section/Service";
 import Events from "@/components/section/Event";
 import Membership from "@/components/section/Membership";
 import Partnerships from "@/components/section/Partnerships";
 import Contact from "@/components/section/Contact";
 import Header from "@/components/Layout/header/Header";
 import About from "@/components/About";
+import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       <main className="pt-20">
         <Hero />
         <About />
-        <Service />
+        <Services />
         <Events />
         <Membership />
         <Partnerships />
