@@ -10,6 +10,7 @@ import Contact from "@/components/section/Contact";
 import Header from "@/components/Layout/header/Header";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Image from "next/image";
 
 export default function Home() {
   return (

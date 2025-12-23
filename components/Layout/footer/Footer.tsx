@@ -1,4 +1,6 @@
 import { Globe } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -7,13 +9,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-3 mb-4">
-            <Globe className="h-10 w-10 text-blue-400" />
-            <div className="flex flex-col items-start">
-              <span className="text-2xl font-bold text-white">AIOCCI</span>
-              <span className="text-xs text-gray-400">
-                African Indian Ocean Chamber
-              </span>
-            </div>
+            <Link href="/" className="flex items-center space-x-3 group">
+              <Image
+                src={"./images/footerLogo.jpg"}
+                alt="logo"
+                width={300}
+                height={300}
+                className="rounded"
+              />
+            </Link>
           </div>
 
           <h3 className="text-xl font-semibold text-white mb-3">

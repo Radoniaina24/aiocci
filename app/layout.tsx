@@ -5,23 +5,12 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "AIOCCI - African Indian Ocean Chamber of Commerce & Industry",
+  title: "AIOCCI - African Indian Ocean",
   description:
     "The African Indian Ocean Chamber of Commerce & Industry (AIOCCI) is an independent business platform dedicated to strengthening trade, investment, and economic cooperation between Africa and the Indian Ocean region.",
-  openGraph: {
-    images: [
-      {
-        url: "https://bolt.new/static/og_default.png",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    images: [
-      {
-        url: "https://bolt.new/static/og_default.png",
-      },
-    ],
+
+  icons: {
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
   },
 };
 
