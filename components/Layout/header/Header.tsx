@@ -67,7 +67,7 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between ">
+        <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3 group">
             <Image
               src={"./images/logo.png"}
