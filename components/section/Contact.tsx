@@ -22,6 +22,58 @@ export default function Contact() {
     TrendingUp,
   };
 
+  // ✅ Mapping complet des couleurs avec les classes Tailwind complètes
+  const colorMap: Record<
+    string,
+    { icon: string; link: string; linkHover: string }
+  > = {
+    blue: {
+      icon: "text-blue-400",
+      link: "text-blue-300",
+      linkHover: "hover:text-blue-200",
+    },
+    green: {
+      icon: "text-green-400",
+      link: "text-green-300",
+      linkHover: "hover:text-green-200",
+    },
+    red: {
+      icon: "text-red-400",
+      link: "text-red-300",
+      linkHover: "hover:text-red-200",
+    },
+    amber: {
+      icon: "text-amber-400",
+      link: "text-amber-300",
+      linkHover: "hover:text-amber-200",
+    },
+    purple: {
+      icon: "text-purple-400",
+      link: "text-purple-300",
+      linkHover: "hover:text-purple-200",
+    },
+    pink: {
+      icon: "text-pink-400",
+      link: "text-pink-300",
+      linkHover: "hover:text-pink-200",
+    },
+    cyan: {
+      icon: "text-cyan-400",
+      link: "text-cyan-300",
+      linkHover: "hover:text-cyan-200",
+    },
+    orange: {
+      icon: "text-orange-400",
+      link: "text-orange-300",
+      linkHover: "hover:text-orange-200",
+    },
+  };
+
+  // Fonction helper pour obtenir les classes de couleur
+  const getColorClasses = (color: string) => {
+    return colorMap[color] || colorMap.blue; // Fallback to blue
+  };
+
   return (
     <section
       id="contact"
@@ -45,10 +97,13 @@ export default function Contact() {
               <div className="grid md:grid-cols-2 gap-6">
                 {contacts.map((item, index) => {
                   const Icon = iconMap[item.icon];
+                  const colors = getColorClasses(item.color);
+
                   return (
                     <div key={index} className="flex items-start space-x-4">
+                      {/* ✅ Utilisation de la classe complète */}
                       <Icon
-                        className={`h-6 w-6 mt-1 flex-shrink-0 text-${item.color}-400`}
+                        className={`h-6 w-6 mt-1 flex-shrink-0 ${colors.icon}`}
                       />
                       <div>
                         <p className="font-semibold text-white mb-1">
@@ -59,7 +114,7 @@ export default function Contact() {
                             href={item.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`text-${item.color}-300 hover:text-${item.color}-200`}
+                            className={`${colors.link} ${colors.linkHover} transition-colors`}
                           >
                             {item.value}
                           </a>
