@@ -1,3 +1,4 @@
+import { LanguageProvider } from "@/context/LanguageContext";
 import "./globals.css";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
@@ -24,7 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {" "}
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
