@@ -1,0 +1,61 @@
+{
+  "header": {
+    "navigation": {
+      "home": "Accueil",
+      "about": "À propos",
+      "services": "Services",
+      "events": "Événements",
+      "membership": "Adhésion",
+      "contact": "Contact"
+    },
+    "actions": {
+      "joinNow": "Rejoindre maintenant"
+    },
+    "aria": {
+      "toggleMenu": "Afficher / masquer le menu"
+    }
+  },
+  "hero": {
+    "title": {
+      "line1": "Chambre de Commerce et d’Industrie",
+      "line2": "Afrique – Océan Indien"
+    },
+    "acronym": "AIOCCI",
+    "tagline": "Un pont économique entre l’Afrique et l’Océan Indien",
+
+    "welcome": {
+      "title": "Bienvenue à l’AIOCCI",
+      "paragraph1": "La Chambre de Commerce et d’Industrie Afrique – Océan Indien (AIOCCI) est une plateforme économique indépendante dédiée au renforcement des échanges commerciaux, des investissements et de la coopération économique entre l’Afrique et la région de l’Océan Indien.",
+      "paragraph2": "L’AIOCCI connecte les entreprises, investisseurs, institutions et acteurs économiques à travers la facilitation des affaires, le réseautage stratégique et l’organisation d’événements économiques et corporatifs de haut niveau.",
+      "paragraph3": "Notre objectif est de promouvoir une croissance durable, des partenariats transfrontaliers et une intégration économique régionale entre l’Afrique, l’Océan Indien et les marchés internationaux."
+    },
+
+    "actions": {
+      "becomeMember": "Devenir membre",
+      "contact": "Nous contacter"
+    }
+  },
+  "about": {
+    "foundingStory": {
+      "year": "2011",
+      "title": "À propos de l’AIOCCI",
+      "description": "L’AIOCCI est une Chambre de Commerce et d’Industrie orientée vers le monde des affaires, réunissant des leaders du secteur privé, des institutions, des entrepreneurs et des investisseurs engagés dans le développement de liens économiques solides et durables entre l’Afrique et la région de l’Océan Indien.\n\nFondée comme une plateforme indépendante et inclusive, l’AIOCCI agit comme un pont entre les marchés, les cultures et les opportunités économiques.",
+      "imageAlt": "Groupe diversifié de professionnels africains et de l’Océan Indien en tenue formelle lors d’une réunion d’affaires dans un bureau moderne avec vue panoramique"
+    },
+
+    "visionMission": {
+      "vision": {
+        "title": "Notre Vision",
+        "description": "Devenir une plateforme économique de référence reliant l’Afrique et l’Océan Indien, en facilitant le commerce, l’investissement, l’innovation et le développement durable aux niveaux régional et international."
+      },
+      "mission": {
+        "title": "Notre Mission",
+        "description": "Promouvoir le commerce et l’investissement entre l’Afrique et la région de l’Océan Indien ; faciliter les connexions d’affaires et les partenariats transfrontaliers ; accompagner les entreprises dans leur expansion internationale ; organiser des événements économiques et corporatifs de haut niveau ; renforcer l’intégration régionale et la coopération du secteur privé."
+      }
+    },
+    "section": {
+      "title": "Notre Vision & Mission",
+      "subtitle": "Construire des ponts économiques entre l’Afrique et l’Océan Indien pour une prospérité partagée"
+    }
+  }
+}

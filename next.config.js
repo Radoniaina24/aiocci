@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
+import createNextIntlPlugin from "next-intl/plugin";
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
 };
-
-module.exports = nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);

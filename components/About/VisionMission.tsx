@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/AppIcon";
 
 interface VisionMissionItem {
@@ -13,20 +16,24 @@ interface VisionMissionProps {
 }
 
 const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
+  const t = useTranslations("about");
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+          {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="font-playfair font-bold text-4xl md:text-5xl text-textPrimary mb-4">
-              Our Vision & Mission
+              {t("section.title")}
             </h2>
+
             <p className="font-sourceSans text-xl text-textSecondary max-w-3xl mx-auto">
-              Building economic bridges between Africa and the Indian Ocean for
-              shared prosperity
+              {t("section.subtitle")}
             </p>
           </div>
 
+          {/* Cards */}
           <div className="grid md:grid-cols-2 gap-8">
             {items.map((item, index) => (
               <div
