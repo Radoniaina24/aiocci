@@ -56,7 +56,11 @@
     "section": {
       "title": "Our Vision & Mission",
       "subtitle": "Building economic bridges between Africa and the Indian Ocean for shared prosperity"
-    }
+    },
+    "countries": "Partner Countries",
+    "activeMembers": "Active Members",
+    "founded": "Founded in",
+    "title": "Our Story"
   },
   "services": {
     "section": {
