@@ -57,5 +57,186 @@
       "title": "Our Vision & Mission",
       "subtitle": "Building economic bridges between Africa and the Indian Ocean for shared prosperity"
     }
+  },
+  "services": {
+    "section": {
+      "title": "What We Do",
+      "subtitle": "Tailored solutions at every stage of your development"
+    },
+
+    "items": {
+      "businessTrade": {
+        "title": "Business & Trade Facilitation",
+        "description": "We assist companies in identifying business opportunities, partners, and markets across Africa and the Indian Ocean region."
+      },
+      "investment": {
+        "title": "Investment Promotion",
+        "description": "AIOCCI promotes investment opportunities and connects investors with high-potential projects, enterprises, and strategic initiatives."
+      },
+      "networking": {
+        "title": "Networking & Representation",
+        "description": "AIOCCI provides a structured platform for networking, representation, and advocacy for its members at national, regional, and international levels."
+      },
+      "events": {
+        "title": "Corporate & Economic Events",
+        "description": "AIOCCI designs and delivers high-level events, including:",
+        "features": [
+          "Economic forums and summits",
+          "Corporate conferences and roundtables",
+          "B2B and B2G meetings",
+          "Trade missions and business delegations",
+          "Investment and sector-focused events"
+        ]
+      }
+    }
+  },
+  "events": {
+    "section": {
+      "title": "Flagship Projects & Events",
+      "subtitle": "Major Projects – 2026",
+      "previousTitle": "Previous & Ongoing Initiatives"
+    },
+
+    "flagship": {
+      "expoMauritius": {
+        "title": "Africa Business Expo",
+        "location": "Mauritius",
+        "description": "A large-scale international business and investment exhibition bringing together African, Indian Ocean, and global companies, investors, and institutions. The Expo aims to position Mauritius as a strategic hub for African and Indian Ocean trade and investment."
+      },
+      "expoDubai": {
+        "title": "Africa Business Expo",
+        "location": "Dubai – November",
+        "description": "An international edition of the Africa Business Expo, connecting African businesses with investors, partners, and markets in the Middle East and beyond, with a strong focus on trade, investment, and global expansion."
+      },
+      "aiSummit": {
+        "title": "AI Meets Africa Summit",
+        "location": "Mauritius",
+        "description": "Positioned as the largest Artificial Intelligence summit in Africa, AI Meets Africa Summit brings together policymakers, tech leaders, investors, startups, researchers, and institutions to shape the future of AI, digital transformation, and innovation across the continent."
+      }
+    },
+
+    "initiatives": {
+      "emploi": {
+        "title": "Carrefour Emploi & Études",
+        "location": "Madagascar",
+        "description": "A major employment and education fair organized in Madagascar, connecting students, professionals, universities, training institutions, and recruiters at national and international levels."
+      },
+      "educationExpo": {
+        "title": "International Education Expo",
+        "location": "Madagascar – 7-8 February",
+        "description": "Bringing together international universities, education providers, and students, with a strong focus on international mobility, skills development, and academic partnerships."
+      },
+      "ceoForum": {
+        "title": "CEO Business Forum",
+        "location": "Madagascar – Launched in 2023",
+        "description": "A high-level business forum dedicated to CEOs, executives, and decision-makers, fostering dialogue on leadership, investment, economic strategy, and private-sector-driven development in Africa and the Indian Ocean region."
+      }
+    }
+  },
+  "membership": {
+    "title": "Membership",
+    "whyTitle": "Why Become a Member of AIOCCI?",
+    "benefits": [
+      "Access to a trusted business network across Africa and the Indian Ocean",
+      "Participation in high-level corporate and economic events",
+      "Business matchmaking and partnership facilitation",
+      "Visibility through AIOCCI communication channels",
+      "Access to trade missions, forums, and delegations",
+      "Strategic positioning within a growing regional and international platform"
+    ],
+    "types": {
+      "founding": {
+        "title": "Founding Members",
+        "description": "Reserved for leading companies and institutions supporting the launch, governance, and strategic orientation of AIOCCI."
+      },
+      "corporate": {
+        "title": "Corporate Members",
+        "description": "Open to companies, SMEs, startups, investors, and professional organizations."
+      },
+      "institutional": {
+        "title": "Institutional & Partner Members",
+        "description": "Open to chambers of commerce, institutions, embassies, and international organizations."
+      }
+    }
+  },
+  "partnerships": {
+    "title": "Partnerships & Governance",
+
+    "collaboration": {
+      "title": "Strategic Collaboration",
+      "intro": "AIOCCI works closely with:",
+      "partners": [
+        "Chambers of commerce and business councils",
+        "Public and private institutions",
+        "Investment promotion agencies",
+        "International organizations",
+        "Corporations and business networks"
+      ],
+      "conclusion": "Partnerships are built around concrete actions such as joint events, trade missions, forums, and collaborative initiatives."
+    },
+
+    "governance": {
+      "title": "Governance",
+      "intro": "AIOCCI operates under a transparent and inclusive governance model, ensuring:",
+      "principles": [
+        "Independence",
+        "Professionalism",
+        "Ethical conduct",
+        "Business-driven leadership"
+      ],
+      "conclusion": "The Chamber promotes collaboration between the private sector, institutions, and economic stakeholders."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch",
+    "intro": "Whether you are a company, investor, institution, or partner, AIOCCI welcomes collaboration and dialogue.",
+    "details": [
+      {
+        "icon": "Mail",
+        "label": "Email",
+        "value": "contact@aiocci.org",
+        "link": "mailto:contact@aiocci.org",
+        "color": "blue"
+      },
+      {
+        "icon": "Globe",
+        "label": "Website",
+        "value": "www.aiocci.org",
+        "link": "http://www.aiocci.org",
+        "color": "green"
+      },
+      {
+        "icon": "MapPin",
+        "label": "Head Office",
+        "value": "Madagascar",
+        "color": "red"
+      },
+      {
+        "icon": "Building2",
+        "label": "Offices",
+        "value": "Delescar & Boris",
+        "color": "amber"
+      },
+      {
+        "icon": "Globe",
+        "label": "Regional Presence",
+        "value": "Africa & Indian Ocean",
+        "color": "blue"
+      },
+      {
+        "icon": "TrendingUp",
+        "label": "Expansion",
+        "value": "New offices opening soon in other African countries",
+        "color": "green"
+      }
+    ]
+  },
+  "footer": {
+    "logoAlt": "AIOCCI Logo",
+    "organization": "African Indian Ocean Chamber of Commerce & Industry",
+    "description": "Connecting Africa and the Indian Ocean through trade, investment, economic cooperation, and high-level corporate events.",
+    "headquarters": "Headquartered in Madagascar, with offices in Delescar and Boris, and expanding across Africa.",
+    "copyright": "© {year} AIOCCI. All rights reserved."
   }
 }

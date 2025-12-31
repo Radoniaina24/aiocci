@@ -1,18 +1,21 @@
-import { Globe } from "lucide-react";
+import React from "react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
+          {/* Logo */}
           <div className="flex items-center justify-center space-x-3 mb-4">
             <Link href="/" className="flex items-center space-x-3 group">
               <Image
-                src={"./images/footerLogo.jpg"}
-                alt="logo"
+                src={"/images/footerLogo.jpg"}
+                alt={t("logoAlt")}
                 width={300}
                 height={300}
                 className="rounded"
@@ -20,23 +23,23 @@ export default function Footer() {
             </Link>
           </div>
 
+          {/* Organization name */}
           <h3 className="text-xl font-semibold text-white mb-3">
-            African Indian Ocean Chamber of Commerce & Industry
+            {t("organization")}
           </h3>
 
+          {/* Description */}
           <p className="text-gray-400 max-w-3xl mx-auto mb-6 leading-relaxed">
-            Connecting Africa and the Indian Ocean through trade, investment,
-            economic cooperation, and high-level corporate events.
+            {t("description")}
           </p>
 
-          <p className="text-sm text-gray-500 mb-6">
-            Headquartered in Madagascar, with offices in Delescar and Boris, and
-            expanding across Africa.
-          </p>
+          {/* Headquarters info */}
+          <p className="text-sm text-gray-500 mb-6">{t("headquarters")}</p>
 
+          {/* Footer copyright */}
           <div className="border-t border-gray-800 pt-6">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} AIOCCI. All rights reserved.
+              {t.rich("copyright", { year: new Date().getFullYear() })}
             </p>
           </div>
         </div>

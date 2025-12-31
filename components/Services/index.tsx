@@ -1,5 +1,9 @@
+"use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 import ServiceCard from "./ServiceCard";
+
 interface Service {
   icon: string;
   title: string;
@@ -9,26 +13,25 @@ interface Service {
 }
 
 export default function Services() {
+  const t = useTranslations("services");
+
   const services: Service[] = [
     {
       icon: "BriefcaseIcon",
-      title: "Business & Trade Facilitation",
-      description:
-        "We assist companies in identifying business opportunities, partners, and markets across Africa and the Indian Ocean region.",
+      title: t("items.businessTrade.title"),
+      description: t("items.businessTrade.description"),
       color: "blue",
     },
     {
       icon: "ArrowTrendingUpIcon",
-      title: "Investment Promotion",
-      description:
-        "AIOCCI promotes investment opportunities and connects investors with high-potential projects, enterprises, and strategic initiatives.",
+      title: t("items.investment.title"),
+      description: t("items.investment.description"),
       color: "green",
     },
     {
       icon: "UsersIcon",
-      title: "Networking & Representation",
-      description:
-        "AIOCCI provides a structured platform for networking, representation, and advocacy for its members at national, regional, and international levels.",
+      title: t("items.networking.title"),
+      description: t("items.networking.description"),
       color: "red",
     },
   ];
@@ -37,34 +40,32 @@ export default function Services() {
     <div id="services" className="bg-background">
       <section className="py-20 bg-surface">
         <div className="container mx-auto px-4">
+          {/* Section header */}
           <div className="text-center mb-16">
             <h2 className="font-playfair font-bold text-4xl text-textPrimary mb-4">
-              What We Do
+              {t("section.title")}
             </h2>
+
             <p className="font-sourceSans text-lg text-textSecondary max-w-2xl mx-auto">
-              Des solutions adaptées à chaque étape de votre développement
+              {t("section.subtitle")}
             </p>
           </div>
+
+          {/* Services grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}
           </div>
+
+          {/* Events service */}
           <div className="mt-8">
             <ServiceCard
-              icon={"CalendarIcon"}
-              title={"Corporate & Economic Events"}
-              description={
-                " AIOCCI designs and delivers high-level events, including:"
-              }
-              color={"blue"}
-              features={[
-                "Economic forums and summits",
-                "Corporate conferences and roundtables",
-                "B2B and B2G meetings",
-                "Trade missions and business delegations",
-                "Investment and sector-focused events",
-              ]}
+              icon="CalendarIcon"
+              title={t("items.events.title")}
+              description={t("items.events.description")}
+              features={t.raw("items.events.features")}
+              color="blue"
             />
           </div>
         </div>

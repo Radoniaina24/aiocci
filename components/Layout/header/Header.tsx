@@ -14,7 +14,7 @@ interface NavigationItem {
 
 const Header = () => {
   const t = useTranslations("header");
-  console.log(t);
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
