@@ -1,7 +1,14 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Card, CardContent } from "../ui/card";
-import { Mail, Globe, MapPin, Building2, TrendingUp } from "lucide-react";
+import {
+  Mail,
+  Globe,
+  MapPin,
+  Building2,
+  TrendingUp,
+  ArrowUpRight,
+} from "lucide-react";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -22,107 +29,176 @@ export default function Contact() {
     TrendingUp,
   };
 
-  // ✅ Mapping complet des couleurs avec les classes Tailwind complètes
   const colorMap: Record<
     string,
-    { icon: string; link: string; linkHover: string }
+    {
+      icon: string;
+      bg: string;
+      border: string;
+      glow: string;
+    }
   > = {
     blue: {
       icon: "text-blue-400",
-      link: "text-blue-300",
-      linkHover: "hover:text-blue-200",
+      bg: "bg-blue-500/10",
+      border: "border-blue-500/20 hover:border-blue-400/50",
+      glow: "group-hover:shadow-blue-500/20",
     },
     green: {
-      icon: "text-green-400",
-      link: "text-green-300",
-      linkHover: "hover:text-green-200",
+      icon: "text-emerald-400",
+      bg: "bg-emerald-500/10",
+      border: "border-emerald-500/20 hover:border-emerald-400/50",
+      glow: "group-hover:shadow-emerald-500/20",
     },
     red: {
-      icon: "text-red-400",
-      link: "text-red-300",
-      linkHover: "hover:text-red-200",
+      icon: "text-rose-400",
+      bg: "bg-rose-500/10",
+      border: "border-rose-500/20 hover:border-rose-400/50",
+      glow: "group-hover:shadow-rose-500/20",
     },
     amber: {
       icon: "text-amber-400",
-      link: "text-amber-300",
-      linkHover: "hover:text-amber-200",
+      bg: "bg-amber-500/10",
+      border: "border-amber-500/20 hover:border-amber-400/50",
+      glow: "group-hover:shadow-amber-500/20",
     },
     purple: {
-      icon: "text-purple-400",
-      link: "text-purple-300",
-      linkHover: "hover:text-purple-200",
+      icon: "text-violet-400",
+      bg: "bg-violet-500/10",
+      border: "border-violet-500/20 hover:border-violet-400/50",
+      glow: "group-hover:shadow-violet-500/20",
     },
     pink: {
       icon: "text-pink-400",
-      link: "text-pink-300",
-      linkHover: "hover:text-pink-200",
+      bg: "bg-pink-500/10",
+      border: "border-pink-500/20 hover:border-pink-400/50",
+      glow: "group-hover:shadow-pink-500/20",
     },
     cyan: {
       icon: "text-cyan-400",
-      link: "text-cyan-300",
-      linkHover: "hover:text-cyan-200",
+      bg: "bg-cyan-500/10",
+      border: "border-cyan-500/20 hover:border-cyan-400/50",
+      glow: "group-hover:shadow-cyan-500/20",
     },
     orange: {
       icon: "text-orange-400",
-      link: "text-orange-300",
-      linkHover: "hover:text-orange-200",
+      bg: "bg-orange-500/10",
+      border: "border-orange-500/20 hover:border-orange-400/50",
+      glow: "group-hover:shadow-orange-500/20",
     },
   };
 
-  // Fonction helper pour obtenir les classes de couleur
   const getColorClasses = (color: string) => {
-    return colorMap[color] || colorMap.blue; // Fallback to blue
+    return colorMap[color] || colorMap.blue;
   };
 
   return (
-    <section
-      id="contact"
-      className="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-green-400 mx-auto mb-6" />
-          <p className="text-xl text-gray-300">{t("subtitle")}</p>
+    <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
+      {/* Background avec gradient sophistiqué */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950" />
+
+      {/* Motif de grille subtil */}
+      <div
+        className="absolute inset-0 opacity-[0.02]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      />
+
+      {/* Cercles de gradient décoratifs */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header avec badge */}
+        <div className="text-center mb-16 lg:mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
+            {t("title")}
+          </h2>
+
+          <div className="flex items-center justify-center gap-2 mb-6">
+            <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-400" />
+            <div className="w-2 h-2 rounded-full bg-blue-400" />
+            <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-400" />
+          </div>
+
+          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            {t("subtitle")}
+          </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-            <CardContent className="p-8">
-              <p className="text-lg text-gray-200 mb-8 text-center">
-                {t("intro")}
-              </p>
+        {/* Card principale avec glassmorphism */}
+        <div className="max-w-5xl mx-auto">
+          <Card className="relative bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl overflow-hidden">
+            {/* Bordure gradient subtile */}
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/10 via-transparent to-violet-500/10 pointer-events-none" />
 
-              <div className="grid md:grid-cols-2 gap-6">
+            <CardContent className="relative p-8 md:p-12 lg:p-16">
+              {/* Introduction */}
+              <div className="text-center mb-12">
+                <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                  {t("intro")}
+                </p>
+              </div>
+
+              {/* Grid des contacts */}
+              <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
                 {contacts.map((item, index) => {
                   const Icon = iconMap[item.icon];
                   const colors = getColorClasses(item.color);
+                  const isLink = !!item.link;
+
+                  const ContentWrapper = isLink ? "a" : "div";
+                  const wrapperProps = isLink
+                    ? {
+                        href: item.link,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      }
+                    : {};
 
                   return (
-                    <div key={index} className="flex items-start space-x-4">
-                      {/* ✅ Utilisation de la classe complète */}
-                      <Icon
-                        className={`h-6 w-6 mt-1 flex-shrink-0 ${colors.icon}`}
-                      />
-                      <div>
-                        <p className="font-semibold text-white mb-1">
+                    <ContentWrapper
+                      key={index}
+                      {...wrapperProps}
+                      className={`
+                        group relative flex items-start gap-4 p-5 lg:p-6 
+                        rounded-2xl border transition-all duration-300
+                        ${colors.border}
+                        ${isLink ? "cursor-pointer hover:bg-white/[0.02]" : ""}
+                        hover:shadow-xl ${colors.glow}
+                      `}
+                    >
+                      {/* Icône avec fond coloré */}
+                      <div
+                        className={`
+                        flex-shrink-0 w-12 h-12 rounded-xl 
+                        flex items-center justify-center
+                        ${colors.bg}
+                        transition-transform duration-300
+                        group-hover:scale-110
+                      `}
+                      >
+                        <Icon className={`h-5 w-5 ${colors.icon}`} />
+                      </div>
+
+                      {/* Contenu */}
+                      <div className="flex-1 min-w-0">
+                        <p className="text-sm font-medium text-gray-400 mb-1">
                           {item.label}
                         </p>
-                        {item.link ? (
-                          <a
-                            href={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={`${colors.link} ${colors.linkHover} transition-colors`}
-                          >
-                            {item.value}
-                          </a>
-                        ) : (
-                          <p className="text-gray-300">{item.value}</p>
-                        )}
+                        <p className="text-base lg:text-lg font-semibold text-white truncate group-hover:text-gray-100 transition-colors">
+                          {item.value}
+                        </p>
                       </div>
-                    </div>
+
+                      {/* Indicateur de lien */}
+                      {isLink && (
+                        <div className="flex-shrink-0 self-center opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                          <ArrowUpRight className="h-5 w-5 text-gray-400" />
+                        </div>
+                      )}
+                    </ContentWrapper>
                   );
                 })}
               </div>
