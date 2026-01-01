@@ -190,6 +190,20 @@
         "Leadership orienté business"
       ],
       "conclusion": "La Chambre favorise la collaboration entre le secteur privé, les institutions et les acteurs économiques."
+    },
+    "badge": "Partenariats stratégiques",
+
+    "heading": {
+      "line1": "Construisons",
+      "highlight": "l'avenir ensemble",
+      "description": "Des collaborations stratégiques qui créent de la valeur durable et favorisent l'innovation à l'échelle internationale"
+    },
+
+    "stats": {
+      "partners": "Partenaires actifs",
+      "countries": "Pays couverts",
+      "funding": "Projets financés",
+      "satisfaction": "Taux de satisfaction"
     }
   },
   "contact": {
