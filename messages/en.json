@@ -18,14 +18,14 @@
   "hero": {
     "title": {
       "line1": "African Indian Ocean",
-      "line2": "Chamber of Commerce & Industry"
+      "line2": "Chamber of Commerce and Industry"
     },
     "acronym": "AIOCCI",
     "tagline": "A Business Bridge between Africa and the Indian Ocean",
 
     "welcome": {
       "title": "Welcome to AIOCCI",
-      "paragraph1": "The African Indian Ocean Chamber of Commerce & Industry (AIOCCI) is an independent business platform dedicated to strengthening trade, investment, and economic cooperation between Africa and the Indian Ocean region.",
+      "paragraph1": "The African Indian Ocean Chamber of Commerce and Industry (AIOCCI) is an independent business platform dedicated to strengthening trade, investment, and economic cooperation between Africa and the Indian Ocean region.",
       "paragraph2": "AIOCCI connects companies, investors, institutions, and economic stakeholders through business facilitation, strategic networking, and the organization of high-level corporate and economic events.",
       "paragraph3": "Our objective is to foster sustainable growth, cross-border partnerships, and regional economic integration across Africa, the Indian Ocean, and international markets."
     },
@@ -54,7 +54,7 @@
       }
     },
     "section": {
-      "title": "Our Vision & Mission",
+      "title": "Our Vision and Mission",
       "subtitle": "Building economic bridges between Africa and the Indian Ocean for shared prosperity"
     },
     "countries": "Partner Countries",
@@ -70,7 +70,7 @@
 
     "items": {
       "businessTrade": {
-        "title": "Business & Trade Facilitation",
+        "title": "Business and Trade Facilitation",
         "description": "We assist companies in identifying business opportunities, partners, and markets across Africa and the Indian Ocean region."
       },
       "investment": {
@@ -78,11 +78,11 @@
         "description": "AIOCCI promotes investment opportunities and connects investors with high-potential projects, enterprises, and strategic initiatives."
       },
       "networking": {
-        "title": "Networking & Representation",
+        "title": "Networking and Representation",
         "description": "AIOCCI provides a structured platform for networking, representation, and advocacy for its members at national, regional, and international levels."
       },
       "events": {
-        "title": "Corporate & Economic Events",
+        "title": "Corporate and Economic Events",
         "description": "AIOCCI designs and delivers high-level events, including:",
         "features": [
           "Economic forums and summits",
@@ -97,9 +97,9 @@
   },
   "events": {
     "section": {
-      "title": "Flagship Projects & Events",
+      "title": "Flagship Projects and Events",
       "subtitle": "Major Projects – 2026",
-      "previousTitle": "Previous & Ongoing Initiatives"
+      "previousTitle": "Previous and Ongoing Initiatives"
     },
 
     "flagship": {
@@ -122,7 +122,7 @@
 
     "initiatives": {
       "emploi": {
-        "title": "Carrefour Emploi & Études",
+        "title": "Carrefour Emploi and Études",
         "location": "Madagascar",
         "description": "A major employment and education fair organized in Madagascar, connecting students, professionals, universities, training institutions, and recruiters at national and international levels."
       },
@@ -159,13 +159,13 @@
         "description": "Open to companies, SMEs, startups, investors, and professional organizations."
       },
       "institutional": {
-        "title": "Institutional & Partner Members",
+        "title": "Institutional and Partner Members",
         "description": "Open to chambers of commerce, institutions, embassies, and international organizations."
       }
     }
   },
   "partnerships": {
-    "title": "Partnerships & Governance",
+    "title": "Partnerships and Governance",
 
     "collaboration": {
       "title": "Strategic Collaboration",
@@ -234,13 +234,13 @@
       {
         "icon": "Building2",
         "label": "Offices",
-        "value": "Delescar & Boris",
+        "value": "Delescar and Boris",
         "color": "amber"
       },
       {
         "icon": "Globe",
         "label": "Regional Presence",
-        "value": "Africa & Indian Ocean",
+        "value": "Africa and Indian Ocean",
         "color": "blue"
       },
       {
@@ -253,7 +253,7 @@
   },
   "footer": {
     "logoAlt": "AIOCCI Logo",
-    "organization": "African Indian Ocean Chamber of Commerce & Industry",
+    "organization": "African Indian Ocean Chamber of Commerce and Industry",
     "description": "Connecting Africa and the Indian Ocean through trade, investment, economic cooperation, and high-level corporate events.",
     "headquarters": "Headquartered in Madagascar, with offices in Delescar and Boris, and expanding across Africa.",
     "copyright": "© {year} AIOCCI. All rights reserved."

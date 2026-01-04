@@ -84,10 +84,10 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
               {/* Titre */}
               <div className="max-w-2xl">
-                <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-textPrimary mb-4">
+                <h2 className=" font-bold text-4xl md:text-5xl lg:text-6xl text-textPrimary mb-4">
                   {t("section.title")}
                 </h2>
-                <p className="font-sourceSans text-xl text-textSecondary leading-relaxed">
+                <p className=" text-xl text-textSecondary leading-relaxed">
                   {t("section.subtitle")}
                 </p>
               </div>
@@ -142,7 +142,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
                           className={`absolute -top-4 -left-4 w-12 h-12 ${colors.text} opacity-20`}
                         />
                         <blockquote className="pl-8 border-l-4 border-primary/20">
-                          <p className="font-sourceSans text-2xl md:text-3xl text-textPrimary leading-relaxed italic">
+                          <p className="text-2xl md:text-3xl text-textPrimary leading-relaxed italic">
                             {item.description.split(".")[0]}.
                           </p>
                         </blockquote>
@@ -150,7 +150,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
 
                       {/* Description complémentaire */}
                       {item.description.split(".").length > 1 && (
-                        <p className="font-sourceSans text-sm text-textSecondary leading-relaxed mb-8">
+                        <p className=" text-sm text-textSecondary leading-relaxed mb-8">
                           {item.description
                             .split(".")
                             .slice(1)

@@ -75,12 +75,12 @@ module.exports = {
           foreground: "var(--color-gold-foreground)" /* gray-900 */,
         },
       },
-      fontFamily: {
-        playfair: ["Playfair Display", "serif"],
-        sourceSans: ["Source Sans Pro", "sans-serif"],
-        montserrat: ["Montserrat", "sans-serif"],
-        crimson: ["Crimson Text", "serif"],
-      },
+      // fontFamily: {
+      //   playfair: ["Playfair Display", "serif"],
+      //   sourceSans: ["Source Sans Pro", "sans-serif"],
+      //   montserrat: ["Montserrat", "sans-serif"],
+      //   crimson: ["Crimson Text", "serif"],
+      // },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
