@@ -7,7 +7,7 @@ import ServiceCard from "./ServiceCard";
 import Icon from "@/components/ui/AppIcon";
 
 // Types étendus pour plus de flexibilité
-type ColorVariant = "blue" | "green" | "red" | "purple" | "orange";
+type ColorVariant = "blue" | "green" | "red" | "purple" | "orange" | "brown";
 
 interface Service {
   icon: string;
@@ -60,26 +60,27 @@ export default function Services() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
+  // ✨ Services avec thème marron
   const services: Service[] = [
     {
       icon: "BriefcaseIcon",
       title: t("items.businessTrade.title"),
       description: t("items.businessTrade.description"),
-      color: "blue",
+      color: "brown",
       badge: "Business",
     },
     {
       icon: "ArrowTrendingUpIcon",
       title: t("items.investment.title"),
       description: t("items.investment.description"),
-      color: "green",
+      color: "brown",
       badge: "Investment",
     },
     {
       icon: "UsersIcon",
       title: t("items.networking.title"),
       description: t("items.networking.description"),
-      color: "purple",
+      color: "brown",
       badge: "Networking",
     },
   ];
@@ -91,25 +92,25 @@ export default function Services() {
       className="relative py-24 lg:py-32 overflow-hidden"
     >
       {/* ═══════════════════════════════════════════════════════════════
-          BACKGROUND DECORATIONS
+          BACKGROUND DECORATIONS - Thème Marron
       ═══════════════════════════════════════════════════════════════ */}
 
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50" />
+      {/* Gradient Background - Tons chauds */}
+      <div className="absolute inset-0 bg-gradient-to-b from-stone-50 via-white to-amber-50/30" />
 
       {/* Grid Pattern Overlay */}
       <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238B4513' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
         }}
         aria-hidden="true"
       />
 
-      {/* Floating Gradient Orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
-      <div className="absolute top-1/2 right-0 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-500" />
+      {/* Floating Gradient Orbs - Marron */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#8B4513]/5 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#CD853F]/5 rounded-full blur-3xl animate-pulse delay-1000" />
+      <div className="absolute top-1/2 right-0 w-64 h-64 bg-[#D2691E]/5 rounded-full blur-3xl animate-pulse delay-500" />
 
       {/* ═══════════════════════════════════════════════════════════════
           MAIN CONTENT
@@ -128,13 +129,13 @@ export default function Services() {
           {/* Main Title */}
           <h2 className="font-playfair font-bold text-4xl sm:text-5xl lg:text-6xl text-gray-900 mb-6 tracking-tight">
             <span className="block">{t("section.title")}</span>
-            {/* Optional: Highlighted word */}
+            {/* Highlighted word - Marron */}
             <span className="relative inline-block mt-2">
-              <span className="relative z-10 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="relative z-10 bg-gradient-to-r from-[#8B4513] via-[#A0522D] to-[#CD853F] bg-clip-text text-transparent">
                 {t("excellence")}
               </span>
               <svg
-                className="absolute -bottom-2 left-0 w-full h-3 text-blue-200"
+                className="absolute -bottom-2 left-0 w-full h-3 text-[#DEB887]/40"
                 viewBox="0 0 200 12"
                 fill="currentColor"
                 preserveAspectRatio="none"
@@ -149,13 +150,13 @@ export default function Services() {
             {t("section.subtitle")}
           </p>
 
-          {/* Decorative Line */}
+          {/* Decorative Line - Marron */}
           <div className="flex items-center justify-center gap-3 mt-8">
-            <span className="h-px w-12 bg-gradient-to-r from-transparent to-gray-300" />
-            <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
-            <span className="h-px w-24 bg-gray-300" />
-            <span className="h-1.5 w-1.5 rounded-full bg-purple-500" />
-            <span className="h-px w-12 bg-gradient-to-l from-transparent to-gray-300" />
+            <span className="h-px w-12 bg-gradient-to-r from-transparent to-[#D2B48C]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#8B4513]" />
+            <span className="h-px w-24 bg-[#D2B48C]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#CD853F]" />
+            <span className="h-px w-12 bg-gradient-to-l from-transparent to-[#D2B48C]" />
           </div>
         </motion.header>
 
@@ -176,7 +177,7 @@ export default function Services() {
         </motion.div>
 
         {/* ─────────────────────────────────────────────────────────────
-            FEATURED SERVICE (EVENTS)
+            FEATURED SERVICE (EVENTS) - Thème Marron
         ───────────────────────────────────────────────────────────── */}
         <motion.div
           variants={itemVariants as any}
@@ -187,20 +188,20 @@ export default function Services() {
         >
           {/* Featured Banner */}
           <div className="relative">
-            {/* Background Card */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl transform rotate-1 opacity-10" />
+            {/* Background Card - Marron */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#8B4513] to-[#5D3A1A] rounded-3xl transform rotate-1 opacity-10" />
 
-            {/* Main Card */}
-            <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 lg:p-12 overflow-hidden">
-              {/* Decorative Elements */}
-              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-emerald-500/10 to-cyan-500/10 rounded-full blur-3xl" />
+            {/* Main Card - Marron foncé */}
+            <div className="relative bg-gradient-to-br from-[#3D2314] via-[#2C1810] to-[#1A0F0A] rounded-3xl p-8 lg:p-12 overflow-hidden">
+              {/* Decorative Elements - Marron */}
+              <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#8B4513]/20 to-[#CD853F]/20 rounded-full blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-gradient-to-tr from-[#D2691E]/10 to-[#DEB887]/10 rounded-full blur-3xl" />
 
               {/* Grid Pattern */}
               <div
                 className="absolute inset-0 opacity-5"
                 style={{
-                  backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 1px)`,
+                  backgroundImage: `radial-gradient(circle at 1px 1px, #CD853F 1px, transparent 1px)`,
                   backgroundSize: "24px 24px",
                 }}
               />
@@ -208,10 +209,8 @@ export default function Services() {
               <div className="relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 {/* Left Content */}
                 <div>
-                  {/* Featured Badge */}
-
-                  {/* Icon */}
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl shadow-lg shadow-blue-500/30 mb-6">
+                  {/* Icon - Marron */}
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#8B4513] to-[#CD853F] rounded-2xl shadow-lg shadow-[#8B4513]/30 mb-6">
                     <Icon
                       name="CalendarIcon"
                       size={28}
@@ -225,7 +224,7 @@ export default function Services() {
                   </h3>
 
                   {/* Description */}
-                  <p className="font-sourceSans text-lg text-gray-300 leading-relaxed mb-8">
+                  <p className="font-sourceSans text-lg text-[#DEB887]/80 leading-relaxed mb-8">
                     {t("items.events.description")}
                   </p>
                 </div>
@@ -236,10 +235,10 @@ export default function Services() {
                     (feature, index) => (
                       <div
                         key={index}
-                        className="group flex items-start gap-4 p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                        className="group flex items-start gap-4 p-4 bg-[#CD853F]/5 backdrop-blur-sm border border-[#8B4513]/20 rounded-2xl hover:bg-[#CD853F]/10 hover:border-[#CD853F]/30 transition-all duration-300"
                       >
-                        {/* Number Badge */}
-                        <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-500/20 to-indigo-500/20 border border-blue-400/30 rounded-xl text-blue-400 font-bold text-sm">
+                        {/* Number Badge - Marron */}
+                        <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 bg-gradient-to-br from-[#8B4513]/20 to-[#CD853F]/20 border border-[#CD853F]/30 rounded-xl text-[#DEB887] font-bold text-sm">
                           {String(index + 1).padStart(2, "0")}
                         </div>
 
@@ -249,13 +248,6 @@ export default function Services() {
                             {feature}
                           </span>
                         </div>
-
-                        {/* Arrow */}
-                        {/* <Icon
-                          name="ChevronRightIcon"
-                          size={20}
-                          className="flex-shrink-0 mt-2 text-white/30 group-hover:text-white/60 group-hover:translate-x-1 transition-all duration-300"
-                        /> */}
                       </div>
                     )
                   )}

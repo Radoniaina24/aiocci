@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Icon from "@/components/ui/AppIcon";
 
 // Types plus robustes et extensibles
-type ColorVariant = "blue" | "green" | "red" | "purple" | "orange";
+type ColorVariant = "blue" | "green" | "red" | "purple" | "orange" | "brown";
 
 interface ServiceCardProps {
   icon: string;
@@ -74,6 +74,16 @@ const colorConfig: Record<
     checkColor: "text-amber-500",
     hoverGlow: "group-hover:shadow-amber-500/25",
   },
+  // ✨ Nouvelle variante MARRON
+  brown: {
+    gradient: "from-[#8B4513]/10 via-[#A0522D]/5 to-transparent",
+    iconBg: "bg-gradient-to-br from-[#8B4513] to-[#5D3A1A]",
+    iconColor: "text-white",
+    accentLine: "bg-gradient-to-r from-[#8B4513] to-[#CD853F]",
+    badgeBg: "bg-[#8B4513]/10 text-[#5D3A1A] ring-[#8B4513]/20",
+    checkColor: "text-[#8B4513]",
+    hoverGlow: "group-hover:shadow-[#8B4513]/25",
+  },
 };
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -81,7 +91,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   features = [],
-  color = "blue",
+  color = "brown", // 👈 Couleur par défaut changée en marron
   badge,
   isPopular = false,
   onClick,
@@ -192,7 +202,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           {/* Badges */}
           <div className="flex flex-col items-end gap-2">
             {isPopular && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-amber-400 to-orange-500 text-white text-xs font-semibold rounded-full shadow-lg shadow-amber-500/30 animate-pulse">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-[#CD853F] to-[#8B4513] text-white text-xs font-semibold rounded-full shadow-lg shadow-[#8B4513]/30 animate-pulse">
                 <Icon name="StarIcon" size={12} className="fill-current" />
                 Populaire
               </span>
