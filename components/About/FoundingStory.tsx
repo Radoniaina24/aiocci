@@ -45,17 +45,20 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-24 md:py-32 bg-surface overflow-hidden"
+      className="relative py-24 md:py-32 bg-gradient-to-b from-amber-50 to-orange-50/50 overflow-hidden"
     >
-      {/* Éléments décoratifs de fond */}
+      {/* Éléments décoratifs de fond - Thème Marron */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Cercle décoratif */}
-        <div className="absolute top-20 -left-32 w-64 h-64 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 -right-32 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 -left-32 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 -right-32 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl" />
 
         {/* Motif de lignes */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-[0.02]">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <div className="absolute top-0 left-0 w-full h-full opacity-[0.03]">
+          <svg
+            className="w-full h-full text-amber-900"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <defs>
               <pattern
                 id="grid"
@@ -78,7 +81,7 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
-          {/* Header de section */}
+          {/* Header de section - Thème Marron */}
           <div
             className={`text-center mb-16 transition-all duration-700 ${
               isVisible
@@ -86,9 +89,9 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                 : "opacity-0 translate-y-8"
             }`}
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
-              <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-sm font-semibold text-primary">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-100 border border-amber-200 rounded-full mb-4">
+              <Sparkles className="w-4 h-4 text-amber-700" />
+              <span className="text-sm font-semibold text-amber-800">
                 {t("title")}
               </span>
             </div>
@@ -104,14 +107,14 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
               }`}
             >
               <div className="relative">
-                {/* Cadre décoratif derrière l'image */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-accent/10 to-primary/20 rounded-3xl blur-sm" />
-                <div className="absolute -inset-2 bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl" />
+                {/* Cadre décoratif derrière l'image - Thème Marron */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-amber-400/20 via-orange-300/10 to-amber-400/20 rounded-3xl blur-sm" />
+                <div className="absolute -inset-2 bg-gradient-to-br from-amber-300/10 to-orange-300/10 rounded-2xl" />
 
                 {/* Conteneur image principal */}
                 <div className="relative group">
                   {/* Image */}
-                  <div className="relative h-[400px] lg:h-[550px] rounded-2xl overflow-hidden shadow-elevated">
+                  <div className="relative h-[400px] lg:h-[550px] rounded-2xl overflow-hidden shadow-xl shadow-amber-900/10">
                     <AppImage
                       src={story.image}
                       alt={story.alt}
@@ -122,21 +125,21 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                       onLoad={() => setImageLoaded(true)}
                     />
 
-                    {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-textPrimary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    {/* Overlay gradient - Thème Marron */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-amber-950/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                     {/* Skeleton loader */}
                     {!imageLoaded && (
-                      <div className="absolute inset-0 bg-border animate-pulse" />
+                      <div className="absolute inset-0 bg-amber-100 animate-pulse" />
                     )}
                   </div>
 
-                  {/* Badge année flottant */}
+                  {/* Badge année flottant - Thème Marron */}
                   {story.year && (
                     <div className="absolute -bottom-6 -right-6 z-20">
                       <div className="relative">
-                        <div className="absolute inset-0 bg-primary rounded-2xl blur-lg opacity-40" />
-                        <div className="relative bg-gradient-to-br from-primary to-primary/80 text-primary-foreground px-6 py-4 rounded-2xl shadow-lg">
+                        <div className="absolute inset-0 bg-amber-600 rounded-2xl blur-lg opacity-40" />
+                        <div className="relative bg-gradient-to-br from-amber-700 to-amber-800 text-amber-50 px-6 py-4 rounded-2xl shadow-lg shadow-amber-700/30">
                           <div className="flex items-center gap-2">
                             <Calendar className="w-5 h-5" />
                             <span className="text-sm font-medium">
@@ -151,14 +154,17 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                     </div>
                   )}
 
-                  {/* Élément décoratif coin supérieur gauche */}
-                  <div className="absolute -top-4 -left-4 w-24 h-24 border-l-4 border-t-4 border-primary/30 rounded-tl-3xl" />
+                  {/* Élément décoratif coin supérieur gauche - Thème Marron */}
+                  <div className="absolute -top-4 -left-4 w-24 h-24 border-l-4 border-t-4 border-amber-500/40 rounded-tl-3xl" />
                 </div>
 
-                {/* Points décoratifs */}
-                <div className="absolute -bottom-8 -left-8 grid grid-cols-4 gap-2 opacity-30">
+                {/* Points décoratifs - Thème Marron */}
+                <div className="absolute -bottom-8 -left-8 grid grid-cols-4 gap-2 opacity-40">
                   {[...Array(16)].map((_, i) => (
-                    <div key={i} className="w-2 h-2 bg-primary rounded-full" />
+                    <div
+                      key={i}
+                      className="w-2 h-2 bg-amber-600 rounded-full"
+                    />
                   ))}
                 </div>
               </div>
@@ -172,16 +178,16 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                   : "opacity-0 translate-x-12"
               }`}
             >
-              {/* Titre */}
-              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-textPrimary mb-8 leading-tight">
+              {/* Titre - Thème Marron */}
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-amber-950 mb-8 leading-tight">
                 {story.title.split(" ").map((word, index, array) => (
                   <span key={index}>
                     {index === array.length - 1 ? (
                       <span className="relative inline-block">
-                        <span className="relative z-10 text-primary">
+                        <span className="relative z-10 text-amber-700">
                           {word}
                         </span>
-                        <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/20 -z-0" />
+                        <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-300/40 -z-0" />
                       </span>
                     ) : (
                       word + " "
@@ -190,66 +196,66 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                 ))}
               </h2>
 
-              {/* Citation en vedette */}
-              <div className="relative mb-8 pl-6 border-l-4 border-primary/30">
-                <Quote className="absolute -top-2 -left-3 w-8 h-8 text-primary/20" />
-                <p className="font-sourceSans text-xl text-textPrimary italic leading-relaxed">
+              {/* Citation en vedette - Thème Marron */}
+              <div className="relative mb-8 pl-6 border-l-4 border-amber-500/50">
+                <Quote className="absolute -top-2 -left-3 w-8 h-8 text-amber-400/40" />
+                <p className="font-sourceSans text-xl text-amber-900 italic leading-relaxed">
                   {paragraphs[0]}
                 </p>
               </div>
 
-              {/* Autres paragraphes */}
+              {/* Autres paragraphes - Thème Marron */}
               <div className="space-y-4 mb-8">
                 {paragraphs.slice(1).map((paragraph, index) => (
                   <p
                     key={index}
-                    className="font-sourceSans text-lg text-textSecondary leading-relaxed"
+                    className="font-sourceSans text-lg text-amber-800/80 leading-relaxed"
                   >
                     {paragraph}
                   </p>
                 ))}
               </div>
 
-              {/* Ligne de séparation animée */}
-              <div className="relative h-px w-full bg-border mb-8 overflow-hidden">
+              {/* Ligne de séparation animée - Thème Marron */}
+              <div className="relative h-px w-full bg-amber-200 mb-8 overflow-hidden">
                 <div
-                  className={`absolute inset-y-0 left-0 bg-gradient-to-r from-primary to-accent transition-all duration-1000 delay-700 ${
+                  className={`absolute inset-y-0 left-0 bg-gradient-to-r from-amber-600 to-orange-500 transition-all duration-1000 delay-700 ${
                     isVisible ? "w-full" : "w-0"
                   }`}
                 />
               </div>
 
-              {/* Stats ou points clés */}
+              {/* Stats ou points clés - Thème Marron */}
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="group">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <span className="text-primary font-bold">54+</span>
+                    <div className="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center group-hover:bg-amber-200 transition-colors">
+                      <span className="text-amber-700 font-bold">54+</span>
                     </div>
-                    <span className="text-textSecondary text-sm">
+                    <span className="text-amber-700 text-sm">
                       {t("countries")}
                     </span>
                   </div>
                 </div>
                 <div className="group">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                      <span className="text-accent font-bold">500+</span>
+                    <div className="w-10 h-10 rounded-xl bg-orange-100 border border-orange-200 flex items-center justify-center group-hover:bg-orange-200 transition-colors">
+                      <span className="text-orange-700 font-bold">500+</span>
                     </div>
-                    <span className="text-textSecondary text-sm">
+                    <span className="text-amber-700 text-sm">
                       {t("activeMembers")}
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* CTA */}
+              {/* CTA - Thème Marron (décommenté et stylisé) */}
               {/* <button
                 onClick={() => {
                   const element = document.getElementById("services");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
                 }}
-                className="group inline-flex items-center gap-3 px-6 py-3 bg-textPrimary text-card rounded-xl font-semibold hover:bg-primary transition-colors duration-300"
+                className="group inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-xl font-semibold hover:from-amber-800 hover:to-amber-900 transition-all duration-300 shadow-lg shadow-amber-700/25"
               >
                 Découvrir nos services
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -259,8 +265,8 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
         </div>
       </div>
 
-      {/* Ligne décorative bas de section */}
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      {/* Ligne décorative bas de section - Thème Marron */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-amber-300 to-transparent" />
     </section>
   );
 };

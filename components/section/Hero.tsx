@@ -98,55 +98,43 @@ export default function Hero() {
       title: "Plateforme Économique",
       description:
         "Renforcement des échanges commerciaux entre l'Afrique et l'Océan Indien",
-      color: "emerald",
+      color: "amber",
     },
     {
       icon: Handshake,
       title: "Réseautage Stratégique",
       description: "Connexion des entreprises, investisseurs et institutions",
-      color: "blue",
+      color: "orange",
     },
     {
       icon: TrendingUp,
       title: "Croissance Durable",
       description:
         "Partenariats transfrontaliers et intégration économique régionale",
-      color: "amber",
+      color: "yellow",
     },
   ];
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
-      {/* Background */}
+      {/* Background - Thème Marron */}
       <div className="absolute inset-0">
-        {/* Image de fond */}
-        {/* <div className="absolute inset-0">
-          <Image
-            src="/images/footerLogo.jpg"
-            alt="Africa Business"
-            fill
-            className="object-cover scale-105 animate-slow-zoom"
-            priority
-            quality={90}
-          />
-        </div> */}
-
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/95 via-blue-900/90 to-emerald-900/95" />
+        {/* Overlay gradient marron */}
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-950/95 via-amber-900/90 to-orange-900/95" />
 
         {/* Motif de points */}
         <div
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 1px)`,
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 1px)`,
             backgroundSize: "40px 40px",
           }}
         />
 
-        {/* Cercles lumineux animés */}
-        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse-slow" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl animate-pulse-slow animation-delay-2000" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow animation-delay-4000" />
+        {/* Cercles lumineux animés - Tons marron/ambre */}
+        <div className="absolute top-1/4 -left-32 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-orange-500/20 rounded-full blur-3xl animate-pulse-slow animation-delay-2000" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-yellow-500/10 rounded-full blur-3xl animate-pulse-slow animation-delay-4000" />
       </div>
 
       {/* Contenu principal */}
@@ -154,24 +142,24 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Colonne gauche - Texte */}
           <div className="text-white space-y-6 md:space-y-8">
-            {/* Badge AIOCCI */}
+            {/* Badge AIOCCI - Thème Marron */}
             <div
-              className={`inline-flex items-center gap-3 px-5 py-2.5 bg-white/10 backdrop-blur-md rounded-full border border-white/20 transition-all duration-700 ${
+              className={`inline-flex items-center gap-3 px-5 py-2.5 bg-white/10 backdrop-blur-md rounded-full border border-amber-400/30 transition-all duration-700 ${
                 isLoaded
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4"
               }`}
             >
               <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500" />
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500" />
               </span>
-              <span className="text-base font-bold tracking-wider text-emerald-300">
+              <span className="text-base font-bold tracking-wider text-amber-300">
                 {t("acronym")}
               </span>
             </div>
 
-            {/* Titre principal */}
+            {/* Titre principal - Thème Marron */}
             <h1 className="space-y-2">
               <span
                 className={`block text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight transition-all duration-700 delay-100 ${
@@ -183,7 +171,7 @@ export default function Hero() {
                 {t("title.line1")}
               </span>
               <span
-                className={`block text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent animate-gradient transition-all duration-700 delay-200 ${
+                className={`block text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight bg-gradient-to-r from-amber-400 via-yellow-400 to-orange-400 bg-clip-text text-transparent animate-gradient transition-all duration-700 delay-200 ${
                   isLoaded
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-4"
@@ -193,9 +181,9 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* Tagline */}
+            {/* Tagline - Thème Marron */}
             <p
-              className={`text-xl md:text-2xl text-blue-200 font-medium border-l-4 border-emerald-500 pl-4 transition-all duration-700 delay-300 ${
+              className={`text-xl md:text-2xl text-amber-200 font-medium border-l-4 border-amber-500 pl-4 transition-all duration-700 delay-300 ${
                 isLoaded
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4"
@@ -204,68 +192,7 @@ export default function Hero() {
               {t("tagline")}
             </p>
 
-            {/* Carousel des features */}
-            {/* <div
-              className={`relative h-24 transition-all duration-700 delay-400 ${
-                isLoaded
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-4"
-              }`}
-            >
-              {features.map((feature, index) => (
-                <div
-                  key={index}
-                  className={`absolute inset-0 flex items-center gap-4 transition-all duration-500 ${
-                    activeFeature === index
-                      ? "opacity-100 translate-x-0"
-                      : "opacity-0 translate-x-8 pointer-events-none"
-                  }`}
-                >
-                  <div
-                    className={`flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br ${
-                      feature.color === "emerald"
-                        ? "from-emerald-500/30 to-emerald-600/30"
-                        : feature.color === "blue"
-                        ? "from-blue-500/30 to-blue-600/30"
-                        : "from-amber-500/30 to-amber-600/30"
-                    } flex items-center justify-center border border-white/10`}
-                  >
-                    <feature.icon
-                      className={`w-7 h-7 ${
-                        feature.color === "emerald"
-                          ? "text-emerald-400"
-                          : feature.color === "blue"
-                          ? "text-blue-400"
-                          : "text-amber-400"
-                      }`}
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-white">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-300">{feature.description}</p>
-                  </div>
-                </div>
-              ))}
-
-            
-              <div className="absolute -bottom-4 left-0 flex gap-2">
-                {features.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setActiveFeature(index)}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${
-                      activeFeature === index
-                        ? "w-8 bg-emerald-400"
-                        : "w-2 bg-white/30 hover:bg-white/50"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div> */}
-
-            {/* Boutons CTA */}
+            {/* Boutons CTA - Thème Marron */}
             <div
               className={`flex flex-col sm:flex-row gap-4 pt-4 transition-all duration-700 delay-500 ${
                 isLoaded
@@ -276,7 +203,7 @@ export default function Hero() {
               <Button
                 onClick={() => scrollToSection("membership")}
                 size="lg"
-                className="group relative overflow-hidden bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-lg px-8 py-6 rounded-xl shadow-lg shadow-emerald-500/25 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/40 hover:-translate-y-1"
+                className="group relative overflow-hidden bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white text-lg px-8 py-6 rounded-xl shadow-lg shadow-amber-700/25 transition-all duration-300 hover:shadow-xl hover:shadow-amber-600/40 hover:-translate-y-1"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   {t("actions.becomeMember")}
@@ -289,7 +216,7 @@ export default function Hero() {
                 onClick={() => scrollToSection("contact")}
                 size="lg"
                 variant="outline"
-                className="group bg-white/5 backdrop-blur-sm border-white/30 text-white hover:bg-white/15 hover:border-white/50 text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white/5 backdrop-blur-sm border-amber-400/40 text-white hover:bg-white/15 hover:border-amber-300/60 text-lg px-8 py-6 rounded-xl transition-all duration-300 hover:-translate-y-1"
               >
                 {t("actions.contact")}
               </Button>
@@ -306,11 +233,11 @@ export default function Hero() {
           >
             {/* Carte principale */}
             <div className="relative">
-              {/* Effet de glow derrière la carte */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 via-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl" />
+              {/* Effet de glow derrière la carte - Thème Marron */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 via-yellow-500/20 to-orange-500/20 rounded-3xl blur-2xl" />
 
-              {/* Carte */}
-              <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-white/20 overflow-hidden shadow-2xl">
+              {/* Carte - Thème Marron */}
+              <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl border border-amber-400/20 overflow-hidden shadow-2xl">
                 {/* Header de la carte avec image */}
                 <div className="relative h-48 md:h-56">
                   <Image
@@ -320,7 +247,7 @@ export default function Hero() {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-amber-950/90 via-amber-900/50 to-transparent" />
 
                   {/* Titre sur l'image */}
                   <div className="absolute bottom-4 left-6 right-6">
@@ -332,49 +259,49 @@ export default function Hero() {
 
                 {/* Contenu */}
                 <div className="p-6 md:p-8 space-y-4">
-                  <p className="text-gray-200 leading-relaxed text-sm md:text-base">
+                  <p className="text-amber-100 leading-relaxed text-sm md:text-base">
                     {t("welcome.paragraph1")}
                   </p>
 
-                  <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-amber-400/30 to-transparent" />
 
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                  <p className="text-amber-200/80 leading-relaxed text-sm md:text-base">
                     {t("welcome.paragraph2")}
                   </p>
 
-                  <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-amber-400/30 to-transparent" />
 
-                  <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                  <p className="text-amber-200/80 leading-relaxed text-sm md:text-base">
                     {t("welcome.paragraph3")}
                   </p>
                 </div>
 
-                {/* Footer avec icônes */}
+                {/* Footer avec icônes - Thème Marron */}
                 <div className="px-6 md:px-8 pb-6 md:pb-8">
-                  <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                  <div className="flex items-center justify-between pt-4 border-t border-amber-400/20">
                     <div className="flex -space-x-2">
                       {[Globe, Building2, Users, TrendingUp].map((Icon, i) => (
                         <div
                           key={i}
-                          className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500/30 to-emerald-500/30 border-2 border-blue-900 flex items-center justify-center"
+                          className="w-10 h-10 rounded-full bg-gradient-to-br from-amber-600/30 to-orange-500/30 border-2 border-amber-950 flex items-center justify-center"
                         >
-                          <Icon className="w-5 h-5 text-emerald-400" />
+                          <Icon className="w-5 h-5 text-amber-400" />
                         </div>
                       ))}
                     </div>
-                    <span className="text-emerald-400 text-sm font-medium">
+                    <span className="text-amber-400 text-sm font-medium">
                       Afrique • Océan Indien
                     </span>
                   </div>
                 </div>
               </div>
 
-              {/* Éléments flottants */}
+              {/* Éléments flottants - Thème Marron */}
               <FloatingElement
                 delay={0}
                 className="absolute -top-6 -right-6 z-20 hidden md:block"
               >
-                <div className="bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl p-4 shadow-lg shadow-emerald-500/30">
+                <div className="bg-gradient-to-br from-amber-600 to-amber-700 rounded-2xl p-4 shadow-lg shadow-amber-600/30">
                   <Globe className="w-8 h-8 text-white" />
                 </div>
               </FloatingElement>
@@ -383,7 +310,7 @@ export default function Hero() {
                 delay={0.5}
                 className="absolute top-1/3 -left-6 z-20 hidden md:block"
               >
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-4 shadow-lg shadow-blue-500/30">
+                <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-4 shadow-lg shadow-orange-500/30">
                   <Handshake className="w-8 h-8 text-white" />
                 </div>
               </FloatingElement>
@@ -392,32 +319,13 @@ export default function Hero() {
                 delay={1}
                 className="absolute -bottom-4 right-16 z-20 hidden md:block"
               >
-                <div className="bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl p-4 shadow-lg shadow-amber-500/30">
+                <div className="bg-gradient-to-br from-yellow-500 to-amber-500 rounded-2xl p-4 shadow-lg shadow-yellow-500/30">
                   <TrendingUp className="w-8 h-8 text-white" />
                 </div>
               </FloatingElement>
             </div>
           </div>
         </div>
-
-        {/* Indicateur de scroll */}
-        {/* <div
-          className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-700 delay-1000 ${
-            isLoaded ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <button
-            onClick={() => scrollToSection("about")}
-            className="flex flex-col items-center text-white/60 hover:text-white transition-colors group"
-          >
-            <span className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
-              Découvrir
-            </span>
-            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2 group-hover:border-white/60 transition-colors">
-              <div className="w-1.5 h-3 bg-white/60 rounded-full animate-scroll-indicator group-hover:bg-white transition-colors" />
-            </div>
-          </button>
-        </div> */}
       </div>
     </section>
   );
