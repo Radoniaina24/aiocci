@@ -10,7 +10,8 @@ import Contact from "@/components/section/Contact";
 import Header from "@/components/Layout/header/Header";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import Image from "next/image";
+import PresidentMessage from "@/components/PresidentMessage";
+import PresidentMessages from "@/components/PresidentMessage";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <main className="pt-20">
         <Hero />
+        <PresidentMessages />
         <About />
         <Services />
         <Events />

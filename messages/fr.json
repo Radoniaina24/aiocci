@@ -257,5 +257,32 @@
     "description": "Relier l'Afrique et l'océan Indien à travers le commerce, l'investissement, la coopération économique et des événements d'entreprise de haut niveau.",
     "headquarters": "Siège à Madagascar, avec des bureaux à Delescar et Boris, et en expansion à travers l'Afrique.",
     "copyright": "© {year} AIOCCI. Tous droits réservés."
+  },
+  "president": {
+    "presidentName": "Rojo Claudino Andrianasolo",
+    "title": "Président",
+    "organization": "Chambre de Commerce et d’Industrie Afrique – Océan Indien",
+    "organizationAcronym": "AIOCCI",
+    "imageAlt": "Rojo Claudino Andrianasolo – Président de l’AIOCCI",
+
+    "greeting": ["Mesdames et Messieurs,", "Chers partenaires,", "Chers amis,"],
+
+    "paragraphs": [
+      "La Chambre de Commerce et d’Industrie Afrique – Océan Indien (AIOCCI) a été conçue comme un espace de convergence, où les trajectoires se croisent, où les idées circulent et où les énergies constructives s’unissent afin de renforcer la coopération économique entre l’Afrique, la région de l’Océan Indien et les partenaires internationaux.",
+      "Dans un monde en profonde mutation, le progrès ne peut plus se construire dans l’isolement. Il exige de l’écoute, de l’équilibre et une volonté partagée. L’AIOCCI offre un cadre propice à des échanges ouverts, respectueux et orientés vers des initiatives durables.",
+      "Organisation privée, indépendante et à but non lucratif, l’AIOCCI est guidée par des principes fondés sur l’intégrité, la discrétion, l’inclusion et la responsabilité. Nous sommes convaincus que la confiance se construit dans la constance, que le dialogue précède l’action et que le développement authentique repose sur des bases éthiques solides, le respect de la dignité humaine et la préservation de notre environnement.",
+      "Notre ambition est de fédérer des forces diverses, de faciliter des coopérations porteuses de sens et de soutenir des partenariats à long terme contribuant à un développement économique équilibré, inclusif et durable.",
+      "Que vous soyez ancrés en Afrique, liés à la région de l’Océan Indien ou engagés à l’international, l’AIOCCI vous invite à rejoindre cette dynamique de coopération et de dialogue constructif."
+    ],
+
+    "closing": "Ensemble, construisons des ponts économiques solides au-delà des frontières, fondés sur la confiance, des valeurs partagées et une vision commune de la prospérité.",
+    "slogan": "Construire des ponts économiques solides au-delà des frontières",
+    "sectionBadge": "Mot du Président",
+    "sectionTitle": "Message du Président",
+
+    "visionLabel": "Notre Vision & Mission",
+
+    "readMore": "Lire la suite",
+    "readLess": "Voir moins"
   }
 }

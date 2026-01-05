@@ -257,5 +257,36 @@
     "description": "Connecting Africa and the Indian Ocean through trade, investment, economic cooperation, and high-level corporate events.",
     "headquarters": "Headquartered in Madagascar, with offices in Delescar and Boris, and expanding across Africa.",
     "copyright": "© {year} AIOCCI. All rights reserved."
+  },
+  "president": {
+    "presidentName": "Rojo Claudino Andrianasolo",
+    "title": "Chairman",
+    "organization": "African Indian Ocean Chamber of Commerce & Industry",
+    "organizationAcronym": "AIOCCI",
+    "imageAlt": "Rojo Claudino Andrianasolo - Chairman of AIOCCI",
+
+    "greeting": [
+      "Ladies and Gentlemen,",
+      "Brothers and Sisters,",
+      "Partners and Friends,"
+    ],
+
+    "paragraphs": [
+      "The African Indian Ocean Chamber of Commerce & Industry (AIOCCI) was conceived as a place of convergence, where paths meet, ideas circulate, and constructive energies align to strengthen economic cooperation between Africa, the Indian Ocean region, and international partners.",
+      "In a world undergoing deep transformation, progress can no longer be built in isolation. It requires listening, balance, and shared intent. AIOCCI offers a framework where stakeholders may meet with openness, exchange with respect, and contribute—each according to their means—to initiatives that are meant to last.",
+      "As a private, independent, and non-profit organization, AIOCCI is guided by principles that value integrity, discretion, inclusion, and responsibility.",
+      "Our ambition is to bring together diverse forces, facilitate meaningful cooperation, and support long-term partnerships that contribute to balanced, inclusive, and sustainable economic development.",
+      "Whether you are rooted in Africa, connected to the Indian Ocean region, or engaged across borders, AIOCCI welcomes you to join this dynamic of cooperation and constructive dialogue."
+    ],
+
+    "closing": "Together, let us build strong economic bridges beyond borders, grounded in trust, shared values, and a common vision of prosperity.",
+    "slogan": "Building Strong Economic Bridges Beyond Borders",
+    "sectionBadge": "Message from the Chairman",
+    "sectionTitle": "Chairman’s Message",
+
+    "visionLabel": "Our Vision & Mission",
+
+    "readMore": "Read more",
+    "readLess": "Read less"
   }
 }
