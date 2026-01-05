@@ -288,5 +288,29 @@
 
     "readMore": "Read more",
     "readLess": "Read less"
+  },
+  "ceoBusinessForum": {
+    "title": "CEO Business Forum",
+    "edition": "2024 Madagascar Edition",
+    "year": "2024",
+    "location": "Madagascar",
+
+    "description": "In line with its mission to strengthen economic cooperation and build strategic bridges between regions, the African Indian Ocean Chamber of Commerce & Industry (AIOCCI) supported and promoted the CEO Business Forum – Indian Ocean, held in Madagascar in 2024. The forum brought together business leaders, investors and decision-makers from 25 countries worldwide, positioning Madagascar as a key meeting point for high-level economic dialogue in the Indian Ocean region. Through this initiative, AIOCCI reaffirmed its role as a platform for private economic diplomacy, fostering cross-border partnerships, facilitating investment discussions and contributing to the emergence of a more integrated and competitive regional economic ecosystem.",
+
+    "badge": {
+      "locationYear": "{location} • {year}"
+    },
+
+    "descriptionIntro": "In line with its mission",
+
+    "aiocci": {
+      "name": "AIOCCI",
+      "tagline": "Private Economic Diplomacy"
+    },
+
+    "highlightsSection": {
+      "title": "Forum Highlights",
+      "subtitle": "Moments from the CEO Business Forum {year}"
+    }
   }
 }

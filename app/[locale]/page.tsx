@@ -12,6 +12,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import PresidentMessage from "@/components/PresidentMessage";
 import PresidentMessages from "@/components/PresidentMessage";
+import CeoBusinessForumPage from "@/components/CeoBusinessForum";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <PresidentMessages />
         <About />
         <Services />
+
         <Events />
         <Membership />
         <Partnerships />

@@ -21,6 +21,7 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+import CeoBusinessForumPage from "../CeoBusinessForum";
 
 // Composant pour les particules décoratives
 const FloatingParticles = () => (
@@ -273,9 +274,9 @@ export default function Events() {
             {t("section.subtitle")}
           </p>
         </div>
-
+        <CeoBusinessForumPage />
         {/* Flagship events */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {flagshipEvents.map((event, index) => (
             <FlagshipEventCard
               key={event.key}
@@ -288,10 +289,10 @@ export default function Events() {
               index={index}
             />
           ))}
-        </div>
+        </div> */}
 
         {/* Divider */}
-        <div className="relative flex items-center justify-center my-16">
+        {/* <div className="relative flex items-center justify-center my-16">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-white/10" />
           </div>
@@ -303,10 +304,10 @@ export default function Events() {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Previous initiatives */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* <div className="grid md:grid-cols-2 gap-6">
           {initiatives.map((initiative) => (
             <InitiativeCard
               key={initiative.key}
@@ -326,7 +327,7 @@ export default function Events() {
             isFullWidth
             date="2026"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

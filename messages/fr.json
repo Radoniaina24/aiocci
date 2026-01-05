@@ -97,7 +97,7 @@
   },
   "events": {
     "section": {
-      "title": "Projets phares & événements",
+      "title": "Projets phares et événements",
       "subtitle": "Grands projets – 2026",
       "previousTitle": "Initiatives précédentes et en cours"
     },
@@ -260,23 +260,27 @@
   },
   "president": {
     "presidentName": "Rojo Claudino Andrianasolo",
-    "title": "Président",
-    "organization": "Chambre de Commerce et d’Industrie Afrique – Océan Indien",
+    "title": "Président Conseil d’Administration - Fondateur ",
+    "organization": "Chambre de Commerce et d’Industrie Africaine de l’Océan Indien (AIOCCI) “African - Indian Ocean Chamber of Commerce and Industry”",
     "organizationAcronym": "AIOCCI",
     "imageAlt": "Rojo Claudino Andrianasolo – Président de l’AIOCCI",
 
-    "greeting": ["Mesdames et Messieurs,", "Chers partenaires,", "Chers amis,"],
+    "greeting": [
+      "Mesdames et Messieurs,",
+      "Frères et Sœurs,",
+      "Partenaires et Amis,"
+    ],
 
     "paragraphs": [
-      "La Chambre de Commerce et d’Industrie Afrique – Océan Indien (AIOCCI) a été conçue comme un espace de convergence, où les trajectoires se croisent, où les idées circulent et où les énergies constructives s’unissent afin de renforcer la coopération économique entre l’Afrique, la région de l’Océan Indien et les partenaires internationaux.",
+      "La Chambre de Commerce et d’Industrie Africaine de l’Océan Indien (AIOCCI) “ African - Indian Ocean Chamber of Commerce and Industry “ a été conçue comme un lieu de convergence, où les chemins se croisent, les idées circulent et les énergies constructives s’alignent afin de renforcer la coopération économique entre l’Afrique, la région de l’océan Indien et les partenaires internationaux.",
       "Dans un monde en profonde mutation, le progrès ne peut plus se construire dans l’isolement. Il exige de l’écoute, de l’équilibre et une volonté partagée. L’AIOCCI offre un cadre propice à des échanges ouverts, respectueux et orientés vers des initiatives durables.",
-      "Organisation privée, indépendante et à but non lucratif, l’AIOCCI est guidée par des principes fondés sur l’intégrité, la discrétion, l’inclusion et la responsabilité. Nous sommes convaincus que la confiance se construit dans la constance, que le dialogue précède l’action et que le développement authentique repose sur des bases éthiques solides, le respect de la dignité humaine et la préservation de notre environnement.",
-      "Notre ambition est de fédérer des forces diverses, de faciliter des coopérations porteuses de sens et de soutenir des partenariats à long terme contribuant à un développement économique équilibré, inclusif et durable.",
+      "En tant qu’organisation privée, indépendante et à but non lucratif, AIOCCI est guidée par des principes qui valorisent l’intégrité, la discrétion, l’inclusion et la responsabilité. Nous sommes convaincus que la confiance se construit par la constance, que le dialogue précède l’action, et que le développement véritable repose sur des fondations éthiques, le respect de la dignité humaine et la préservation de notre environnement.",
+      "Notre ambition est de rassembler des forces diverses, de faciliter une coopération porteuse de sens et de soutenir des partenariats de long terme contribuant à un développement économique équilibré, inclusif et durable. Ce qui est bâti avec patience, pierre après pierre, guidé par le sens et la constance, est ce qui perdure véritablement.",
       "Que vous soyez ancrés en Afrique, liés à la région de l’Océan Indien ou engagés à l’international, l’AIOCCI vous invite à rejoindre cette dynamique de coopération et de dialogue constructif."
     ],
 
-    "closing": "Ensemble, construisons des ponts économiques solides au-delà des frontières, fondés sur la confiance, des valeurs partagées et une vision commune de la prospérité.",
-    "slogan": "Construire des ponts économiques solides au-delà des frontières",
+    "closing": "Ensemble, bâtissons de solides ponts économiques au-delà des frontières, fondés sur la confiance, des valeurs partagées et une vision commune de la prospérité.",
+    "slogan": "Bâtir de solides ponts économiques au-delà des frontières",
     "sectionBadge": "Mot du Président",
     "sectionTitle": "Message du Président",
 
@@ -284,5 +288,29 @@
 
     "readMore": "Lire la suite",
     "readLess": "Voir moins"
+  },
+  "ceoBusinessForum": {
+    "title": "Forum des PDG",
+    "edition": "Édition Madagascar 2024",
+    "year": "2024",
+    "location": "Madagascar",
+
+    "description": "Dans le cadre de sa mission visant à renforcer la coopération économique et à bâtir des ponts stratégiques entre les régions, la Chambre de Commerce et d’Industrie Afrique – Océan Indien (AIOCCI) a soutenu et promu le CEO Business Forum – Océan Indien, organisé à Madagascar en 2024. Le forum a réuni des dirigeants d’entreprises, des investisseurs et des décideurs issus de 25 pays, positionnant Madagascar comme un carrefour majeur du dialogue économique de haut niveau dans la région de l’Océan Indien.",
+
+    "badge": {
+      "locationYear": "{location} • {year}"
+    },
+
+    "descriptionIntro": "Conformément à sa mission",
+
+    "aiocci": {
+      "name": "AIOCCI",
+      "tagline": "Diplomatie Économique Privée"
+    },
+
+    "highlightsSection": {
+      "title": "Temps forts du Forum",
+      "subtitle": "Moments du CEO Business Forum {year}"
+    }
   }
 }
