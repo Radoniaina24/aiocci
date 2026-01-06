@@ -314,15 +314,87 @@
     }
   },
   "marquee": {
-    "slides": {
-      "1": "Culture, créativité et industries culturelles comme leviers économiques durables pour l'Afrique et l'Océan Indien.",
-      "2": "Accélérer l'industrialisation africaine par l'innovation, la transformation locale et les chaînes de valeur régionales.",
-      "3": "Relier l'Afrique aux marchés mondiaux grâce au commerce, à la logistique et aux corridors stratégiques.",
-      "4": "Former les talents africains d'aujourd'hui pour bâtir l'économie compétitive de demain.",
-      "5": "Connecter l'intelligence humaine et artificielle pour stimuler l'innovation, l'investissement et la croissance.",
-      "6": "Concilier croissance économique, transition écologique et protection des ressources naturelles.",
-      "7": "Moderniser l'agriculture africaine par la technologie, la data et des modèles durables."
-    }
+    "slides": [
+      {
+        "id": 1,
+        "text": "Culture, créativité et industries culturelles comme leviers économiques durables pour l'Afrique et l'Océan Indien."
+      },
+      {
+        "id": 2,
+        "text": "Accélérer l'industrialisation africaine par l'innovation, la transformation locale et les chaînes de valeur régionales."
+      },
+      {
+        "id": 3,
+        "text": "Relier l'Afrique aux marchés mondiaux grâce au commerce, à la logistique et aux corridors stratégiques."
+      },
+      {
+        "id": 4,
+        "text": "Former les talents africains d'aujourd'hui pour bâtir l'économie compétitive de demain."
+      },
+      {
+        "id": 5,
+        "text": "Connecter l'intelligence humaine et artificielle pour stimuler l'innovation, l'investissement et la croissance."
+      },
+      {
+        "id": 6,
+        "text": "Concilier croissance économique, transition écologique et protection des ressources naturelles."
+      },
+      {
+        "id": 7,
+        "text": "Moderniser l'agriculture africaine par la technologie, la data et des modèles durables."
+      }
+    ],
+    "cards": [
+      {
+        "id": 1,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_2_az96tj.jpg",
+        "title": "Créativité",
+        "description": "Santé, culture, industrialisation et innovation au cœur du développement économique et humain de l’Afrique et de l’Océan Indien.",
+        "subtitle": "Industries Culturelles"
+      },
+      {
+        "id": 2,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_3_zh7t4v.jpg",
+        "title": "Industrialisation",
+        "description": "Concilier croissance économique, transition écologique et protection des ressources naturelles.",
+        "subtitle": "Innovation"
+      },
+      {
+        "id": 3,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_4_vdopqw.jpg",
+        "title": "Commerce",
+        "description": "Connecter l’intelligence humaine et artificielle pour stimuler l’innovation, l’investissement et la croissance.",
+        "subtitle": "Logistique"
+      },
+      {
+        "id": 4,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_5_yj15um.jpg",
+        "title": "Talents",
+        "description": "Former les talents africains d’aujourd’hui pour bâtir l’économie compétitive de demain.",
+        "subtitle": "Éducation"
+      },
+      {
+        "id": 5,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
+        "title": "Innovation",
+        "description": "Relier l’Afrique aux marchés mondiaux grâce au commerce, à la logistique et aux corridors stratégiques.",
+        "subtitle": "Technologie"
+      },
+      {
+        "id": 6,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
+        "title": "Durabilité",
+        "description": "Transition énergétique, innovation verte et développement durable en Afrique et dans l’Océan Indien.",
+        "subtitle": "Environnement"
+      },
+      {
+        "id": 7,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_1_tpmj2s.jpg",
+        "title": "Agriculture",
+        "description": "Agro-industrie, technologie et chaînes de valeur agricoles durables.",
+        "subtitle": "AgriTech"
+      }
+    ]
   },
   "cardCarousel": {
     "badge": "✦ Nos Domaines d’Expertise ✦",
@@ -378,6 +450,63 @@
         "title": "Agriculture",
         "description": "Agro-industrie, technologie et chaînes de valeur agricoles durables.",
         "category": "AgriTech"
+      }
+    ]
+  },
+  "banner": {
+    "badge": "✦ Nos Domaines d’Expertise ✦",
+    "title": "Découvrez Nos",
+    "highlight": "Axes Stratégiques",
+    "subtitle": "Explorez les piliers qui façonnent l’avenir économique de l’Afrique",
+    "cards": [
+      {
+        "id": 1,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_2_az96tj.jpg",
+        "title": "Créativité",
+        "description": "Santé, culture, industrialisation et innovation au cœur du développement économique et humain de l’Afrique et de l’Océan Indien.",
+        "subtitle": "Industries Culturelles"
+      },
+      {
+        "id": 2,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_3_zh7t4v.jpg",
+        "title": "Industrialisation",
+        "description": "Concilier croissance économique, transition écologique et protection des ressources naturelles.",
+        "subtitle": "Innovation"
+      },
+      {
+        "id": 3,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_4_vdopqw.jpg",
+        "title": "Commerce",
+        "description": "Connecter l’intelligence humaine et artificielle pour stimuler l’innovation, l’investissement et la croissance.",
+        "subtitle": "Logistique"
+      },
+      {
+        "id": 4,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_5_yj15um.jpg",
+        "title": "Talents",
+        "description": "Former les talents africains d’aujourd’hui pour bâtir l’économie compétitive de demain.",
+        "subtitle": "Éducation"
+      },
+      {
+        "id": 5,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
+        "title": "Innovation",
+        "description": "Relier l’Afrique aux marchés mondiaux grâce au commerce, à la logistique et aux corridors stratégiques.",
+        "subtitle": "Technologie"
+      },
+      {
+        "id": 6,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
+        "title": "Durabilité",
+        "description": "Transition énergétique, innovation verte et développement durable en Afrique et dans l’Océan Indien.",
+        "subtitle": "Environnement"
+      },
+      {
+        "id": 7,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_1_tpmj2s.jpg",
+        "title": "Agriculture",
+        "description": "Agro-industrie, technologie et chaînes de valeur agricoles durables.",
+        "subtitle": "AgriTech"
       }
     ]
   }

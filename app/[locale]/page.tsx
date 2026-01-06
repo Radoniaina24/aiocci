@@ -14,17 +14,19 @@ import Services from "@/components/Services";
 import PresidentMessages from "@/components/PresidentMessage";
 
 import CardCarousel from "@/components/CardCarousel/CardCarousel";
+import Banner from "@/components/Banner";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main className="pt-20">
+        <Banner />
         <Hero />
         <PresidentMessages />
         <About />
         <Services />
-        <CardCarousel />
+        {/* <CardCarousel /> */}
         <Events />
         <Membership />
         <Partnerships />
