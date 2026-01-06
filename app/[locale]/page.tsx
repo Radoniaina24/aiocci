@@ -10,9 +10,10 @@ import Contact from "@/components/section/Contact";
 import Header from "@/components/Layout/header/Header";
 import About from "@/components/About";
 import Services from "@/components/Services";
-import PresidentMessage from "@/components/PresidentMessage";
+
 import PresidentMessages from "@/components/PresidentMessage";
-import CeoBusinessForumPage from "@/components/CeoBusinessForum";
+
+import CardCarousel from "@/components/CardCarousel/CardCarousel";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         <PresidentMessages />
         <About />
         <Services />
-
+        <CardCarousel />
         <Events />
         <Membership />
         <Partnerships />

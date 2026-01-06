@@ -312,5 +312,73 @@
       "title": "Forum Highlights",
       "subtitle": "Moments from the CEO Business Forum {year}"
     }
+  },
+  "marquee": {
+    "slides": {
+      "1": "Culture, creativity and cultural industries as sustainable economic drivers for Africa and the Indian Ocean.",
+      "2": "Accelerating African industrialization through innovation, local transformation and regional value chains.",
+      "3": "Connecting Africa to global markets through trade, logistics and strategic corridors.",
+      "4": "Training today's African talents to build tomorrow's competitive economy.",
+      "5": "Connecting human and artificial intelligence to drive innovation, investment and growth.",
+      "6": "Balancing economic growth, ecological transition and protection of natural resources.",
+      "7": "Modernizing African agriculture through technology, data and sustainable models."
+    }
+  },
+  "cardCarousel": {
+    "badge": "✦ Our Areas of Expertise ✦",
+    "title": "Discover Our",
+    "highlight": "Strategic Pillars",
+    "subtitle": "Explore the key pillars shaping Africa’s economic future",
+    "cards": [
+      {
+        "id": 1,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_2_az96tj.jpg",
+        "title": "Creativity",
+        "description": "Health, culture, industrialization and innovation at the heart of Africa and the Indian Ocean’s economic and human development.",
+        "category": "Cultural Industries"
+      },
+      {
+        "id": 2,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_3_zh7t4v.jpg",
+        "title": "Industrialization",
+        "description": "Balancing economic growth, ecological transition and the protection of natural resources.",
+        "category": "Innovation"
+      },
+      {
+        "id": 3,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_4_vdopqw.jpg",
+        "title": "Trade",
+        "description": "Connecting human and artificial intelligence to drive innovation, investment and growth.",
+        "category": "Logistics"
+      },
+      {
+        "id": 4,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_5_yj15um.jpg",
+        "title": "Talents",
+        "description": "Training today’s African talents to build tomorrow’s competitive economy.",
+        "category": "Education"
+      },
+      {
+        "id": 5,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
+        "title": "Innovation",
+        "description": "Connecting Africa to global markets through trade, logistics and strategic corridors.",
+        "category": "Technology"
+      },
+      {
+        "id": 6,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
+        "title": "Sustainability",
+        "description": "Energy transition, green innovation and sustainable development in Africa and the Indian Ocean.",
+        "category": "Environment"
+      },
+      {
+        "id": 7,
+        "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_1_tpmj2s.jpg",
+        "title": "Agriculture",
+        "description": "Agro-industry, technology and sustainable agricultural value chains.",
+        "category": "AgriTech"
+      }
+    ]
   }
 }

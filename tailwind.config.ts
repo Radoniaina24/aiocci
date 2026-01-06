@@ -111,6 +111,22 @@ module.exports = {
           from: { transform: "scale(0.95)", opacity: "0" },
           to: { transform: "scale(1)", opacity: "1" },
         },
+        "marquee-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "marquee-right": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        "scroll-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "scroll-right": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -119,6 +135,10 @@ module.exports = {
         "slide-in-up": "slide-in-up 0.3s ease-out",
         "slide-in-down": "slide-in-down 0.3s ease-out",
         "scale-in": "scale-in 0.3s ease-out",
+        "marquee-left": "marquee-left linear infinite",
+        "marquee-right": "marquee-right linear infinite",
+        "scroll-left": "scroll-left 40s linear infinite",
+        "scroll-right": "scroll-right 40s linear infinite",
       },
       boxShadow: {
         subtle: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
