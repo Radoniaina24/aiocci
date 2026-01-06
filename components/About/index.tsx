@@ -35,7 +35,7 @@ export default function About() {
   return (
     <>
       <FoundingStory story={foundingStory} />
-      <VisionMission items={visionMission} />
+      {/* <VisionMission items={visionMission} /> */}
     </>
   );
 }

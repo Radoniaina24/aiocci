@@ -354,49 +354,49 @@
       {
         "id": 1,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_2_az96tj.jpg",
-        "title": "Creativity",
-        "description": "Health, culture, industrialization and innovation at the heart of Africa and the Indian Ocean’s economic and human development.",
+        "title": "HEALTH, CULTURE and INDUSTRIALIZATION",
+        "description": "Health, culture, industrialization and innovation at the heart of Africa’s and the Indian Ocean’s economic and human development.",
         "category": "Cultural Industries"
       },
       {
         "id": 2,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_3_zh7t4v.jpg",
-        "title": "Industrialization",
+        "title": "BLUE and GREEN ECONOMY",
         "description": "Balancing economic growth, ecological transition and the protection of natural resources.",
         "category": "Innovation"
       },
       {
         "id": 3,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_4_vdopqw.jpg",
-        "title": "Trade",
+        "title": "AI, TECH and CREATIVITY",
         "description": "Connecting human and artificial intelligence to drive innovation, investment and growth.",
         "category": "Logistics"
       },
       {
         "id": 4,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_5_yj15um.jpg",
-        "title": "Talents",
+        "title": "HUMAN CAPITAL",
         "description": "Training today’s African talents to build tomorrow’s competitive economy.",
         "category": "Education"
       },
       {
         "id": 5,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
-        "title": "Innovation",
+        "title": "INTERNATIONAL TRADE",
         "description": "Connecting Africa to global markets through trade, logistics and strategic corridors.",
         "category": "Technology"
       },
       {
         "id": 6,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
-        "title": "Sustainability",
+        "title": "GREEN ENERGY",
         "description": "Energy transition, green innovation and sustainable development in Africa and the Indian Ocean.",
         "category": "Environment"
       },
       {
         "id": 7,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_1_tpmj2s.jpg",
-        "title": "Agriculture",
+        "title": "AGRICULTURE",
         "description": "Agro-industry, technology and sustainable agricultural value chains.",
         "category": "AgriTech"
       }

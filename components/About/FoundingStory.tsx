@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import AppImage from "@/components/ui/AppImage";
 import { Quote, Calendar, ArrowRight, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
+import VisionMission from "./VisionMission";
 
 interface FoundingStoryProps {
   story: {
@@ -17,6 +18,20 @@ interface FoundingStoryProps {
 
 const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
   const t = useTranslations("about");
+  const visionMission = [
+    {
+      type: "vision" as const,
+      title: t("visionMission.vision.title"),
+      description: t("visionMission.vision.description"),
+      icon: "EyeIcon",
+    },
+    {
+      type: "mission" as const,
+      title: t("visionMission.mission.title"),
+      description: t("visionMission.mission.description"),
+      icon: "RocketLaunchIcon",
+    },
+  ];
   const [isVisible, setIsVisible] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -97,17 +112,17 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
             </div>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 ">
             {/* Colonne Texte */}
             <div
-              className={`order-1 lg:order-2 transition-all duration-1000 delay-400 ${
+              className={`transition-all duration-1000 delay-400 ${
                 isVisible
                   ? "opacity-100 translate-x-0"
                   : "opacity-0 translate-x-12"
               }`}
             >
               {/* Titre - Thème Marron */}
-              <h2 className="font-playfair font-bold text-4xl md:text-5xl lg:text-6xl text-amber-950 mb-8 leading-tight">
+              <h2 className="font-playfair font-bold text-4xl md:text-5xl text-amber-950 mb-8 leading-tight">
                 {story.title.split(" ").map((word, index, array) => (
                   <span key={index}>
                     {index === array.length - 1 ? (
@@ -189,6 +204,8 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </button> */}
             </div>
+
+            <VisionMission items={visionMission} />
           </div>
         </div>
       </div>

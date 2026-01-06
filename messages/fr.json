@@ -405,49 +405,49 @@
       {
         "id": 1,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_2_az96tj.jpg",
-        "title": "Créativité",
+        "title": "SANTE, CULTURE, INDUSTRIALISATION",
         "description": "Santé, culture, industrialisation et innovation au cœur du développement économique et humain de l’Afrique et de l’Océan Indien.",
         "category": "Industries Culturelles"
       },
       {
         "id": 2,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_3_zh7t4v.jpg",
-        "title": "Industrialisation",
+        "title": "ECONOMIE BLEUE et VERTE",
         "description": "Concilier croissance économique, transition écologique et protection des ressources naturelles.",
         "category": "Innovation"
       },
       {
         "id": 3,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_4_vdopqw.jpg",
-        "title": "Commerce",
+        "title": "IA - TECH et CREATIVITY",
         "description": "Connecter l’intelligence humaine et artificielle pour stimuler l’innovation, l’investissement et la croissance.",
         "category": "Logistique"
       },
       {
         "id": 4,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_5_yj15um.jpg",
-        "title": "Talents",
+        "title": "CAPITAL HUMAIN",
         "description": "Former les talents africains d’aujourd’hui pour bâtir l’économie compétitive de demain.",
         "category": "Éducation"
       },
       {
         "id": 5,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
-        "title": "Innovation",
+        "title": "COMMERCE INTERNATIONAL",
         "description": "Relier l’Afrique aux marchés mondiaux grâce au commerce, à la logistique et aux corridors stratégiques.",
         "category": "Technologie"
       },
       {
         "id": 6,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
-        "title": "Durabilité",
+        "title": "ENERGIE VERTE",
         "description": "Transition énergétique, innovation verte et développement durable en Afrique et dans l’Océan Indien.",
         "category": "Environnement"
       },
       {
         "id": 7,
         "image": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_1_tpmj2s.jpg",
-        "title": "Agriculture",
+        "title": "AGRICULTURE",
         "description": "Agro-industrie, technologie et chaînes de valeur agricoles durables.",
         "category": "AgriTech"
       }

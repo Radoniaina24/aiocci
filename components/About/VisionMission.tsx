@@ -62,10 +62,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
   };
 
   return (
-    <section
-      ref={sectionRef}
-      className="relative py-24 md:py-32 bg-background overflow-hidden"
-    >
+    <section ref={sectionRef} className="relative  overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary/5 to-transparent rounded-full" />
@@ -84,7 +81,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
               {/* Titre */}
               <div className="max-w-2xl">
-                <h2 className=" font-bold text-4xl md:text-5xl lg:text-6xl text-textPrimary mb-4">
+                <h2 className=" font-bold text-4xl md:text-5xl  text-textPrimary mb-4">
                   {t("section.title")}
                 </h2>
                 <p className=" text-xl text-textSecondary leading-relaxed">
@@ -93,28 +90,28 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
               </div>
 
               {/* Tabs de navigation */}
-              <div className="flex gap-2 p-1.5 bg-surface rounded-2xl">
-                {(["vision", "mission"] as const).map((type) => {
-                  const TypeIcon = typeIcons[type];
-                  const colors = typeColors[type];
-                  const isActive = activeTab === type;
+            </div>
+            <div className="flex gap-2 p-1.5  rounded-2xl">
+              {(["vision", "mission"] as const).map((type) => {
+                const TypeIcon = typeIcons[type];
+                const colors = typeColors[type];
+                const isActive = activeTab === type;
 
-                  return (
-                    <button
-                      key={type}
-                      onClick={() => setActiveTab(type)}
-                      className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                        isActive
-                          ? `${colors.bg} text-white shadow-lg`
-                          : "text-textSecondary hover:text-textPrimary hover:bg-card"
-                      }`}
-                    >
-                      <TypeIcon className="w-5 h-5" />
-                      <span className="capitalize">{type}</span>
-                    </button>
-                  );
-                })}
-              </div>
+                return (
+                  <button
+                    key={type}
+                    onClick={() => setActiveTab(type)}
+                    className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                      isActive
+                        ? `${colors.bg} text-white shadow-lg`
+                        : "text-textSecondary hover:text-textPrimary hover:bg-card"
+                    }`}
+                  >
+                    <TypeIcon className="w-5 h-5" />
+                    <span className="capitalize text-sm">{type}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
@@ -133,7 +130,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
                       : "opacity-0 translate-x-8 absolute inset-0 pointer-events-none"
                   }`}
                 >
-                  <div className="grid lg:grid-cols-5 gap-8 lg:gap-16">
+                  <div className="grid lg:grid-cols-1">
                     {/* Colonne droite - Contenu détaillé */}
                     <div className="lg:col-span-3 flex flex-col justify-center">
                       {/* Citation/Description principale */}
@@ -142,14 +139,14 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
                           className={`absolute -top-4 -left-4 w-12 h-12 ${colors.text} opacity-20`}
                         />
                         <blockquote className="pl-8 border-l-4 border-primary/20">
-                          <p className="text-2xl md:text-3xl text-textPrimary leading-relaxed italic">
+                          <p className="text-xl md:text-xl text-textPrimary leading-relaxed italic">
                             {item.description.split(".")[0]}.
                           </p>
                         </blockquote>
                       </div>
 
                       {/* Description complémentaire */}
-                      {item.description.split(".").length > 1 && (
+                      {/* {item.description.split(".").length > 1 && (
                         <p className=" text-sm text-textSecondary leading-relaxed mb-8">
                           {item.description
                             .split(".")
@@ -157,7 +154,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
                             .join(".")
                             .trim()}
                         </p>
-                      )}
+                      )} */}
                     </div>
                   </div>
                 </div>
