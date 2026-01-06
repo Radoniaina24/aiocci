@@ -529,5 +529,29 @@
         "subtitle": "AgriTech"
       }
     ]
+  },
+  "carrefour": {
+    "title": "Carrefour Emploi et Études",
+    "edition": "Édition Madagascar 2025",
+    "year": "2025",
+    "location": "Madagascar",
+
+    "description": "Dans le cadre de son engagement en faveur du développement du capital humain et de la coopération internationale, AIOCCI a soutenu et valorisé le Carrefour Emploi & Études 2025, une initiative majeure dédiée à l’employabilité, à la formation et à la mobilité académique. L’événement, organisé à Madagascar, a réuni plus de 50 grandes institutions et écoles internationales, notamment en provenance des Émirats arabes unis, du Canada, de l’île Maurice, ainsi que d’autres pays partenaires. Il a offert une plateforme d’échange entre établissements de formation, entreprises, recruteurs et jeunes talents. À travers cette initiative, AIOCCI contribue activement à rapprocher les systèmes éducatifs et le monde professionnel, à promouvoir l’accès aux opportunités internationales et à répondre aux besoins du marché du travail, dans une approche durable et inclusive.",
+
+    "badge": {
+      "locationYear": "{location} • {year}"
+    },
+
+    "descriptionIntro": "",
+
+    "aiocci": {
+      "name": "AIOCCI",
+      "tagline": "Diplomatie Économique Privée"
+    },
+
+    "highlightsSection": {
+      "title": "Temps forts du Carrefour",
+      "subtitle": "Moments du Carrefour Emploi & Études {year}"
+    }
   }
 }
