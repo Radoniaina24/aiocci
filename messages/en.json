@@ -208,8 +208,16 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Get in Touch",
-    "intro": "Whether you are a company, investor, institution, or partner, AIOCCI welcomes collaboration and dialogue.",
+    "subtitle": "We are available for any information, partnership or collaboration.",
+    "generalInfo": "General Information",
+    "intro": "Feel free to reach out to us through the channels below.",
+    "viewOnMap": "View on map",
+
+    "addressLabels": {
+      "siege": "Head Office",
+      "bureau": "Branch Office"
+    },
+
     "details": [
       {
         "icon": "Mail",
@@ -219,37 +227,49 @@
         "color": "blue"
       },
       {
+        "icon": "Phone",
+        "label": "Phone",
+        "value": "+261 34 03 777 07",
+        "link": "tel:+261340377707",
+        "color": "green"
+      },
+      {
         "icon": "Globe",
         "label": "Website",
         "value": "www.aiocci.org",
-        "link": "http://www.aiocci.org",
-        "color": "green"
-      },
-      {
-        "icon": "MapPin",
-        "label": "Head Office",
-        "value": "Madagascar",
-        "color": "red"
-      },
-      {
-        "icon": "Building2",
-        "label": "Offices",
-        "value": "Delescar and Boris",
-        "color": "amber"
-      },
-      {
-        "icon": "Globe",
-        "label": "Regional Presence",
-        "value": "Africa and Indian Ocean",
-        "color": "blue"
+        "link": "https://www.aiocci.org",
+        "color": "cyan"
       },
       {
         "icon": "TrendingUp",
-        "label": "Expansion",
-        "value": "New offices opening soon in other African countries",
-        "color": "green"
+        "label": "Opportunities",
+        "value": "Partnerships & Investments",
+        "color": "amber"
       }
-    ]
+    ],
+
+    "addresses": {
+      "siege": {
+        "title": "Head Office",
+        "street": " Lot II A 105 E Nanisana Iadiambola, Immeuble E-media",
+        "city": "Antananarivo",
+        "postalCode": "101",
+        "country": "Madagascar",
+        "phone": "+261 34 03 777 07",
+        "email": "siege@aiocci.org",
+        "mapLink": "https://maps.google.com"
+      },
+      "bureau": {
+        "title": "Regional Office",
+        "street": "Villa Nº1 Chemin Desvaux Petit Verger Saint PierreAdresse Maurice",
+        "city": "",
+        "postalCode": "",
+        "country": "Île Maurice",
+        "phone": "+230 5 782 8567",
+        "email": "bureau@aiocci.org",
+        "mapLink": "https://maps.google.com"
+      }
+    }
   },
   "footer": {
     "logoAlt": "AIOCCI Logo",

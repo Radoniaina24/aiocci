@@ -8,18 +8,40 @@ import {
   Building2,
   TrendingUp,
   ArrowUpRight,
+  Landmark,
+  Building,
+  Phone,
 } from "lucide-react";
+
+interface ContactDetail {
+  icon: string;
+  label: string;
+  value: string;
+  link?: string;
+  color: string;
+}
+
+interface Address {
+  title: string;
+  street: string;
+  city: string;
+  postalCode: string;
+  country: string;
+  phone?: string;
+  email?: string;
+  mapLink?: string;
+}
+
+interface Addresses {
+  siege: Address;
+  bureau: Address;
+}
 
 export default function Contact() {
   const t = useTranslations("contact");
 
-  const contacts = t.raw("details") as Array<{
-    icon: string;
-    label: string;
-    value: string;
-    link?: string;
-    color: string;
-  }>;
+  const contacts = t.raw("details") as ContactDetail[];
+  const addresses = t.raw("addresses") as Addresses;
 
   const iconMap: Record<string, React.ElementType> = {
     Mail,
@@ -27,6 +49,9 @@ export default function Contact() {
     MapPin,
     Building2,
     TrendingUp,
+    Phone,
+    Landmark,
+    Building,
   };
 
   const colorMap: Record<
@@ -92,6 +117,102 @@ export default function Contact() {
     return colorMap[color] || colorMap.blue;
   };
 
+  // Composant pour afficher une carte d'adresse
+  const AddressCard = ({
+    address,
+    type,
+  }: {
+    address: Address;
+    type: "siege" | "bureau";
+  }) => {
+    const isSiege = type === "siege";
+    const Icon = isSiege ? Landmark : Building;
+    const colors = isSiege
+      ? getColorClasses("purple")
+      : getColorClasses("cyan");
+
+    return (
+      <div
+        className={`
+          group relative flex flex-col p-6 lg:p-8
+          rounded-2xl border transition-all duration-300
+          bg-white/[0.02] backdrop-blur-sm
+          ${colors.border}
+          hover:bg-white/[0.04] hover:shadow-xl ${colors.glow}
+        `}
+      >
+        {/* Badge du type d'adresse */}
+        <div className="flex items-center gap-3 mb-6">
+          <div
+            className={`
+              flex-shrink-0 w-14 h-14 rounded-2xl
+              flex items-center justify-center
+              ${colors.bg}
+              transition-transform duration-300
+              group-hover:scale-105
+            `}
+          >
+            <Icon className={`h-7 w-7 ${colors.icon}`} />
+          </div>
+          <div>
+            <span
+              className={`
+                inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider
+                ${colors.bg} ${colors.icon}
+              `}
+            >
+              {isSiege ? t("addressLabels.siege") : t("addressLabels.bureau")}
+            </span>
+            <h3 className="text-xl font-bold text-white mt-1">
+              {address?.title}
+            </h3>
+          </div>
+        </div>
+
+        {/* Détails de l'adresse */}
+        <div className="space-y-4 flex-1">
+          {/* Adresse physique */}
+          <div className="flex items-start gap-3">
+            <MapPin className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
+            <div className="text-gray-300">
+              <p className="font-medium">{address?.street}</p>
+              <p>
+                {address?.postalCode} {address?.city}
+              </p>
+              <p className="text-gray-400">{address?.country}</p>
+            </div>
+          </div>
+
+          {/* Téléphone si disponible */}
+          {address?.phone && (
+            <div className="flex items-center gap-3">
+              <Phone className="h-5 w-5 text-gray-400 flex-shrink-0" />
+              <a
+                href={`tel:${address?.phone.replace(/\s/g, "")}`}
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                {address?.phone}
+              </a>
+            </div>
+          )}
+
+          {/* Email si disponible */}
+          {/* {address?.email && (
+            <div className="flex items-center gap-3">
+              <Mail className="h-5 w-5 text-gray-400 flex-shrink-0" />
+              <a
+                href={`mailto:${address?.email}`}
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                {address?.email}
+              </a>
+            </div>
+          )} */}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section id="contact" className="relative py-24 lg:py-32 overflow-hidden">
       {/* Background avec gradient sophistiqué */}
@@ -108,6 +229,7 @@ export default function Contact() {
       {/* Cercles de gradient décoratifs */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/2 right-0 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header avec badge */}
@@ -128,21 +250,20 @@ export default function Contact() {
         </div>
 
         {/* Card principale avec glassmorphism */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-8">
+          {/* Section des informations de contact générales */}
           <Card className="relative bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl overflow-hidden">
-            {/* Bordure gradient subtile */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-500/10 via-transparent to-violet-500/10 pointer-events-none" />
 
-            <CardContent className="relative p-8 md:p-12 lg:p-16">
-              {/* Introduction */}
-              <div className="text-center mb-12">
-                <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
-                  {t("intro")}
-                </p>
+            <CardContent className="relative p-8 md:p-12">
+              <div className="text-center mb-10">
+                <h3 className="text-2xl font-bold text-white mb-3">
+                  {t("generalInfo")}
+                </h3>
+                <p className="text-gray-400">{t("intro")}</p>
               </div>
 
-              {/* Grid des contacts */}
-              <div className="grid sm:grid-cols-2 gap-4 lg:gap-6">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6">
                 {contacts.map((item, index) => {
                   const Icon = iconMap[item.icon];
                   const colors = getColorClasses(item.color);
@@ -169,20 +290,18 @@ export default function Contact() {
                         hover:shadow-xl ${colors.glow}
                       `}
                     >
-                      {/* Icône avec fond coloré */}
                       <div
                         className={`
-                        flex-shrink-0 w-12 h-12 rounded-xl 
-                        flex items-center justify-center
-                        ${colors.bg}
-                        transition-transform duration-300
-                        group-hover:scale-110
-                      `}
+                          flex-shrink-0 w-12 h-12 rounded-xl 
+                          flex items-center justify-center
+                          ${colors.bg}
+                          transition-transform duration-300
+                          group-hover:scale-110
+                        `}
                       >
                         <Icon className={`h-5 w-5 ${colors.icon}`} />
                       </div>
 
-                      {/* Contenu */}
                       <div className="flex-1 min-w-0">
                         <p className="text-sm font-medium text-gray-400 mb-1">
                           {item.label}
@@ -192,7 +311,6 @@ export default function Contact() {
                         </p>
                       </div>
 
-                      {/* Indicateur de lien */}
                       {isLink && (
                         <div className="flex-shrink-0 self-center opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                           <ArrowUpRight className="h-5 w-5 text-gray-400" />
@@ -204,6 +322,12 @@ export default function Contact() {
               </div>
             </CardContent>
           </Card>
+
+          {/* Section des adresses - Siège et Bureau */}
+          <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+            <AddressCard address={addresses.siege} type="siege" />
+            <AddressCard address={addresses.bureau} type="bureau" />
+          </div>
         </div>
       </div>
     </section>

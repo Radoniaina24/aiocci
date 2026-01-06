@@ -208,8 +208,16 @@
   },
   "contact": {
     "title": "Contactez-nous",
-    "subtitle": "Entrer en contact",
-    "intro": "Que vous soyez une entreprise, un investisseur, une institution ou un partenaire, l’AIOCCI accueille la collaboration et le dialogue.",
+    "subtitle": "Nous sommes à votre écoute pour toute information, partenariat ou collaboration.",
+    "generalInfo": "Informations générales",
+    "intro": "N'hésitez pas à nous contacter via les canaux ci-dessous.",
+    "viewOnMap": "Voir sur la carte",
+
+    "addressLabels": {
+      "siege": "Siège",
+      "bureau": "Bureau"
+    },
+
     "details": [
       {
         "icon": "Mail",
@@ -219,37 +227,49 @@
         "color": "blue"
       },
       {
-        "icon": "Globe",
-        "label": "Site Web",
-        "value": "www.aiocci.org",
-        "link": "http://www.aiocci.org",
+        "icon": "Phone",
+        "label": "Téléphone",
+        "value": "+261 34 03 777 07",
+        "link": "tel:+261341234567",
         "color": "green"
       },
       {
-        "icon": "MapPin",
-        "label": "Siège",
-        "value": "Madagascar",
-        "color": "red"
-      },
-      {
-        "icon": "Building2",
-        "label": "Bureaux",
-        "value": "Delescar & Boris",
-        "color": "amber"
-      },
-      {
         "icon": "Globe",
-        "label": "Présence Régionale",
-        "value": "Afrique & Océan Indien",
-        "color": "blue"
+        "label": "Site web",
+        "value": "www.aiocci.org",
+        "link": "https://www.aiocci.org",
+        "color": "cyan"
       },
       {
         "icon": "TrendingUp",
-        "label": "Expansion",
-        "value": "De nouveaux bureaux ouvriront bientôt dans d'autres pays africains",
-        "color": "green"
+        "label": "Opportunités",
+        "value": "Partenariats & Investissements",
+        "color": "amber"
       }
-    ]
+    ],
+
+    "addresses": {
+      "siege": {
+        "title": "Siège principal",
+        "street": "Lot II A 105 E Nanisana Iadiambola, Immeuble E-media",
+        "city": "Antananarivo",
+        "postalCode": "101",
+        "country": "Madagascar",
+        "phone": "+261 34 03 777 07",
+        "email": "siege@aiocci.org",
+        "mapLink": "https://maps.google.com"
+      },
+      "bureau": {
+        "title": "Bureau de représentation",
+        "street": "Villa Nº1 Chemin Desvaux Petit Verger Saint PierreAdresse Maurice",
+        "city": "",
+        "postalCode": "",
+        "country": "Île Maurice",
+        "phone": "+230 5 782 8567",
+        "email": "bureau@aiocci.org",
+        "mapLink": "https://maps.google.com"
+      }
+    }
   },
   "footer": {
     "logoAlt": "Logo AIOCCI",
