@@ -54,7 +54,7 @@ export default function Banner() {
         tickerItems={tickerItems}
         tickerVariant="gradient"
         tickerSpeed="normal"
-        carouselAutoPlayInterval={8000}
+        carouselAutoPlayInterval={3000}
         carouselHeight="h-[60vh] sm:h-[70vh] lg:h-[85vh]"
       />
     </main>

@@ -70,8 +70,8 @@ export default function BannerCarousel({
   return (
     <section
       className={`relative w-full ${height} overflow-hidden bg-gray-900`}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      // onMouseEnter={() => setIsPaused(true)}
+      // onMouseLeave={() => setIsPaused(false)}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

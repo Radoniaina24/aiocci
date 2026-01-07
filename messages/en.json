@@ -250,7 +250,7 @@
 
     "addresses": {
       "siege": {
-        "title": "Head Office",
+        "title": "Madagascar",
         "street": " Lot II A 105 E Nanisana Iadiambola, Immeuble E-media",
         "city": "Antananarivo",
         "postalCode": "101",
@@ -260,11 +260,11 @@
         "mapLink": "https://maps.google.com"
       },
       "bureau": {
-        "title": "Regional Office",
+        "title": "Mauritius",
         "street": "Villa Nº1 Chemin Desvaux Petit Verger Saint PierreAdresse Maurice",
         "city": "",
         "postalCode": "",
-        "country": "Île Maurice",
+        "country": "Mauritius",
         "phone": "+230 5 782 8567",
         "email": "bureau@aiocci.org",
         "mapLink": "https://maps.google.com"

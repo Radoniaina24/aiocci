@@ -250,7 +250,7 @@
 
     "addresses": {
       "siege": {
-        "title": "Siège principal",
+        "title": "Madagascar",
         "street": "Lot II A 105 E Nanisana Iadiambola, Immeuble E-media",
         "city": "Antananarivo",
         "postalCode": "101",
@@ -260,7 +260,7 @@
         "mapLink": "https://maps.google.com"
       },
       "bureau": {
-        "title": "Bureau de représentation",
+        "title": "Île Maurice",
         "street": "Villa Nº1 Chemin Desvaux Petit Verger Saint PierreAdresse Maurice",
         "city": "",
         "postalCode": "",
