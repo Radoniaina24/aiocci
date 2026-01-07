@@ -116,7 +116,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Background - Thème Marron */}
       <div className="absolute inset-0">
         {/* Overlay gradient marron */}

@@ -47,7 +47,7 @@ export default function Banner() {
   const bannerSlides: Slide[] = t.raw("cards");
   const tickerItems: TickerItem[] = s.raw("slides");
   return (
-    <main>
+    <main id="home">
       {/* Option 1: Ticker simple + Banner */}
       <BannerWithTicker
         slides={bannerSlides}
