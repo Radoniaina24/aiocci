@@ -165,7 +165,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <Image src="/images/logo.png" alt="Logo" width={200} height={150} />
+            <Image
+              src="https://res.cloudinary.com/dx3xhdaym/image/upload/v1767782198/logo-removebg-preview_qhrsem.png"
+              alt="Logo"
+              width={200}
+              height={150}
+            />
           </Link>
 
           {/* Desktop navigation - Thème Marron */}

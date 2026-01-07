@@ -14,7 +14,9 @@ export default function Footer() {
           <div className="flex items-center justify-center space-x-3 mb-4">
             <Link href="/" className="flex items-center space-x-3 group">
               <Image
-                src={"/images/footerLogo.jpg"}
+                src={
+                  "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767782065/logo_ps4jlv.jpg"
+                }
                 alt={t("logoAlt")}
                 width={300}
                 height={300}
