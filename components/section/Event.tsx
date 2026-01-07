@@ -276,7 +276,7 @@ export default function Events() {
           </p>
         </div>
         <CeoBusinessForumPage />
-        {/* <CarrefourPage /> */}
+        <CarrefourPage />
         {/* Flagship events */}
         {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {flagshipEvents.map((event, index) => (

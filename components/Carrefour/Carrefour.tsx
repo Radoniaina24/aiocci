@@ -1,4 +1,4 @@
-// components/CeoBusinessForum/index.tsx
+// components/CeoBusinessForum/ExecutivePremium.tsx
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -22,10 +22,10 @@ interface CarrefourProps {
     label: string;
   }[];
   images: ForumImage[];
-  scrollSpeed?: number; // pixels per second
+  scrollSpeed?: number;
 }
 
-const Carrefour: React.FC<CarrefourProps> = ({
+const ExecutivePremium: React.FC<CarrefourProps> = ({
   title,
   edition,
   year,
@@ -37,8 +37,9 @@ const Carrefour: React.FC<CarrefourProps> = ({
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
   const t = useTranslations("carrefour");
-  // Auto-scroll animation
+
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
@@ -65,166 +66,285 @@ const Carrefour: React.FC<CarrefourProps> = ({
     };
   }, [isHovered, scrollSpeed]);
 
-  // Double the images array for seamless infinite scroll
   const duplicatedImages = [...images, ...images];
 
-  return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Gradient Orbs */}
-        <div className="absolute top-0 left-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-amber-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-blue-500/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-amber-500/5 to-orange-500/5 rounded-full blur-3xl" />
+  const iconMap = {
+    globe: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+        />
+      </svg>
+    ),
+    users: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+        />
+      </svg>
+    ),
+    handshake: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"
+        />
+      </svg>
+    ),
+    chart: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+        />
+      </svg>
+    ),
+    building: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        />
+      </svg>
+    ),
+    flag: (
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+        />
+      </svg>
+    ),
+  };
 
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBoMXYxaC0xek0wIDBoMXYxSDB6TTAgMzBoMXYxSDB6TTMwIDBoMXYxaC0xeiIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvZz48L3N2Zz4=')] opacity-40" />
+  return (
+    <section className="relative py-20 lg:py-32 bg-gradient-to-b from-[#0a0a0a] via-[#111111] to-[#0a0a0a]">
+      {/* Premium Background Pattern */}
+      <div className="absolute inset-0 opacity-30">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(212, 175, 55, 0.15) 1px, transparent 0)`,
+            backgroundSize: "40px 40px",
+          }}
+        />
       </div>
 
+      {/* Luxury Gold Lines */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent" />
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
-        <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 text-amber-400 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium tracking-wider mb-4 sm:mb-6 backdrop-blur-sm">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
-            </span>
-            <span>
-              {location} • {year}
-            </span>
+        {/* Header */}
+        <div className="text-center mb-16 lg:mb-24">
+          {/* Luxury Badge */}
+          <div className="inline-flex items-center gap-4 mb-8">
+            <div className="w-16 h-px bg-gradient-to-r from-transparent to-[#d4af37]" />
+            <div className="flex items-center gap-2 px-6 py-2 border border-[#d4af37]/30 bg-[#d4af37]/5">
+              <svg
+                className="w-4 h-4 text-[#d4af37]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+              <span className="text-[#d4af37] text-sm font-light tracking-[0.3em] uppercase">
+                {edition}
+              </span>
+              <svg
+                className="w-4 h-4 text-[#d4af37]"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              </svg>
+            </div>
+            <div className="w-16 h-px bg-gradient-to-l from-transparent to-[#d4af37]" />
           </div>
 
-          {/* Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-4xl  font-bold text-white tracking-tight mb-3 sm:mb-4">
-            <span className="block">{title}</span>
-            <span className="block mt-1 sm:mt-2 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 bg-clip-text text-transparent">
-              {edition}
-            </span>
+          {/* Main Title */}
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-extralight text-white tracking-tight mb-6">
+            {title}
           </h2>
 
-          {/* Decorative Line */}
-          <div className="flex items-center justify-center gap-2 sm:gap-3 mt-4 sm:mt-6">
-            <div className="w-8 sm:w-12 md:w-16 h-0.5 bg-gradient-to-r from-transparent to-amber-500 rounded-full" />
-            <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-amber-500 shadow-lg shadow-amber-500/50" />
-            <div className="w-8 sm:w-12 md:w-16 h-0.5 bg-gradient-to-l from-transparent to-amber-500 rounded-full" />
+          {/* Location & Year */}
+          <div className="flex items-center justify-center gap-6 text-white/60">
+            <span className="flex items-center gap-2">
+              <svg
+                className="w-5 h-5 text-[#d4af37]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              {location}
+            </span>
+            <div className="w-1 h-1 rounded-full bg-[#d4af37]" />
+            <span className="flex items-center gap-2">
+              <svg
+                className="w-5 h-5 text-[#d4af37]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+              {year}
+            </span>
           </div>
         </div>
 
-        {/* Main Content Card */}
-        <div className="relative bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 overflow-hidden mb-12 sm:mb-16 md:mb-20">
-          {/* Decorative Top Gradient */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-400 via-orange-500 to-amber-400" />
-
-          <div className="p-5 sm:p-6 md:p-8 lg:p-10 xl:p-12">
-            {/* Description */}
-            <div className="max-w-4xl mx-auto">
-              {/* Quote Icon */}
-              <div className="flex justify-center mb-4 sm:mb-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-amber-500/20 to-orange-500/20 border border-amber-500/30 flex items-center justify-center">
-                  <svg
-                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-amber-400"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                  </svg>
-                </div>
-              </div>
-
-              <p className="text-slate-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center">
-                <span className="text-amber-400 font-semibold">
-                  {t("descriptionIntro")}
-                </span>{" "}
-                {description.replace(t("descriptionIntro"), "")}
+        {/* Content Grid */}
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-20">
+          {/* Left - Description */}
+          <div className="space-y-8">
+            <div className="relative">
+              <div className="absolute -left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#d4af37] to-transparent" />
+              <p className="text-white/80 text-lg lg:text-xl font-light leading-relaxed pl-8">
+                {description}
               </p>
+            </div>
 
-              {/* AIOCCI Badge */}
-              <div className="flex justify-center mt-6 sm:mt-8">
-                <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-slate-800 to-slate-700 rounded-full border border-slate-600">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center">
-                    <span className="text-white font-bold text-xs sm:text-sm">
-                      A
-                    </span>
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-xs sm:text-sm">
-                      {t("aiocci.name")}
-                    </p>
-                    <p className="text-slate-400 text-[10px] sm:text-xs">
-                      {t("aiocci.tagline")}
-                    </p>
-                  </div>
-                </div>
+            {/* AIOCCI Info */}
+            <div className="flex items-center gap-6 pt-8 border-t border-white/10">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#d4af37] to-[#b8962e] flex items-center justify-center">
+                <span className="text-black font-bold text-xl">A</span>
+              </div>
+              <div>
+                <h4 className="text-white font-medium text-lg">
+                  {t("aiocci.name")}
+                </h4>
+                <p className="text-white/50 text-sm">{t("aiocci.tagline")}</p>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Image Carousel Section */}
-        <div className="relative">
-          {/* Section Title */}
-          <div className="text-center mb-6 sm:mb-8">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
-              {t("highlightsSection.title")}
-            </h3>
-            <p className="text-slate-400 text-sm sm:text-base">
-              {t("highlightsSection.subtitle", { year })}
-            </p>
-          </div>
+          {/* Right - Stats */}
+          <div className="grid grid-cols-2 gap-6">
+            {highlights.map((highlight, index) => (
+              <div
+                key={index}
+                className="group relative p-6 bg-white/[0.02] border border-white/10 hover:border-[#d4af37]/50 transition-all duration-500"
+              >
+                {/* Corner Accents */}
+                <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-[#d4af37]/50" />
+                <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[#d4af37]/50" />
 
-          {/* Gradient Overlays for Carousel */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
-
-          {/* Scrolling Container */}
-          <div
-            ref={scrollRef}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="flex gap-3 sm:gap-4 md:gap-6 overflow-x-hidden cursor-grab active:cursor-grabbing py-4"
-            style={{ scrollBehavior: "auto" }}
-          >
-            {duplicatedImages.map((image, index) => (
-              <div key={index} className="flex-shrink-0 group relative">
-                <div className="relative w-56 sm:w-64 md:w-72 lg:w-80 xl:w-96 aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden border-2 border-white/10 group-hover:border-amber-500/50 transition-all duration-300 shadow-xl group-hover:shadow-amber-500/20">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    sizes="(max-width: 640px) 224px, (max-width: 768px) 256px, (max-width: 1024px) 288px, (max-width: 1280px) 320px, 384px"
-                  />
-
-                  {/* Image Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                  {/* Image Caption */}
-                  {/* <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                    <p className="text-white text-xs sm:text-sm font-medium truncate">
-                      {image.alt}
-                    </p>
-                  </div> */}
-
-                  {/* Corner Decoration */}
-                  {/* <div className="absolute top-2 sm:top-3 right-2 sm:right-3 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-amber-500/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-50 group-hover:scale-100">
-                    <svg
-                      className="w-3 h-3 sm:w-4 sm:h-4 text-white"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"
-                      />
-                    </svg>
-                  </div> */}
+                <div className="text-[#d4af37] mb-4 opacity-70 group-hover:opacity-100 transition-opacity">
+                  {iconMap[highlight.icon]}
+                </div>
+                <div className="text-3xl lg:text-4xl font-light text-white mb-2">
+                  {highlight.value}
+                </div>
+                <div className="text-white/50 text-sm uppercase tracking-wider">
+                  {highlight.label}
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Image Gallery */}
+        <div className="relative">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl lg:text-3xl font-light text-white mb-2">
+              {t("highlightsSection.title")}
+            </h3>
+            <div className="w-24 h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto mt-4" />
+          </div>
+
+          {/* Carousel */}
+          <div className="relative">
+            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10" />
+
+            <div
+              ref={scrollRef}
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="flex gap-6 overflow-x-hidden py-4"
+            >
+              {duplicatedImages.map((image, index) => (
+                <div key={index} className="flex-shrink-0 group">
+                  <div className="relative w-80 lg:w-96 aspect-[16/10] overflow-hidden">
+                    {/* Gold Border Frame */}
+                    <div className="absolute inset-0 border border-[#d4af37]/20 group-hover:border-[#d4af37]/60 transition-colors duration-500 z-10" />
+                    <div className="absolute top-2 left-2 right-2 bottom-2 border border-[#d4af37]/10 group-hover:border-[#d4af37]/30 transition-colors duration-500 z-10" />
+
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 320px, 384px"
+                    />
+
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500" />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
@@ -232,4 +352,4 @@ const Carrefour: React.FC<CarrefourProps> = ({
   );
 };
 
-export default Carrefour;
+export default ExecutivePremium;

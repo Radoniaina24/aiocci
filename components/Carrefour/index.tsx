@@ -45,64 +45,59 @@ export default function CarrefourPage() {
     ],
     images: [
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637763/WhatsApp_Image_2026-01-03_at_12.40.00_qzp91i.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763852/1_1_qwpehh.jpg",
         alt: "Opening Ceremony",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637763/WhatsApp_Image_2026-01-03_at_12.40.03_ftfm2t.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763852/1_2_c0iqcc.jpg",
         alt: "Panel Discussion",
       },
-
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637763/WhatsApp_Image_2026-01-03_at_12.39.59_vmqgsj.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763851/1_3_leinol.jpg",
         alt: "Business Meetings",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637762/WhatsApp_Image_2026-01-03_at_12.39.53_ln6gkt.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763852/1_4_geygyq.jpg",
         alt: "Keynote Speech",
       },
-      // {
-      //   src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637762/WhatsApp_Image_2026-01-03_at_12.39.54_gy5bmy.jpgg",
-      //   alt: "Awards Ceremony",
-      // },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637762/WhatsApp_Image_2026-01-03_at_12.39.55_ttitro.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763852/1_5_zdy23a.jpg",
         alt: "Group Photo",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637762/WhatsApp_Image_2026-01-03_at_12.39.50_y7vgls.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
         alt: "Exhibition Hall",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637762/WhatsApp_Image_2026-01-03_at_12.39.52_pqgubp.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
         alt: "Exhibition",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637762/WhatsApp_Image_2026-01-03_at_12.39.48_ykob24.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_8_xhcjns.jpg",
         alt: "Exhibition Hall",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637761/WhatsApp_Image_2026-01-03_at_12.39.44_pcgzps.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_9_ehcbwz.jpg",
         alt: "Exhibition Hll",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637761/WhatsApp_Image_2026-01-03_at_12.39.46_qyuygf.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_10_hc2ig8.jpg",
         alt: "Exhibition Hall",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637761/WhatsApp_Image_2026-01-03_at_12.39.45_pii4vh.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_11_ecqlmf.jpg",
         alt: " Hall",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637761/WhatsApp_Image_2026-01-03_at_12.39.43_huxinf.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_12_qgaibe.jpg",
         alt: "Exhibition Hall",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637761/WhatsApp_Image_2026-01-03_at_12.39.39_dfk1yq.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_13_mu7jnz.jpg",
         alt: "Exhibition Hall",
       },
       {
-        src: "https://res.cloudinary.com/devhkzelq/image/upload/v1767637761/WhatsApp_Image_2026-01-03_at_12.39.41_cdu1po.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763853/1_14_ufqn6j.jpg",
         alt: "Exhibition Hall",
       },
     ],

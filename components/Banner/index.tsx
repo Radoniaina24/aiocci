@@ -5,42 +5,6 @@ import BannerWithTicker from "@/components/Banner/BannerWithTicker";
 import { Slide, TickerItem } from "@/components/Banner/types";
 import { useTranslations } from "next-intl";
 
-// Données du Ticker
-const tickerItems: TickerItem[] = [
-  {
-    id: 1,
-    text: "🔥 Nouvelle collection disponible !",
-    highlight: true,
-    link: "/nouveautes",
-  },
-  {
-    id: 2,
-    text: "Livraison gratuite dès 50€",
-    icon: "🚚",
-  },
-  {
-    id: 3,
-    text: "-20% sur votre première commande",
-    icon: "💰",
-    highlight: true,
-  },
-  {
-    id: 4,
-    text: "Retours gratuits sous 30 jours",
-    icon: "↩️",
-  },
-  {
-    id: 5,
-    text: "Service client 24/7",
-    icon: "💬",
-  },
-  {
-    id: 6,
-    text: "Paiement sécurisé",
-    icon: "🔒",
-  },
-];
-
 export default function Banner() {
   const t = useTranslations("cardCarousel");
   const s = useTranslations("marquee");

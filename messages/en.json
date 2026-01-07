@@ -478,5 +478,29 @@
         "subtitle": "AgriTech"
       }
     ]
+  },
+  "carrefour": {
+    "title": "Employment and Education Fair",
+    "edition": "Madagascar Edition 2025",
+    "year": "2025",
+    "location": "Madagascar",
+
+    "description": "As part of its commitment to human capital development and international cooperation, AIOCCI supported and promoted the Employment & Education Fair 2025, a major initiative dedicated to employability, education, and academic mobility. Held in Madagascar, the event brought together more than 50 leading international institutions and schools, notably from the United Arab Emirates, Canada, Mauritius, as well as other partner countries. It provided a dynamic platform for exchange between educational institutions, businesses, recruiters, and young talents. Through this initiative, AIOCCI actively contributes to bridging education systems and the professional world, promoting access to international opportunities, and addressing labor market needs through a sustainable and inclusive approach.",
+
+    "badge": {
+      "locationYear": "{location} • {year}"
+    },
+
+    "descriptionIntro": "",
+
+    "aiocci": {
+      "name": "AIOCCI",
+      "tagline": "Private Economic Diplomacy"
+    },
+
+    "highlightsSection": {
+      "title": "Fair Highlights",
+      "subtitle": "Key Moments of the Employment & Education Fair {year}"
+    }
   }
 }
