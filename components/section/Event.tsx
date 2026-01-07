@@ -23,6 +23,7 @@ import {
 } from "../ui/card";
 import CeoBusinessForumPage from "../CeoBusinessForum";
 import CarrefourPage from "../Carrefour";
+import EditorialPrestigePage from "../AIOCCIVision";
 
 // Composant pour les particules décoratives
 const FloatingParticles = () => (
@@ -271,12 +272,13 @@ export default function Events() {
             <div className="w-12 h-px bg-gradient-to-l from-transparent to-purple-500" />
           </div>
 
-          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+          {/* <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
             {t("section.subtitle")}
-          </p>
+          </p> */}
         </div>
         <CeoBusinessForumPage />
         <CarrefourPage />
+        <EditorialPrestigePage />
         {/* Flagship events */}
         {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-20">
           {flagshipEvents.map((event, index) => (

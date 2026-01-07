@@ -553,5 +553,32 @@
       "title": "Temps forts du Carrefour",
       "subtitle": "Moments du Carrefour Emploi & Études {year}"
     }
+  },
+  "editorialPrestige": {
+    "eyebrow": "AIOCCI • Île Maurice",
+    "tagline": {
+      "build": "Bâtir.",
+      "inspire": "Inspirer.",
+      "transform": "Transformer."
+    },
+    "lead": "À l'Île Maurice, AIOCCI – African Indian Ocean Chamber of Commerce & Industry a eu l'honneur de porter une vision économique partagée devant des ministres, ambassadeurs, consuls, leaders économiques et représentants de grandes institutions internationales.",
+    "sectors": [
+      "Technologie",
+      "Numérique",
+      "Cinéma",
+      "Intelligence Artificielle"
+    ],
+    "paragraphs": {
+      "p1": "Cet échange de haut niveau a illustré la capacité d'AIOCCI à rassembler les décideurs, à ouvrir le dialogue et à faire émerger des perspectives concrètes pour Madagascar, Maurice, la région de l'Océan Indien et l'Afrique.",
+      "p2": "Au-delà de l'événement, cette rencontre marque une étape importante dans le rayonnement international d'AIOCCI, confirmant son rôle de plateforme de coopération économique, d'influence et de transformation."
+    },
+    "quote": {
+      "text": "L'avenir se construit par le dialogue, la confiance et l'action collective.",
+      "author": "AIOCCI Vision 2025"
+    },
+    "closing": {
+      "line1": "AIOCCI continue de bâtir des ponts économiques",
+      "line2": "solides au-delà des frontières."
+    }
   }
 }

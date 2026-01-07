@@ -69,7 +69,7 @@ const CeoBusinessForum: React.FC<CeoBusinessForumProps> = ({
   const duplicatedImages = [...images, ...images];
 
   return (
-    <section className="relative py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden">
+    <section className="relative py-5 overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Gradient Orbs */}
@@ -132,7 +132,7 @@ const CeoBusinessForum: React.FC<CeoBusinessForumProps> = ({
                 </div>
               </div>
 
-              <p className="text-slate-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed text-center">
+              <p className="text-white/80 text-sm sm:text-base md:text-lg lg:text-xl font-light leading-relaxed text-center">
                 <span className="text-amber-400 font-semibold">
                   {t("descriptionIntro")}
                 </span>{" "}

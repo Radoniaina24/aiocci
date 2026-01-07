@@ -502,5 +502,27 @@
       "title": "Fair Highlights",
       "subtitle": "Key Moments of the Employment & Education Fair {year}"
     }
+  },
+  "editorialPrestige": {
+    "eyebrow": "AIOCCI • Mauritius",
+    "tagline": {
+      "build": "Build.",
+      "inspire": "Inspire.",
+      "transform": "Transform."
+    },
+    "lead": "In Mauritius, AIOCCI – the African Indian Ocean Chamber of Commerce & Industry had the honor of presenting a shared economic vision before ministers, ambassadors, consuls, business leaders, and representatives of major international institutions.",
+    "sectors": ["Technology", "Digital", "Cinema", "Artificial Intelligence"],
+    "paragraphs": {
+      "p1": "This high-level exchange demonstrated AIOCCI’s ability to bring decision-makers together, foster dialogue, and generate concrete perspectives for Madagascar, Mauritius, the Indian Ocean region, and Africa.",
+      "p2": "Beyond the event itself, this meeting marks a significant milestone in AIOCCI’s international outreach, confirming its role as a platform for economic cooperation, influence, and transformation."
+    },
+    "quote": {
+      "text": "The future is built through dialogue, trust, and collective action.",
+      "author": "AIOCCI Vision 2025"
+    },
+    "closing": {
+      "line1": "AIOCCI continues to build strong economic bridges",
+      "line2": "beyond borders."
+    }
   }
 }
