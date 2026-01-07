@@ -245,6 +245,7 @@ const EventImage: React.FC<EventImageProps> = ({
   const shadowClasses = getShadowColor(accentColor);
   const borderClasses = getBorderColor(accentColor);
   const textClasses = getTextColor(accentColor);
+  const bgClasses = getBackgroundColor(accentColor);
 
   return (
     <div
@@ -254,19 +255,20 @@ const EventImage: React.FC<EventImageProps> = ({
         ${shadowClasses}
       `}
     >
-      <div className="aspect-[4/3] relative">
+      {/* Container avec hauteur minimale et fond coloré */}
+      <div className={`relative min-h-[300px] md:min-h-[400px] ${bgClasses}`}>
         {!imageError ? (
           <img
             src={src}
             alt={alt}
             onError={() => setImageError(true)}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             loading="lazy"
           />
         ) : (
           <div
             className={`
-              w-full h-full flex flex-col items-center justify-center
+              w-full h-full min-h-[300px] flex flex-col items-center justify-center
               bg-gradient-to-br ${gradientClasses}
             `}
           >
@@ -277,14 +279,16 @@ const EventImage: React.FC<EventImageProps> = ({
           </div>
         )}
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        {/* Gradient overlay - Plus subtil pour ne pas masquer l'image */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
+        {/* Badge */}
         {badge && (
-          <div className="absolute top-4 left-4">
+          <div className="absolute top-4 left-4 z-10">
             <span
               className={`
                 px-4 py-2 rounded-full text-sm font-semibold
-                bg-white/90 backdrop-blur-sm shadow-lg
+                bg-white/95 backdrop-blur-sm shadow-lg
                 ${textClasses}
               `}
             >
@@ -293,13 +297,15 @@ const EventImage: React.FC<EventImageProps> = ({
           </div>
         )}
 
-        <div className="absolute bottom-0 left-0 right-0 p-6">
+        {/* Title overlay */}
+        <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
           <h3 className="text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-lg">
             {title}
           </h3>
         </div>
       </div>
 
+      {/* Border decorative */}
       <div
         className={`
           absolute inset-0 rounded-3xl 

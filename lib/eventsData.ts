@@ -21,7 +21,7 @@ export const eventsData: EventData[] = [
     accentColor: "blue",
     logo: "/images/logos/education-expo-logo.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767776043/4_2_gcnfhl.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_1_l6a81k.jpg",
     hasParticipants: false,
     hasDetails: true,
     objectivesCount: 3,
@@ -32,7 +32,7 @@ export const eventsData: EventData[] = [
     accentColor: "emerald",
     logo: "/images/logos/africa-business-expo-mauritius.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767776043/4_3_oqdera.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_3_w4unoe.jpg",
     hasParticipants: true,
     hasDetails: false,
     participantsCount: 4,
@@ -44,7 +44,7 @@ export const eventsData: EventData[] = [
     accentColor: "purple",
     logo: "/images/logos/ai-meets-africa.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767776043/4_1_r1zw8m.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_2_coz5or.jpg",
     hasParticipants: true,
     hasDetails: false,
     participantsCount: 4,
@@ -56,7 +56,7 @@ export const eventsData: EventData[] = [
     accentColor: "amber",
     logo: "/images/logos/africa-business-expo-dubai.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767776044/4_4_f3hi12.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_4_itqjsp.jpg",
     hasParticipants: true,
     hasDetails: false,
     participantsCount: 4,
