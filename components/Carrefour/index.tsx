@@ -65,11 +65,11 @@ export default function CarrefourPage() {
         alt: "Group Photo",
       },
       {
-        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767678236/1_6_qctnmh.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763852/1_6_bawp76.jpg",
         alt: "Exhibition Hall",
       },
       {
-        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767679993/1_7_ijhulr.jpg",
+        src: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767763852/1_7_aqbahg.jpg",
         alt: "Exhibition",
       },
       {
