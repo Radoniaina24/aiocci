@@ -15,6 +15,7 @@ import PresidentMessages from "@/components/PresidentMessage";
 
 import CardCarousel from "@/components/CardCarousel/CardCarousel";
 import Banner from "@/components/Banner";
+import UpcomingEvents from "@/components/Event/UpcomingEvents";
 
 export default function Home() {
   return (
@@ -27,7 +28,8 @@ export default function Home() {
         <About />
         <Services />
         {/* <CardCarousel /> */}
-        <Events />
+        <UpcomingEvents />
+        {/* <Events /> */}
         <Membership />
         <Partnerships />
         <Contact />

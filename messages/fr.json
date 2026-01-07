@@ -580,5 +580,115 @@
       "line1": "AIOCCI continue de bâtir des ponts économiques",
       "line2": "solides au-delà des frontières."
     }
+  },
+
+  "upcomingEvents": {
+    "header": {
+      "title": "Événements à venir",
+      "subtitle": "AIOCCI",
+      "description": "Rejoignez-nous lors de nos événements phares à travers l'Afrique et au-delà, réunissant leaders, innovateurs et décideurs pour façonner l'avenir du continent."
+    },
+    "stats": {
+      "events": "Événements",
+      "countries": "Pays",
+      "year": "Année",
+      "attendees": "Participants attendus"
+    },
+    "buttons": {
+      "learnMore": "En savoir plus",
+      "showLess": "Voir moins"
+    },
+    "labels": {
+      "participants": "Participants",
+      "imagePlaceholder": "Image de l'événement",
+      "logo": "Logo"
+    },
+    "events": {
+      "event1": {
+        "title": "Salon International de l'Éducation – Madagascar 2026",
+        "date": "7–8 Février 2026",
+        "location": "Madagascar",
+        "badge": "Co-organisé par AIOCCI",
+        "description": "Dans le cadre de son engagement pour le développement du capital humain et la coopération académique internationale, AIOCCI co-organise fièrement le Salon International de l'Éducation – Madagascar.",
+        "details": "Cet événement éducatif phare rassemble universités, établissements d'enseignement supérieur, centres de formation et organisations internationales, créant une plateforme dynamique de dialogue entre institutions, étudiants, parents et acteurs publics.",
+        "objectivesLabel": "Le Salon International de l'Éducation vise à :",
+        "objectives": {
+          "0": "Promouvoir la mobilité académique internationale",
+          "1": "Faciliter l'accès aux opportunités éducatives mondiales",
+          "2": "Renforcer l'adéquation entre éducation, compétences et besoins du marché du travail"
+        },
+        "logoAlt": "Logo du Salon International de l'Éducation Madagascar",
+        "imageAlt": "Salon de l'Éducation Madagascar 2026"
+      },
+      "event2": {
+        "title": "Africa Business Expo – Maurice 2026",
+        "date": "5–6 Juin 2026",
+        "location": "Maurice",
+        "badge": "",
+        "description": "Africa Business Expo – Maurice est conçu comme l'une des plus grandes expositions économiques reliant l'Afrique et la région de l'océan Indien, organisée à Maurice, l'une des économies les plus dynamiques et favorables aux affaires d'Afrique.",
+        "details": "",
+        "objectivesLabel": "Africa Business Expo vise à :",
+        "participants": {
+          "0": "Entreprises africaines et internationales",
+          "1": "Investisseurs et institutions financières",
+          "2": "Chambres de commerce",
+          "3": "Décideurs des secteurs public et privé"
+        },
+        "objectives": {
+          "0": "Stimuler le commerce intra-africain et régional",
+          "1": "Faciliter les partenariats B2B et B2G",
+          "2": "Présenter des projets à fort impact et opportunités d'investissement",
+          "3": "Renforcer l'intégration économique régionale"
+        },
+        "logoAlt": "Logo Africa Business Expo Maurice",
+        "imageAlt": "Africa Business Expo Maurice 2026"
+      },
+      "event3": {
+        "title": "AI Meets Africa – Sommet Maurice 2026",
+        "date": "6–7 Août 2026",
+        "location": "Centre de Convention de Trianon, Maurice",
+        "badge": "",
+        "description": "AI Meets Africa – Sommet Maurice est appelé à devenir l'un des sommets sur l'intelligence artificielle les plus importants et influents d'Afrique, organisé à Maurice, un hub d'innovation émergent de premier plan sur le continent.",
+        "details": "",
+        "objectivesLabel": "Les domaines clés incluent :",
+        "participants": {
+          "0": "Décideurs politiques et dirigeants gouvernementaux",
+          "1": "Entreprises technologiques mondiales",
+          "2": "Investisseurs et sociétés de capital-risque",
+          "3": "Chercheurs, startups et innovateurs"
+        },
+        "objectives": {
+          "0": "Intelligence artificielle et technologies émergentes",
+          "1": "Transformation numérique et automatisation",
+          "2": "Données, cybersécurité et systèmes intelligents",
+          "3": "Développement économique et industriel piloté par l'IA"
+        },
+        "logoAlt": "Logo du Sommet AI Meets Africa",
+        "imageAlt": "Sommet AI Meets Africa 2026"
+      },
+      "event4": {
+        "title": "Africa Business Expo – Dubaï 2026",
+        "date": "Novembre 2026",
+        "location": "Dubaï, Émirats Arabes Unis",
+        "badge": "",
+        "description": "Africa Business Expo – Dubaï positionne l'Afrique au cœur de l'un des centres d'affaires les plus influents au monde, servant de passerelle stratégique entre l'Afrique, le Moyen-Orient, l'Asie et l'Europe.",
+        "details": "",
+        "objectivesLabel": "Africa Business Expo vise à :",
+        "participants": {
+          "0": "Entreprises et institutions africaines",
+          "1": "Investisseurs mondiaux et fonds souverains",
+          "2": "Chambres de commerce internationales",
+          "3": "Multinationales et facilitateurs commerciaux"
+        },
+        "objectives": {
+          "0": "Promouvoir les opportunités d'investissement africaines sur la scène mondiale",
+          "1": "Connecter les entreprises africaines aux marchés internationaux",
+          "2": "Faciliter le commerce transfrontalier et les partenariats stratégiques",
+          "3": "Renforcer la visibilité économique et la compétitivité de l'Afrique dans le monde"
+        },
+        "logoAlt": "Logo Africa Business Expo Dubaï",
+        "imageAlt": "Africa Business Expo Dubaï 2026"
+      }
+    }
   }
 }

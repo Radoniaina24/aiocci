@@ -524,5 +524,115 @@
       "line1": "AIOCCI continues to build strong economic bridges",
       "line2": "beyond borders."
     }
+  },
+
+  "upcomingEvents": {
+    "header": {
+      "title": "Upcoming Events",
+      "subtitle": "AIOCCI",
+      "description": "Join us at our flagship events across Africa and beyond, connecting leaders, innovators, and decision-makers to shape the future of the continent."
+    },
+    "stats": {
+      "events": "Events",
+      "countries": "Countries",
+      "year": "Year",
+      "attendees": "Expected Attendees"
+    },
+    "buttons": {
+      "learnMore": "Learn more",
+      "showLess": "Show less"
+    },
+    "labels": {
+      "participants": "Participants",
+      "imagePlaceholder": "Event image",
+      "logo": "Logo"
+    },
+    "events": {
+      "event1": {
+        "title": "International Education Expo – Madagascar 2026",
+        "date": "7–8 February 2026",
+        "location": "Madagascar",
+        "badge": "Co-organized by AIOCCI",
+        "description": "As part of its commitment to human capital development and international academic cooperation, AIOCCI proudly co-organizes the International Education Expo – Madagascar.",
+        "details": "This flagship education event brings together universities, higher education institutions, training centers, and international organizations, creating a dynamic platform for dialogue between institutions, students, parents, and public stakeholders.",
+        "objectivesLabel": "International Education Expo aims to:",
+        "objectives": {
+          "0": "Promote international academic mobility",
+          "1": "Facilitate access to global education opportunities",
+          "2": "Strengthen alignment between education, skills, and labor market needs"
+        },
+        "logoAlt": "International Education Expo Madagascar Logo",
+        "imageAlt": "Education Expo Madagascar 2026"
+      },
+      "event2": {
+        "title": "Africa Business Expo – Mauritius 2026",
+        "date": "5–6 June 2026",
+        "location": "Mauritius",
+        "badge": "",
+        "description": "Africa Business Expo – Mauritius is designed as one of the largest economic exhibitions connecting Africa and the Indian Ocean region, hosted in Mauritius, one of Africa's most dynamic and business-friendly economies.",
+        "details": "",
+        "objectivesLabel": "Africa Business Expo aims to:",
+        "participants": {
+          "0": "African and international companies",
+          "1": "Investors and financial institutions",
+          "2": "Chambers of commerce",
+          "3": "Public and private sector decision-makers"
+        },
+        "objectives": {
+          "0": "Stimulate intra-African and regional trade",
+          "1": "Facilitate B2B and B2G partnerships",
+          "2": "Showcase high-impact projects and investment opportunities",
+          "3": "Strengthen regional economic integration"
+        },
+        "logoAlt": "Africa Business Expo Mauritius Logo",
+        "imageAlt": "Africa Business Expo Mauritius 2026"
+      },
+      "event3": {
+        "title": "AI Meets Africa – Mauritius Summit 2026",
+        "date": "6–7 August 2026",
+        "location": "Trianon Convention Centre, Mauritius",
+        "badge": "",
+        "description": "AI Meets Africa – Mauritius Summit is set to become one of the largest and most influential artificial intelligence summits in Africa, hosted in Mauritius, a leading emerging innovation hub on the continent.",
+        "details": "",
+        "objectivesLabel": "Key focus areas include:",
+        "participants": {
+          "0": "Policymakers and government leaders",
+          "1": "Global technology companies",
+          "2": "Investors and venture capital firms",
+          "3": "Researchers, startups, and innovators"
+        },
+        "objectives": {
+          "0": "Artificial intelligence and emerging technologies",
+          "1": "Digital transformation and automation",
+          "2": "Data, cybersecurity, and smart systems",
+          "3": "AI-driven economic and industrial development"
+        },
+        "logoAlt": "AI Meets Africa Summit Logo",
+        "imageAlt": "AI Meets Africa Summit 2026"
+      },
+      "event4": {
+        "title": "Africa Business Expo – Dubai 2026",
+        "date": "November 2026",
+        "location": "Dubai, United Arab Emirates",
+        "badge": "",
+        "description": "Africa Business Expo – Dubai positions Africa at the heart of one of the world's most influential global business hubs, serving as a strategic gateway between Africa, the Middle East, Asia, and Europe.",
+        "details": "",
+        "objectivesLabel": "Africa Business Expo aims to:",
+        "participants": {
+          "0": "African companies and institutions",
+          "1": "Global investors and sovereign funds",
+          "2": "International chambers of commerce",
+          "3": "Multinational corporations and trade facilitators"
+        },
+        "objectives": {
+          "0": "Promote African investment opportunities on a global stage",
+          "1": "Connect African businesses with international markets",
+          "2": "Facilitate cross-border trade and strategic partnerships",
+          "3": "Strengthen Africa's economic visibility and competitiveness worldwide"
+        },
+        "logoAlt": "Africa Business Expo Dubai Logo",
+        "imageAlt": "Africa Business Expo Dubai 2026"
+      }
+    }
   }
 }
