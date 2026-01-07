@@ -256,12 +256,12 @@ const ExecutivePremium: React.FC<CarrefourProps> = ({
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 mb-20">
+        <div className="grid lg:grid-cols-1 gap-16 lg:gap-24 mb-20">
           {/* Left - Description */}
           <div className="space-y-8">
             <div className="relative">
               <div className="absolute -left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#d4af37] to-transparent" />
-              <p className="text-white/80 text-lg lg:text-xl font-light leading-relaxed pl-8">
+              <p className="text-white/80 text-sm sm:text-base md:text-lg lg:text-xl font-light leading-relaxed pl-8">
                 {description}
               </p>
             </div>
@@ -281,13 +281,13 @@ const ExecutivePremium: React.FC<CarrefourProps> = ({
           </div>
 
           {/* Right - Stats */}
-          <div className="grid grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-2 gap-6">
             {highlights.map((highlight, index) => (
               <div
                 key={index}
                 className="group relative p-6 bg-white/[0.02] border border-white/10 hover:border-[#d4af37]/50 transition-all duration-500"
               >
-                {/* Corner Accents */}
+                
                 <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-[#d4af37]/50" />
                 <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-[#d4af37]/50" />
 
@@ -302,7 +302,7 @@ const ExecutivePremium: React.FC<CarrefourProps> = ({
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Image Gallery */}

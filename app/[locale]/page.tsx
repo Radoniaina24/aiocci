@@ -29,7 +29,7 @@ export default function Home() {
         <Services />
         {/* <CardCarousel /> */}
         <UpcomingEvents />
-        {/* <Events /> */}
+        <Events />
         <Membership />
         <Partnerships />
         <Contact />
