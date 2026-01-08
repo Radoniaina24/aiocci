@@ -690,5 +690,23 @@
         "imageAlt": "Africa Business Expo Dubaï 2026"
       }
     }
+  },
+  "AboutAIOCCI": {
+    "title": "À propos de l'AIOCCI",
+
+    "paragraph1": {
+      "highlight": "L'AIOCCI",
+      "text": "est une organisation économique indépendante orientée vers le développement des relations d'affaires, réunissant des acteurs du secteur privé, des institutions, des entrepreneurs et des investisseurs engagés dans la construction de partenariats économiques solides entre l'Afrique et la région de l'Océan Indien."
+    },
+
+    "paragraph2": {
+      "highlight": "Plateforme de référence",
+      "text": "pour l'accompagnement des projets économiques, la facilitation de l'accès aux marchés, la mise en réseau des acteurs clés et le renforcement de la coopération public-privé."
+    },
+
+    "paragraph3": {
+      "text": "Par son approche inclusive, son ancrage régional et son ouverture internationale, l'AIOCCI contribue à structurer des initiatives à fort impact et à soutenir un",
+      "highlight": "développement économique durable et partagé"
+    }
   }
 }

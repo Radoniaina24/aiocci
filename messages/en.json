@@ -634,5 +634,23 @@
         "imageAlt": "Africa Business Expo Dubai 2026"
       }
     }
+  },
+  "AboutAIOCCI": {
+    "title": "About AIOCCI",
+
+    "paragraph1": {
+      "highlight": "AIOCCI",
+      "text": "is an independent economic organization focused on fostering business relations, bringing together private sector stakeholders, institutions, entrepreneurs, and investors committed to building strong economic partnerships between Africa and the Indian Ocean region."
+    },
+
+    "paragraph2": {
+      "highlight": "A reference platform",
+      "text": "supporting economic projects, facilitating market access, connecting key stakeholders, and strengthening public-private cooperation."
+    },
+
+    "paragraph3": {
+      "text": "Through its inclusive approach, strong regional roots, and international openness, AIOCCI helps structure high-impact initiatives and promote",
+      "highlight": "sustainable and shared economic development"
+    }
   }
 }
