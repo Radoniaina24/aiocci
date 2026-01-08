@@ -25,9 +25,9 @@
 
     "welcome": {
       "title": "Welcome to AIOCCI",
-      "paragraph1": "The African Indian Ocean Chamber of Commerce and Industry (AIOCCI) is an independent business platform dedicated to strengthening trade, investment, and economic cooperation between Africa and the Indian Ocean region.",
-      "paragraph2": "AIOCCI connects companies, investors, institutions, and economic stakeholders through business facilitation, strategic networking, and the organization of high-level corporate and economic events.",
-      "paragraph3": "Our objective is to foster sustainable growth, cross-border partnerships, and regional economic integration across Africa, the Indian Ocean, and international markets."
+      "paragraph1": "The Africa – Indian Ocean Chamber of Commerce and Industry (AIOCCI) is an international economic platform dedicated to structuring trade exchanges, promoting investment, and fostering sustainable economic cooperation between Africa, the Indian Ocean region, and the rest of the world.",
+      "paragraph2": "AIOCCI facilitates strategic connections between businesses, investors, institutions, and economic decision-makers by creating high-value platforms for dialogue, business development, and collaboration.",
+      "paragraph3": "Through its initiatives, AIOCCI supports the growth and strengthening of African and regional economic ecosystems, enhances market attractiveness, and contributes to an open, responsible, and forward-looking economic integration."
     },
 
     "actions": {
@@ -60,7 +60,7 @@
     "countries": "Partner Countries",
     "activeMembers": "Active Members",
     "founded": "Founded in",
-    "title": "Our Story"
+    "title": "Legal framework, vision and mission"
   },
   "services": {
     "section": {

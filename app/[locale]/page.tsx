@@ -16,6 +16,7 @@ import PresidentMessages from "@/components/PresidentMessage";
 import CardCarousel from "@/components/CardCarousel/CardCarousel";
 import Banner from "@/components/Banner";
 import UpcomingEvents from "@/components/Event/UpcomingEvents";
+import AboutAIOCCI from "@/components/About/AboutAIOCCI";
 
 export default function Home() {
   return (
@@ -27,8 +28,10 @@ export default function Home() {
         <PresidentMessages />
         <About />
         <Services />
+        <AboutAIOCCI />
         {/* <CardCarousel /> */}
         <UpcomingEvents />
+
         <Events />
         <Membership />
         <Partnerships />

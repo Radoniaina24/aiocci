@@ -25,9 +25,9 @@
 
     "welcome": {
       "title": "Bienvenue à l’AIOCCI",
-      "paragraph1": "La Chambre de Commerce et d’Industrie Afrique – Océan Indien (AIOCCI) est une plateforme économique indépendante dédiée au renforcement des échanges commerciaux, des investissements et de la coopération économique entre l’Afrique et la région de l’Océan Indien.",
-      "paragraph2": "L’AIOCCI connecte les entreprises, investisseurs, institutions et acteurs économiques à travers la facilitation des affaires, le réseautage stratégique et l’organisation d’événements économiques et corporatifs de haut niveau.",
-      "paragraph3": "Notre objectif est de promouvoir une croissance durable, des partenariats transfrontaliers et une intégration économique régionale entre l’Afrique, l’Océan Indien et les marchés internationaux."
+      "paragraph1": "La Chambre de Commerce et d’Industrie Afrique – Océan Indien (AIOCCI) est une plateforme économique internationale dédiée à la structuration des échanges commerciaux, à la promotion des investissements et au développement de coopérations économiques durables entre l’Afrique, la région de l’Océan Indien et le reste du monde.",
+      "paragraph2": "L’AIOCCI favorise la mise en relation stratégique entre entreprises, investisseurs, institutions et décideurs économiques, en créant des espaces de dialogue, d’affaires et de collaboration à forte valeur économique.",
+      "paragraph3": "À travers ses actions, l’AIOCCI accompagne la montée en puissance des écosystèmes économiques africains et régionaux, soutient l’attractivité des marchés et contribue à une intégration économique ouverte, responsable et tournée vers l’avenir."
     },
 
     "actions": {
@@ -60,7 +60,7 @@
     "countries": "Pays partenaires",
     "activeMembers": "Membres actifs",
     "founded": "Fondée en",
-    "title": "Notre Histoire"
+    "title": "Cadre juridique, vision et mission"
   },
   "services": {
     "section": {
