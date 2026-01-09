@@ -38,7 +38,7 @@
   "about": {
     "foundingStory": {
       "year": "2011",
-      "title": "À propos de l’AIOCCI",
+      "title": "Cadre juridique",
       "description": "L’AIOCCI est une Chambre de Commerce et d’Industrie orientée vers le monde des affaires, réunissant des leaders du secteur privé, des institutions, des entrepreneurs et des investisseurs engagés dans le développement de liens économiques solides et durables entre l’Afrique et la région de l’Océan Indien.\n\nFondée comme une plateforme indépendante et inclusive, l’AIOCCI agit comme un pont entre les marchés, les cultures et les opportunités économiques.",
       "imageAlt": "Groupe diversifié de professionnels africains et de l’Océan Indien en tenue formelle lors d’une réunion d’affaires dans un bureau moderne avec vue panoramique"
     },
@@ -557,9 +557,9 @@
   "editorialPrestige": {
     "eyebrow": "AIOCCI • Île Maurice",
     "tagline": {
-      "build": "Bâtir.",
-      "inspire": "Inspirer.",
-      "transform": "Transformer."
+      "build": "Global Economic Dialogue - Mauritius.",
+      "inspire": "",
+      "transform": ""
     },
     "lead": "À l'Île Maurice, AIOCCI – African Indian Ocean Chamber of Commerce & Industry a eu l'honneur de porter une vision économique partagée devant des ministres, ambassadeurs, consuls, leaders économiques et représentants de grandes institutions internationales.",
     "sectors": [
@@ -692,7 +692,7 @@
     }
   },
   "AboutAIOCCI": {
-    "title": "À propos de l'AIOCCI",
+    "title": "Notre vision et notre mission stratégique",
 
     "paragraph1": {
       "highlight": "L'AIOCCI",

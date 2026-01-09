@@ -38,7 +38,7 @@
   "about": {
     "foundingStory": {
       "year": "2011",
-      "title": "About AIOCCI",
+      "title": "Legal Framework",
       "description": "AIOCCI is a business-oriented Chamber of Commerce and Industry bringing together private sector leaders, institutions, entrepreneurs, and investors committed to developing strong and sustainable economic links between Africa and the Indian Ocean region.\n\nFounded as an independent and inclusive platform, AIOCCI acts as a bridge between markets, cultures, and economic opportunities.",
       "imageAlt": "A diverse group of African and Indian Ocean professionals in formal business attire during a business meeting in a modern office with panoramic views"
     },
@@ -506,9 +506,9 @@
   "editorialPrestige": {
     "eyebrow": "AIOCCI • Mauritius",
     "tagline": {
-      "build": "Build.",
-      "inspire": "Inspire.",
-      "transform": "Transform."
+      "build": "Global Economic Dialogue - Mauritius.",
+      "inspire": "",
+      "transform": ""
     },
     "lead": "In Mauritius, AIOCCI – the African Indian Ocean Chamber of Commerce & Industry had the honor of presenting a shared economic vision before ministers, ambassadors, consuls, business leaders, and representatives of major international institutions.",
     "sectors": ["Technology", "Digital", "Cinema", "Artificial Intelligence"],
@@ -636,7 +636,7 @@
     }
   },
   "AboutAIOCCI": {
-    "title": "About AIOCCI",
+    "title": "Our Vision and Strategic Mission",
 
     "paragraph1": {
       "highlight": "AIOCCI",
