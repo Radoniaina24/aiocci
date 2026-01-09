@@ -652,5 +652,51 @@
       "text": "Through its inclusive approach, strong regional roots, and international openness, AIOCCI helps structure high-impact initiatives and promote",
       "highlight": "sustainable and shared economic development"
     }
+  },
+  "legalFramework": {
+    "subtitle": "Governance & Compliance",
+    "title": {
+      "part1": "Legal",
+      "part2": "Framework"
+    },
+    "description": "AIOCCI is governed by Ordinance No. 60-133 of 03 October 1960 relating to associations in the Republic of Madagascar and operates in full compliance with all applicable national and international regulations.",
+
+    "legalStatus": {
+      "label": "Legal Status",
+      "value": "Non-profit Association"
+    },
+
+    "headquarters": {
+      "label": "Registered Headquarters",
+      "value": "Antananarivo, Republic of Madagascar"
+    },
+
+    "officialRepresentation": "Official Representation",
+
+    "addresses": [
+      {
+        "country": "Madagascar",
+        "flag": "🇲🇬",
+        "lines": [
+          "Lot II A 105 E Nanisa Iadiambola",
+          "Gate Africa Group Building",
+          "Antananarivo, Madagascar"
+        ]
+      },
+      {
+        "country": "Mauritius",
+        "flag": "🇲🇺",
+        "lines": [
+          "Villa No. 1, Chemin Desvaux",
+          "Petit Verger, Saint Pierre",
+          "Mauritius"
+        ]
+      }
+    ],
+
+    "expansion": {
+      "title": "Global Expansion",
+      "note": "AIOCCI is currently expanding its institutional presence and will establish additional representations in other countries in the near future."
+    }
   }
 }

@@ -169,7 +169,7 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
               </div>
 
               {/* Stats ou points clés - Thème Marron */}
-              {/* <div className="grid grid-cols-2 gap-6 mb-8">
+              <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="group">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center group-hover:bg-amber-200 transition-colors">
@@ -190,7 +190,7 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                     </span>
                   </div>
                 </div>
-              </div> */}
+              </div>
 
               {/* CTA - Thème Marron (décommenté et stylisé) */}
               {/* <button

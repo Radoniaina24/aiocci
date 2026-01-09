@@ -4,6 +4,7 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import FoundingStory from "./FoundingStory";
 import VisionMission from "./VisionMission";
+import LegalFramework from "./LegalFramework";
 
 export default function About() {
   const t = useTranslations("about");
@@ -17,25 +18,10 @@ export default function About() {
     alt: t("foundingStory.imageAlt"),
   };
 
-  const visionMission = [
-    {
-      type: "vision" as const,
-      title: t("visionMission.vision.title"),
-      description: t("visionMission.vision.description"),
-      icon: "EyeIcon",
-    },
-    {
-      type: "mission" as const,
-      title: t("visionMission.mission.title"),
-      description: t("visionMission.mission.description"),
-      icon: "RocketLaunchIcon",
-    },
-  ];
-
   return (
     <>
+      <LegalFramework />
       <FoundingStory story={foundingStory} />
-      {/* <VisionMission items={visionMission} /> */}
     </>
   );
 }

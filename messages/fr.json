@@ -708,5 +708,51 @@
       "text": "Par son approche inclusive, son ancrage régional et son ouverture internationale, l'AIOCCI contribue à structurer des initiatives à fort impact et à soutenir un",
       "highlight": "développement économique durable et partagé"
     }
+  },
+  "legalFramework": {
+    "subtitle": "Gouvernance & Conformité",
+    "title": {
+      "part1": "Cadre",
+      "part2": "Juridique"
+    },
+    "description": "AIOCCI est régie par l’Ordonnance n° 60-133 du 03 octobre 1960 relative aux associations en République de Madagascar et exerce ses activités dans le strict respect des réglementations nationales et internationales en vigueur.",
+
+    "legalStatus": {
+      "label": "Statut juridique",
+      "value": "Association à but non lucratif"
+    },
+
+    "headquarters": {
+      "label": "Siège social",
+      "value": "Antananarivo, République de Madagascar"
+    },
+
+    "officialRepresentation": "Représentation officielle",
+
+    "addresses": [
+      {
+        "country": "Madagascar",
+        "flag": "🇲🇬",
+        "lines": [
+          "Lot II A 105 E Nanisa Iadiambola",
+          "Immeuble Gate Africa Group",
+          "Antananarivo, Madagascar"
+        ]
+      },
+      {
+        "country": "Maurice",
+        "flag": "🇲🇺",
+        "lines": [
+          "Villa n°1, Chemin Desvaux",
+          "Petit Verger, Saint Pierre",
+          "Île Maurice"
+        ]
+      }
+    ],
+
+    "expansion": {
+      "title": "Expansion internationale",
+      "note": "AIOCCI renforce actuellement sa présence institutionnelle et prévoit l’ouverture de nouvelles représentations dans d’autres pays dans un avenir proche."
+    }
   }
 }
