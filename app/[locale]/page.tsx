@@ -17,6 +17,7 @@ import CardCarousel from "@/components/CardCarousel/CardCarousel";
 import Banner from "@/components/Banner";
 import UpcomingEvents from "@/components/Event/UpcomingEvents";
 import AboutAIOCCI from "@/components/About/AboutAIOCCI";
+import LegalFramework from "@/components/About/LegalFramework";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Services />
         <AboutAIOCCI />
         {/* <CardCarousel /> */}
+        <LegalFramework />
         <UpcomingEvents />
 
         <Events />

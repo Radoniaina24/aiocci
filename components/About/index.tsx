@@ -20,7 +20,6 @@ export default function About() {
 
   return (
     <>
-      <LegalFramework />
       <FoundingStory story={foundingStory} />
     </>
   );

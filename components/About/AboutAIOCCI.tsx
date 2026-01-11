@@ -28,7 +28,7 @@ const AboutAIOCCI: React.FC = () => {
   const t = useTranslations("AboutAIOCCI");
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 py-20 px-4 relative">
+    <section className=" bg-gradient-to-b from-amber-50 via-orange-50 to-amber-100 py-20 px-4 relative">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-amber-200/30 rounded-full blur-3xl" />
