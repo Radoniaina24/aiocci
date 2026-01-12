@@ -14,7 +14,7 @@ const PresidentMessages = () => {
         title={t("title")}
         organization={t("organization")}
         organizationAcronym={t("organizationAcronym")}
-        imageSrc="https://res.cloudinary.com/devhkzelq/image/upload/v1767632740/pr%C3%A9sident_vwrrms.jpg"
+        imageSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1768193504/pdg_pggdxb.jpg"
         imageAlt={t("imageAlt")}
         greeting={t.raw("greeting")}
         paragraphs={t.raw("paragraphs")}
