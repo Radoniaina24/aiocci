@@ -635,24 +635,7 @@
       }
     }
   },
-  "AboutAIOCCI": {
-    "title": "Our Vision and Strategic Mission",
 
-    "paragraph1": {
-      "highlight": "AIOCCI",
-      "text": "is an independent economic organization focused on fostering business relations, bringing together private sector stakeholders, institutions, entrepreneurs, and investors committed to building strong economic partnerships between Africa and the Indian Ocean region."
-    },
-
-    "paragraph2": {
-      "highlight": "A reference platform",
-      "text": "supporting economic projects, facilitating market access, connecting key stakeholders, and strengthening public-private cooperation."
-    },
-
-    "paragraph3": {
-      "text": "Through its inclusive approach, strong regional roots, and international openness, AIOCCI helps structure high-impact initiatives and promote",
-      "highlight": "sustainable and shared economic development"
-    }
-  },
   "legalFramework": {
     "subtitle": "Governance & Compliance",
     "title": {
@@ -742,5 +725,85 @@
       "Promoting innovation, digital transformation, and emerging sectors",
       "Contributing to sustainable, inclusive, and future-oriented economic development"
     ]
+  },
+  "aboutAIOCCI": {
+    "badge": "Strategic Vision",
+    "title": "Why Africa and the Indian Ocean Matter",
+
+    "navigation": {
+      "intro": "Introduction",
+      "africa": "Africa",
+      "indianOcean": "Indian Ocean",
+      "synergy": "Synergy",
+      "aiocci": "AIOCCI"
+    },
+
+    "paragraph1": {
+      "highlight": "A strategic global growth corridor",
+      "text": "Africa and the Indian Ocean region stand at the heart of today's global economic transformation. Together, they represent a vast and dynamic economic space encompassing 54 African countries and more than 20 countries across the Indian Ocean region, forming one of the most strategic growth corridors in the world.",
+      "subtext": "This space combines demographic strength, abundant natural resources, strategic geography, and rapidly expanding markets."
+    },
+
+    "paragraph2": {
+      "highlight": "Africa: a continent of opportunity",
+      "text": "Africa is a continent of opportunity, innovation, and resilience. With a young and growing population, accelerating urbanization, increasing regional integration, and significant untapped potential across key sectors, Africa is steadily emerging as a major player in global trade, investment, and innovation."
+    },
+
+    "paragraph3": {
+      "highlight": "The Indian Ocean region",
+      "text": "The Indian Ocean region serves as a natural bridge between Africa, Asia, the Middle East, and global markets. It functions as a critical maritime, financial, and logistical hub, facilitating international trade flows, investment mobility, and economic connectivity across continents."
+    },
+
+    "paragraph4": {
+      "title": "A Natural Economic Synergy",
+      "text": "The convergence of Africa and the Indian Ocean creates a powerful and complementary economic synergy.",
+      "details": "Africa offers scale, resources, talent, production capacity, and fast-growing consumer markets, while the Indian Ocean region provides connectivity, financial expertise, regulatory platforms, and direct access to international capital and global value chains."
+    },
+
+    "paragraph5": {
+      "text": "Together, these regions form an integrated economic ecosystem capable of driving sustainable growth, industrial development, technological innovation, and cross-border cooperation at both regional and global levels."
+    },
+
+    "paragraph6": {
+      "title": "AIOCCI's Strategic Positioning",
+      "text": "AIOCCI places Africa and the Indian Ocean at the center of its action because their combined potential goes far beyond geography.",
+      "details": "It represents a strategic alliance of over 70 countries, united by shared economic interests, trade flows, and development ambitions."
+    },
+
+    "paragraph7": {
+      "text": "Through structured dialogue, facilitation of trade and investment, strengthening of regional value chains, and connection of local economies to global opportunities, AIOCCI contributes to a more balanced, inclusive, and forward-looking global economic architecture."
+    },
+
+    "synergy": {
+      "africaOffers": "Africa Offers",
+      "africaDescription": "Scale, resources, talent, production capacity, and fast-growing consumer markets",
+      "indianOceanProvides": "Indian Ocean Provides",
+      "indianOceanDescription": "Connectivity, financial expertise, regulatory platforms, and access to global value chains"
+    },
+
+    "tags": {
+      "maritimeHub": "Maritime Hub",
+      "financialCenter": "Financial Center",
+      "tradeGateway": "Trade Gateway"
+    },
+
+    "stats": {
+      "countries": "Countries",
+      "population": "Population",
+      "gdp": "GDP",
+      "africanCountries": "African Countries",
+      "indianOceanNations": "Indian Ocean Nations",
+      "partnerCountries": "Partner Countries",
+      "peopleRepresented": "People Represented"
+    },
+
+    "conclusion": {
+      "badge": "Conclusion",
+      "highlight": "Africa and the Indian Ocean are not only regions of the future.",
+      "text": "Together, they are strategic partners shaping the economy of today and tomorrow."
+    },
+
+    "signature": "Claudino Rojo",
+    "footer": "The 54 countries of Africa and the Indian Ocean region"
   }
 }

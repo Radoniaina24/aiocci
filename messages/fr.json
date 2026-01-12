@@ -691,24 +691,6 @@
       }
     }
   },
-  "AboutAIOCCI": {
-    "title": "Notre vision et notre mission stratégique",
-
-    "paragraph1": {
-      "highlight": "L'AIOCCI",
-      "text": "est une organisation économique indépendante orientée vers le développement des relations d'affaires, réunissant des acteurs du secteur privé, des institutions, des entrepreneurs et des investisseurs engagés dans la construction de partenariats économiques solides entre l'Afrique et la région de l'Océan Indien."
-    },
-
-    "paragraph2": {
-      "highlight": "Plateforme de référence",
-      "text": "pour l'accompagnement des projets économiques, la facilitation de l'accès aux marchés, la mise en réseau des acteurs clés et le renforcement de la coopération public-privé."
-    },
-
-    "paragraph3": {
-      "text": "Par son approche inclusive, son ancrage régional et son ouverture internationale, l'AIOCCI contribue à structurer des initiatives à fort impact et à soutenir un",
-      "highlight": "développement économique durable et partagé"
-    }
-  },
   "legalFramework": {
     "subtitle": "Gouvernance & Conformité",
     "title": {
@@ -798,5 +780,85 @@
       "Promouvoir l'innovation, la transformation numérique et les secteurs émergents",
       "Contribuer à un développement économique durable, inclusif et tourné vers l'avenir"
     ]
+  },
+  "aboutAIOCCI": {
+    "badge": "Vision Stratégique",
+    "title": "Pourquoi l'Afrique et l'Océan Indien comptent",
+
+    "navigation": {
+      "intro": "Introduction",
+      "africa": "Afrique",
+      "indianOcean": "Océan Indien",
+      "synergy": "Synergie",
+      "aiocci": "AIOCCI"
+    },
+
+    "paragraph1": {
+      "highlight": "Un corridor de croissance mondiale stratégique",
+      "text": "L'Afrique et la région de l'Océan Indien sont au cœur de la transformation économique mondiale actuelle. Ensemble, elles représentent un espace économique vaste et dynamique englobant 54 pays africains et plus de 20 pays de la région de l'Océan Indien, formant l'un des corridors de croissance les plus stratégiques au monde.",
+      "subtext": "Cet espace combine force démographique, ressources naturelles abondantes, géographie stratégique et marchés en expansion rapide."
+    },
+
+    "paragraph2": {
+      "highlight": "L'Afrique : un continent d'opportunités",
+      "text": "L'Afrique est un continent d'opportunités, d'innovation et de résilience. Avec une population jeune et croissante, une urbanisation accélérée, une intégration régionale croissante et un potentiel inexploité significatif dans des secteurs clés, l'Afrique émerge progressivement comme un acteur majeur du commerce mondial, de l'investissement et de l'innovation."
+    },
+
+    "paragraph3": {
+      "highlight": "La région de l'Océan Indien",
+      "text": "La région de l'Océan Indien sert de pont naturel entre l'Afrique, l'Asie, le Moyen-Orient et les marchés mondiaux. Elle fonctionne comme un hub maritime, financier et logistique critique, facilitant les flux commerciaux internationaux, la mobilité des investissements et la connectivité économique entre les continents."
+    },
+
+    "paragraph4": {
+      "title": "Une synergie économique naturelle",
+      "text": "La convergence de l'Afrique et de l'Océan Indien crée une synergie économique puissante et complémentaire.",
+      "details": "L'Afrique offre échelle, ressources, talents, capacité de production et marchés de consommation en forte croissance, tandis que la région de l'Océan Indien apporte connectivité, expertise financière, plateformes réglementaires et accès direct aux capitaux internationaux et aux chaînes de valeur mondiales."
+    },
+
+    "paragraph5": {
+      "text": "Ensemble, ces régions forment un écosystème économique intégré capable de stimuler une croissance durable, un développement industriel, une innovation technologique et une coopération transfrontalière aux niveaux régional et mondial."
+    },
+
+    "paragraph6": {
+      "title": "Positionnement stratégique de l'AIOCCI",
+      "text": "L'AIOCCI place l'Afrique et l'Océan Indien au centre de son action car leur potentiel combiné va bien au-delà de la géographie.",
+      "details": "Elle représente une alliance stratégique de plus de 70 pays, unis par des intérêts économiques communs, des flux commerciaux et des ambitions de développement partagées."
+    },
+
+    "paragraph7": {
+      "text": "À travers un dialogue structuré, la facilitation du commerce et de l'investissement, le renforcement des chaînes de valeur régionales et la connexion des économies locales aux opportunités mondiales, l'AIOCCI contribue à une architecture économique mondiale plus équilibrée, inclusive et tournée vers l'avenir."
+    },
+
+    "synergy": {
+      "africaOffers": "L'Afrique offre",
+      "africaDescription": "Échelle, ressources, talents, capacité de production et marchés de consommation en croissance",
+      "indianOceanProvides": "L'Océan Indien apporte",
+      "indianOceanDescription": "Connectivité, expertise financière, plateformes réglementaires et accès aux chaînes de valeur mondiales"
+    },
+
+    "tags": {
+      "maritimeHub": "Hub Maritime",
+      "financialCenter": "Centre Financier",
+      "tradeGateway": "Porte du Commerce"
+    },
+
+    "stats": {
+      "countries": "Pays",
+      "population": "Population",
+      "gdp": "PIB",
+      "africanCountries": "Pays Africains",
+      "indianOceanNations": "Nations de l'Océan Indien",
+      "partnerCountries": "Pays Partenaires",
+      "peopleRepresented": "Personnes Représentées"
+    },
+
+    "conclusion": {
+      "badge": "Conclusion",
+      "highlight": "L'Afrique et l'Océan Indien ne sont pas seulement des régions d'avenir.",
+      "text": "Ensemble, ils sont des partenaires stratégiques façonnant l'économie d'aujourd'hui et de demain."
+    },
+
+    "signature": "Claudino Rojo",
+    "footer": "Les 54 pays d'Afrique et de la région de l'Océan Indien"
   }
 }
