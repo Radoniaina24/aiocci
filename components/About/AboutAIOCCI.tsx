@@ -415,13 +415,6 @@ const AboutAIOCCI: React.FC = () => {
                 <div className="relative z-10">
                   <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                     <div>
-                      <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full mb-4">
-                        <Sparkles className="w-3 h-3 text-amber-300" />
-                        <span className="text-xs text-amber-200">
-                          {t("conclusion.badge")}
-                        </span>
-                      </div>
-
                       <blockquote className="text-base md:text-lg font-semibold mb-3 leading-relaxed">
                         "{t("conclusion.highlight")}"
                       </blockquote>
