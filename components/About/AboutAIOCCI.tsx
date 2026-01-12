@@ -15,6 +15,7 @@ import {
   Sparkles,
   CircleDot,
 } from "lucide-react";
+import Image from "next/image";
 
 interface NavigationSection {
   id: string;
@@ -412,24 +413,41 @@ const AboutAIOCCI: React.FC = () => {
                 <Quote className="absolute top-3 left-3 w-10 h-10 text-white/10" />
 
                 <div className="relative z-10">
-                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full mb-4">
-                    <Sparkles className="w-3 h-3 text-amber-300" />
-                    <span className="text-xs text-amber-200">
-                      {t("conclusion.badge")}
-                    </span>
-                  </div>
-
-                  <blockquote className="text-base md:text-lg font-semibold mb-3 leading-relaxed">
-                    "{t("conclusion.highlight")}"
-                  </blockquote>
-
-                  <p className="text-amber-200 text-sm mb-6">
-                    {t("conclusion.text")}
-                  </p>
-
-                  <div className="flex items-center gap-4 pt-4 border-t border-white/10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                     <div>
-                      <p className="text-xs text-amber-300/60">{t("footer")}</p>
+                      <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full mb-4">
+                        <Sparkles className="w-3 h-3 text-amber-300" />
+                        <span className="text-xs text-amber-200">
+                          {t("conclusion.badge")}
+                        </span>
+                      </div>
+
+                      <blockquote className="text-base md:text-lg font-semibold mb-3 leading-relaxed">
+                        "{t("conclusion.highlight")}"
+                      </blockquote>
+
+                      <p className="text-amber-200 text-sm mb-6">
+                        {t("conclusion.text")}
+                      </p>
+
+                      <div className="flex items-center gap-4 pt-4 border-t border-white/10">
+                        <div>
+                          <p className="text-xs text-amber-300/60">
+                            {t("footer")}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <Image
+                        src={
+                          "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768221284/ocean_itnjs2.jpg"
+                        }
+                        alt=""
+                        width={450}
+                        height={450}
+                        className="rounded-xl"
+                      />
                     </div>
                   </div>
                 </div>
