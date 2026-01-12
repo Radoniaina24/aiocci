@@ -18,6 +18,7 @@ import Banner from "@/components/Banner";
 import UpcomingEvents from "@/components/Event/UpcomingEvents";
 import AboutAIOCCI from "@/components/About/AboutAIOCCI";
 import LegalFramework from "@/components/About/LegalFramework";
+import AIOCCIValues from "@/components/About/AIOCCIValues";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Hero />
         <PresidentMessages />
         <About />
+        {/* <AIOCCIValues /> */}
         <Services />
         <AboutAIOCCI />
         {/* <CardCarousel /> */}

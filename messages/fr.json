@@ -38,7 +38,7 @@
   "about": {
     "foundingStory": {
       "year": "2011",
-      "title": "Cadre juridique",
+      "title": "Nos valeurs et objectifs stratégiques",
       "description": "L’AIOCCI est une Chambre de Commerce et d’Industrie orientée vers le monde des affaires, réunissant des leaders du secteur privé, des institutions, des entrepreneurs et des investisseurs engagés dans le développement de liens économiques solides et durables entre l’Afrique et la région de l’Océan Indien.\n\nFondée comme une plateforme indépendante et inclusive, l’AIOCCI agit comme un pont entre les marchés, les cultures et les opportunités économiques.",
       "imageAlt": "Groupe diversifié de professionnels africains et de l’Océan Indien en tenue formelle lors d’une réunion d’affaires dans un bureau moderne avec vue panoramique"
     },
@@ -754,5 +754,49 @@
       "title": "Expansion internationale",
       "note": "AIOCCI renforce actuellement sa présence institutionnelle et prévoit l’ouverture de nouvelles représentations dans d’autres pays dans un avenir proche."
     }
+  },
+  "AIOCCIValues": {
+    "tabs": {
+      "values": "Valeurs fondamentales",
+      "objectives": "Objectifs stratégiques"
+    },
+    "valuesIntro": "L'AIOCCI est guidée par des principes forts qui orientent ses actions et ses partenariats.",
+    "objectivesIntro": "L'AIOCCI a pour objectifs de :",
+
+    "values": [
+      {
+        "title": "Coopération économique",
+        "description": "Encourager la collaboration entre les acteurs publics et privés au-delà des frontières"
+      },
+      {
+        "title": "Intégrité et transparence",
+        "description": "Promouvoir une gouvernance éthique, la responsabilité et la confiance"
+      },
+      {
+        "title": "Développement durable",
+        "description": "Soutenir une croissance responsable, l'économie verte et un impact à long terme"
+      },
+      {
+        "title": "Innovation et technologie",
+        "description": "Accompagner la transformation numérique, l'intelligence artificielle et les industries créatives"
+      },
+      {
+        "title": "Inclusion",
+        "description": "Impliquer les entreprises de toutes tailles, les institutions et la diversité des acteurs économiques"
+      },
+      {
+        "title": "Croissance centrée sur l'humain",
+        "description": "Valoriser le développement des compétences, l'éducation et le progrès social"
+      }
+    ],
+
+    "objectives": [
+      "Faciliter les flux commerciaux et d'investissement entre l'Afrique, l'Océan Indien et les marchés internationaux",
+      "Accompagner les entreprises et institutions dans leur développement régional et international",
+      "Renforcer la coopération du secteur privé et l'intégration économique régionale",
+      "Organiser des forums économiques de haut niveau, sommets et expositions internationales",
+      "Promouvoir l'innovation, la transformation numérique et les secteurs émergents",
+      "Contribuer à un développement économique durable, inclusif et tourné vers l'avenir"
+    ]
   }
 }

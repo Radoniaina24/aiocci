@@ -38,7 +38,7 @@
   "about": {
     "foundingStory": {
       "year": "2011",
-      "title": "Legal Framework",
+      "title": "Our Values and Strategic Objectives",
       "description": "AIOCCI is a business-oriented Chamber of Commerce and Industry bringing together private sector leaders, institutions, entrepreneurs, and investors committed to developing strong and sustainable economic links between Africa and the Indian Ocean region.\n\nFounded as an independent and inclusive platform, AIOCCI acts as a bridge between markets, cultures, and economic opportunities.",
       "imageAlt": "A diverse group of African and Indian Ocean professionals in formal business attire during a business meeting in a modern office with panoramic views"
     },
@@ -698,5 +698,49 @@
       "title": "Global Expansion",
       "note": "AIOCCI is currently expanding its institutional presence and will establish additional representations in other countries in the near future."
     }
+  },
+  "AIOCCIValues": {
+    "tabs": {
+      "values": "Core Values",
+      "objectives": "Strategic Objectives"
+    },
+    "valuesIntro": "AIOCCI is guided by strong principles that shape its actions and partnerships.",
+    "objectivesIntro": "AIOCCI aims to:",
+
+    "values": [
+      {
+        "title": "Economic Cooperation",
+        "description": "Encouraging collaboration between public and private stakeholders beyond borders"
+      },
+      {
+        "title": "Integrity and Transparency",
+        "description": "Promoting ethical governance, accountability, and trust"
+      },
+      {
+        "title": "Sustainable Development",
+        "description": "Supporting responsible growth, green economy, and long-term impact"
+      },
+      {
+        "title": "Innovation and Technology",
+        "description": "Supporting digital transformation, artificial intelligence, and creative industries"
+      },
+      {
+        "title": "Inclusion",
+        "description": "Engaging businesses of all sizes, institutions, and diverse economic actors"
+      },
+      {
+        "title": "Human-Centered Growth",
+        "description": "Valuing skills development, education, and social progress"
+      }
+    ],
+
+    "objectives": [
+      "Facilitating trade and investment flows between Africa, the Indian Ocean region, and global markets",
+      "Supporting companies and institutions in their regional and international development",
+      "Strengthening private sector cooperation and regional economic integration",
+      "Organizing high-level economic forums, summits, and international exhibitions",
+      "Promoting innovation, digital transformation, and emerging sectors",
+      "Contributing to sustainable, inclusive, and future-oriented economic development"
+    ]
   }
 }

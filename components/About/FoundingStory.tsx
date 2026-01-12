@@ -5,6 +5,7 @@ import AppImage from "@/components/ui/AppImage";
 import { Quote, Calendar, ArrowRight, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import VisionMission from "./VisionMission";
+import AIOCCIValues from "./AIOCCIValues";
 
 interface FoundingStoryProps {
   story: {
@@ -139,70 +140,8 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
                 ))}
               </h2>
 
-              {/* Citation en vedette - Thème Marron */}
-              <div className="relative mb-8 pl-6 border-l-4 border-amber-500/50">
-                <Quote className="absolute -top-2 -left-3 w-8 h-8 text-amber-400/40" />
-                <p className="font-sourceSans text-xl text-amber-900 italic leading-relaxed">
-                  {paragraphs[0]}
-                </p>
-              </div>
-
               {/* Autres paragraphes - Thème Marron */}
-              <div className="space-y-4 mb-8">
-                {paragraphs.slice(1).map((paragraph, index) => (
-                  <p
-                    key={index}
-                    className="font-sourceSans text-lg text-amber-800/80 leading-relaxed"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-
-              {/* Ligne de séparation animée - Thème Marron */}
-              <div className="relative h-px w-full bg-amber-200 mb-8 overflow-hidden">
-                <div
-                  className={`absolute inset-y-0 left-0 bg-gradient-to-r from-amber-600 to-orange-500 transition-all duration-1000 delay-700 ${
-                    isVisible ? "w-full" : "w-0"
-                  }`}
-                />
-              </div>
-
-              {/* Stats ou points clés - Thème Marron */}
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="group">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center group-hover:bg-amber-200 transition-colors">
-                      <span className="text-amber-700 font-bold">54+</span>
-                    </div>
-                    <span className="text-amber-700 text-sm">
-                      {t("countries")}
-                    </span>
-                  </div>
-                </div>
-                <div className="group">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 rounded-xl bg-orange-100 border border-orange-200 flex items-center justify-center group-hover:bg-orange-200 transition-colors">
-                      <span className="text-orange-700 font-bold">500+</span>
-                    </div>
-                    <span className="text-amber-700 text-sm">
-                      {t("activeMembers")}
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA - Thème Marron (décommenté et stylisé) */}
-              {/* <button
-                onClick={() => {
-                  const element = document.getElementById("services");
-                  if (element) element.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="group inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-xl font-semibold hover:from-amber-800 hover:to-amber-900 transition-all duration-300 shadow-lg shadow-amber-700/25"
-              >
-                Découvrir nos services
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </button> */}
+              <AIOCCIValues />
             </div>
 
             <VisionMission items={visionMission} />
