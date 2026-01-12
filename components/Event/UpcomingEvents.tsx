@@ -10,6 +10,23 @@ import {
 } from "@/lib/eventsData";
 
 // ============================================
+// TYPES & INTERFACES
+// ============================================
+
+interface BannerConfig {
+  externalUrl: string;
+  isFullWidth?: boolean;
+}
+
+// Configuration pour les événements avec bannière
+const bannerEventConfig: Record<number, BannerConfig> = {
+  2: {
+    externalUrl: "https://votre-site-externe.com/evenement-2",
+    isFullWidth: true,
+  },
+};
+
+// ============================================
 // HELPER FUNCTIONS FOR COLORS
 // ============================================
 
@@ -101,6 +118,19 @@ const getButtonOutlineClasses = (color: AccentColor): string => {
       return "border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white";
     case "amber":
       return "border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white";
+  }
+};
+
+const getButtonSolidClasses = (color: AccentColor): string => {
+  switch (color) {
+    case "blue":
+      return "bg-blue-600 hover:bg-blue-700 text-white";
+    case "emerald":
+      return "bg-emerald-600 hover:bg-emerald-700 text-white";
+    case "purple":
+      return "bg-purple-600 hover:bg-purple-700 text-white";
+    case "amber":
+      return "bg-amber-500 hover:bg-amber-600 text-white";
   }
 };
 
@@ -202,6 +232,38 @@ const UsersIcon: React.FC = () => (
   </svg>
 );
 
+const ExternalLinkIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg
+    className={className || "w-5 h-5"}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+    />
+  </svg>
+);
+
+const ArrowRightIcon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg
+    className={className || "w-5 h-5"}
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M17 8l4 4m0 0l-4 4m4-4H3"
+    />
+  </svg>
+);
+
 const ImagePlaceholderIcon: React.FC = () => (
   <svg
     className="w-16 h-16 text-gray-400"
@@ -255,7 +317,6 @@ const EventImage: React.FC<EventImageProps> = ({
         ${shadowClasses}
       `}
     >
-      {/* Container avec hauteur minimale et fond coloré */}
       <div className={`relative min-h-[300px] md:min-h-[400px] ${bgClasses}`}>
         {!imageError ? (
           <img
@@ -279,10 +340,8 @@ const EventImage: React.FC<EventImageProps> = ({
           </div>
         )}
 
-        {/* Gradient overlay - Plus subtil pour ne pas masquer l'image */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
-        {/* Badge */}
         {badge && (
           <div className="absolute top-4 left-4 z-10">
             <span
@@ -297,7 +356,6 @@ const EventImage: React.FC<EventImageProps> = ({
           </div>
         )}
 
-        {/* Title overlay */}
         <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
           <h3 className="text-xl md:text-2xl font-bold text-white leading-tight drop-shadow-lg">
             {title}
@@ -305,7 +363,6 @@ const EventImage: React.FC<EventImageProps> = ({
         </div>
       </div>
 
-      {/* Border decorative */}
       <div
         className={`
           absolute inset-0 rounded-3xl 
@@ -337,7 +394,6 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
   const textClasses = getTextColor(eventData.accentColor);
   const textLightClasses = getTextLightColor(eventData.accentColor);
 
-  // Helper function to get array of translations
   const getTranslatedArray = (key: string, count: number): string[] => {
     return Array.from({ length: count }, (_, i) => t(`${key}.${i}`));
   };
@@ -354,10 +410,8 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
 
   return (
     <div className="space-y-4 animate-fadeIn">
-      {/* Details */}
       {details && <p className="text-gray-600 leading-relaxed">{details}</p>}
 
-      {/* Participants */}
       {participants && (
         <div className="bg-gray-50 rounded-xl p-4">
           <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
@@ -375,7 +429,6 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
         </div>
       )}
 
-      {/* Objectives */}
       <div className={`rounded-xl p-4 ${bgClasses}`}>
         <h5 className={`font-semibold mb-3 ${textClasses}`}>
           {t("objectivesLabel")}
@@ -397,7 +450,147 @@ const ExpandedContent: React.FC<ExpandedContentProps> = ({
 };
 
 // ============================================
-// EVENT CARD COMPONENT
+// BANNER EVENT CARD COMPONENT (Pour l'événement 2)
+// ============================================
+
+// ============================================
+// BANNER EVENT CARD COMPONENT (Pour l'événement 2)
+// ============================================
+
+interface BannerEventCardProps {
+  eventData: EventData;
+  externalUrl: string;
+}
+
+const BannerEventCard: React.FC<BannerEventCardProps> = ({
+  eventData,
+  externalUrl,
+}) => {
+  const [imageError, setImageError] = useState(false);
+  const t = useTranslations(
+    `upcomingEvents.events.${eventData.translationKey}`
+  );
+  const tButtons = useTranslations("upcomingEvents.buttons");
+  const tLabels = useTranslations("upcomingEvents.labels");
+
+  const gradientClasses = getGradientClasses(eventData.accentColor);
+  const buttonSolidClasses = getButtonSolidClasses(eventData.accentColor);
+  const shadowClasses = getShadowColor(eventData.accentColor);
+  const bgClasses = getBackgroundColor(eventData.accentColor);
+  const textClasses = getTextColor(eventData.accentColor);
+  const borderClasses = getBorderColor(eventData.accentColor);
+
+  const title = t("title");
+  const date = t("date");
+  const location = t("location");
+  const badgeText = t("badge");
+  const badge = badgeText && badgeText.length > 0 ? badgeText : null;
+  const description = t("description");
+  const imageAlt = t("imageAlt");
+
+  const handleExternalRedirect = () => {
+    window.open(eventData?.externalUrl, "_blank", "noopener,noreferrer");
+  };
+
+  return (
+    <div
+      className={`
+        relative w-full overflow-hidden rounded-3xl
+        shadow-2xl ${shadowClasses}
+        transform hover:shadow-3xl
+        transition-all duration-500
+        bg-white border ${borderClasses}
+        group
+      `}
+    >
+      {/* Badge en haut à gauche */}
+      {badge && (
+        <div className="absolute top-4 left-4 z-20">
+          <span
+            className={`
+              px-4 py-2 rounded-full text-sm font-bold
+              bg-white/95 backdrop-blur-sm shadow-lg
+              ${textClasses}
+            `}
+          >
+            ⭐ {badge}
+          </span>
+        </div>
+      )}
+
+      {/* Image Section - Full Display */}
+      <div className={`relative w-full ${bgClasses}`}>
+        {!imageError ? (
+          <img
+            src={eventData.image}
+            alt={imageAlt}
+            onError={() => setImageError(true)}
+            className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+            loading="lazy"
+          />
+        ) : (
+          <div
+            className={`
+              w-full min-h-[300px] md:min-h-[400px]
+              flex flex-col items-center justify-center
+              bg-gradient-to-br ${gradientClasses}
+            `}
+          >
+            <ImagePlaceholderIcon />
+            <span className="mt-4 text-white/80 text-sm font-medium">
+              {tLabels("imagePlaceholder")}
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* Content Section - Bottom */}
+      <div className="relative z-10 p-6 md:p-8 lg:p-10 bg-white">
+        {/* Title */}
+        <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 leading-tight">
+          {title}
+        </h3>
+
+        {/* Date & Location */}
+        <div className="flex flex-wrap gap-3 mb-5">
+          <div className="flex items-center text-gray-600 bg-gray-100 px-4 py-2 rounded-full text-sm">
+            <CalendarIcon />
+            <span className="ml-2 font-medium">{date}</span>
+          </div>
+          <div className="flex items-center text-gray-600 bg-gray-100 px-4 py-2 rounded-full text-sm">
+            <LocationIcon />
+            <span className="ml-2 font-medium">{location}</span>
+          </div>
+        </div>
+
+        {/* Description */}
+        <p className="text-base  text-gray-600 leading-relaxed mb-8">
+          {description}
+        </p>
+
+        {/* CTA Button */}
+        <button
+          onClick={handleExternalRedirect}
+          className={`
+            group/btn inline-flex items-center
+            px-8 py-4 rounded-xl font-bold text-sm
+            ${buttonSolidClasses}
+            shadow-lg hover:shadow-xl
+            transform hover:-translate-y-1
+            transition-all duration-300
+          `}
+          aria-label={`${tButtons("learnMore")} - ${title}`}
+        >
+          {tButtons("learnMore")}
+          <ExternalLinkIcon className="w-5 h-5 ml-3 transition-transform group-hover/btn:translate-x-1" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+// ============================================
+// STANDARD EVENT CARD COMPONENT
 // ============================================
 
 interface EventCardProps {
@@ -422,7 +615,6 @@ const EventCard: React.FC<EventCardProps> = ({ eventData, index }) => {
     setIsExpanded(!isExpanded);
   };
 
-  // Get translated content
   const title = t("title");
   const date = t("date");
   const location = t("location");
@@ -612,12 +804,41 @@ const HeaderSection: React.FC = () => {
 };
 
 // ============================================
+// EVENT RENDERER COMPONENT
+// ============================================
+
+interface EventRendererProps {
+  eventData: EventData;
+  index: number;
+}
+
+const EventRenderer: React.FC<EventRendererProps> = ({ eventData, index }) => {
+  const bannerConfig = bannerEventConfig[eventData.id];
+
+  // Si l'événement a une configuration de bannière, utiliser le composant BannerEventCard
+  if (bannerConfig) {
+    return (
+      <BannerEventCard
+        eventData={eventData}
+        externalUrl={bannerConfig.externalUrl}
+      />
+    );
+  }
+
+  // Sinon, utiliser le composant EventCard standard
+  return <EventCard eventData={eventData} index={index} />;
+};
+
+// ============================================
 // MAIN COMPONENT
 // ============================================
 
 const UpcomingEvents: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <div
+      id="events"
+      className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100"
+    >
       {/* CSS for animation */}
       <style>{`
         @keyframes fadeIn {
@@ -642,7 +863,11 @@ const UpcomingEvents: React.FC = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="space-y-24">
           {eventsData.map((eventData, index) => (
-            <EventCard key={eventData.id} eventData={eventData} index={index} />
+            <EventRenderer
+              key={eventData.id}
+              eventData={eventData}
+              index={index}
+            />
           ))}
         </div>
       </main>

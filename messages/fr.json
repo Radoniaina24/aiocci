@@ -601,7 +601,8 @@
     "labels": {
       "participants": "Participants",
       "imagePlaceholder": "Image de l'événement",
-      "logo": "Logo"
+      "logo": "Logo",
+      "externalLink": "Lien externe"
     },
     "events": {
       "event1": {

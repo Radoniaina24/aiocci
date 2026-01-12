@@ -11,6 +11,7 @@ export interface EventData {
   hasDetails: boolean;
   participantsCount?: number;
   objectivesCount: number;
+  externalUrl?: string;
 }
 
 // Event static data (non-translatable content)
@@ -32,11 +33,12 @@ export const eventsData: EventData[] = [
     accentColor: "emerald",
     logo: "/images/logos/africa-business-expo-mauritius.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_3_w4unoe.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768223810/post-paysage_bvk0rb.jpg",
     hasParticipants: true,
     hasDetails: false,
     participantsCount: 4,
     objectivesCount: 4,
+    externalUrl: "https://www.africabusinessexpo.aiocci.org",
   },
   {
     id: 3,

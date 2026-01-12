@@ -234,10 +234,7 @@ export default function Events() {
   ];
 
   return (
-    <section
-      id="events"
-      className="relative py-24 lg:py-32 bg-gray-950 text-white overflow-hidden"
-    >
+    <section className="relative py-24 lg:py-32 bg-gray-950 text-white overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-950 to-gray-950" />
