@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { motion, useInView } from "framer-motion";
 import ServiceCard from "./ServiceCard";
 import Icon from "@/components/ui/AppIcon";
+import Image from "next/image";
 
 // Types étendus pour plus de flexibilité
 type ColorVariant = "blue" | "green" | "red" | "purple" | "orange" | "brown";
@@ -209,24 +210,15 @@ export default function Services() {
               <div className="relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 {/* Left Content */}
                 <div>
-                  {/* Icon - Marron */}
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#8B4513] to-[#CD853F] rounded-2xl shadow-lg shadow-[#8B4513]/30 mb-6">
-                    <Icon
-                      name="CalendarIcon"
-                      size={28}
-                      className="text-white"
-                    />
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="font-playfair font-bold text-3xl lg:text-4xl text-white mb-4">
-                    {t("items.events.title")}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="font-sourceSans text-lg text-[#DEB887]/80 leading-relaxed mb-8">
-                    {t("items.events.description")}
-                  </p>
+                  <Image
+                    src={
+                      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768221284/031f9f5e-2ebb-4114-8bd2-747a808587fc_ssdq1i.jpg"
+                    }
+                    alt=""
+                    width={600}
+                    height={600}
+                    className="rounded-xl"
+                  />
                 </div>
 
                 {/* Right Content - Features */}

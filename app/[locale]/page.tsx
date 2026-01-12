@@ -33,7 +33,7 @@ export default function Home() {
         <Services />
         <AboutAIOCCI />
         {/* <CardCarousel /> */}
-        <LegalFramework />
+        {/* <LegalFramework /> */}
         <UpcomingEvents />
 
         <Events />
