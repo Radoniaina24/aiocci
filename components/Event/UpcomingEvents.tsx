@@ -24,6 +24,14 @@ const bannerEventConfig: Record<number, BannerConfig> = {
     externalUrl: "https://votre-site-externe.com/evenement-2",
     isFullWidth: true,
   },
+  1: {
+    externalUrl: "https://votre-site-externe.com/evenement-2",
+    isFullWidth: true,
+  },
+  3: {
+    externalUrl: "https://votre-site-externe.com/evenement-2",
+    isFullWidth: true,
+  },
 };
 
 // ============================================

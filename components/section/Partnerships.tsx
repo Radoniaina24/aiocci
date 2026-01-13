@@ -325,7 +325,7 @@ export default function Partnerships() {
         </div>
 
         {/* Stats */}
-        <PartnershipsStats />
+        {/* <PartnershipsStats /> */}
 
         {/* Main Cards */}
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">

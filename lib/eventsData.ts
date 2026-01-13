@@ -22,7 +22,7 @@ export const eventsData: EventData[] = [
     accentColor: "blue",
     logo: "/images/logos/education-expo-logo.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_1_l6a81k.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768292914/686fab41-3b53-499b-afe1-9f202220201b_otxncs.jpg",
     hasParticipants: false,
     hasDetails: true,
     objectivesCount: 3,
@@ -46,11 +46,12 @@ export const eventsData: EventData[] = [
     accentColor: "purple",
     logo: "/images/logos/ai-meets-africa.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_2_coz5or.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768292978/89213308-f888-4ec2-87ee-a76f0711db2b_mogbce.jpg",
     hasParticipants: true,
     hasDetails: false,
     participantsCount: 4,
     objectivesCount: 4,
+    externalUrl: "https://www.aimeetsafricasummit.aiocci.org",
   },
   {
     id: 4,
