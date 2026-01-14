@@ -38,7 +38,7 @@ export const eventsData: EventData[] = [
     hasDetails: false,
     participantsCount: 4,
     objectivesCount: 4,
-    externalUrl: "https://www.africabusinessexpo.aiocci.org",
+    externalUrl: "https://africabusinessexpo.aiocci.org",
   },
   {
     id: 3,
