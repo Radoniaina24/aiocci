@@ -803,9 +803,6 @@ const HeaderSection: React.FC = () => {
         <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
           {t("description")}
         </p>
-
-        {/* Stats */}
-        <StatsSection />
       </div>
     </header>
   );
