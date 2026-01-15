@@ -32,6 +32,12 @@ const FoundingStory: React.FC<FoundingStoryProps> = ({ story }) => {
       description: t("visionMission.mission.description"),
       icon: "RocketLaunchIcon",
     },
+    {
+      type: "cadreJuridique" as const,
+      title: t("visionMission.cadreJuridique.title"),
+      description: t("visionMission.cadreJuridique.description"),
+      icon: "RocketLaunchIcon",
+    },
   ];
   const [isVisible, setIsVisible] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);

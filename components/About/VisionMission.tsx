@@ -3,10 +3,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import Icon from "@/components/ui/AppIcon";
-import { Eye, Target, ChevronRight, Quote } from "lucide-react";
+import { Eye, Target, ChevronRight, Quote, Scale } from "lucide-react";
 
 interface VisionMissionItem {
-  type: "vision" | "mission";
+  type: "vision" | "mission" | "cadreJuridique";
   title: string;
   description: string;
   icon: string;
@@ -19,7 +19,9 @@ interface VisionMissionProps {
 const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
   const t = useTranslations("about");
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState<"vision" | "mission">("vision");
+  const [activeTab, setActiveTab] = useState<
+    "vision" | "mission" | "cadreJuridique"
+  >("vision");
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -42,6 +44,7 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
   const typeIcons = {
     vision: Eye,
     mission: Target,
+    cadreJuridique: Scale,
   };
 
   const typeColors = {
@@ -58,6 +61,13 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
       text: "text-accent",
       border: "border-accent",
       gradient: "from-accent to-accent/70",
+    },
+    cadreJuridique: {
+      bg: "bg-primary",
+      bgLight: "bg-primary/10",
+      text: "text-primary",
+      border: "border-primary",
+      gradient: "from-primary to-primary/70",
     },
   };
 
@@ -92,26 +102,28 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
               {/* Tabs de navigation */}
             </div>
             <div className="flex gap-2 p-1.5  rounded-2xl">
-              {(["vision", "mission"] as const).map((type) => {
-                const TypeIcon = typeIcons[type];
-                const colors = typeColors[type];
-                const isActive = activeTab === type;
+              {(["vision", "mission", "cadreJuridique"] as const).map(
+                (type) => {
+                  const TypeIcon = typeIcons[type];
+                  const colors = typeColors[type];
+                  const isActive = activeTab === type;
 
-                return (
-                  <button
-                    key={type}
-                    onClick={() => setActiveTab(type)}
-                    className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                      isActive
-                        ? `${colors.bg} text-white shadow-lg`
-                        : "text-textSecondary hover:text-textPrimary hover:bg-card"
-                    }`}
-                  >
-                    <TypeIcon className="w-5 h-5" />
-                    <span className="capitalize text-sm">{type}</span>
-                  </button>
-                );
-              })}
+                  return (
+                    <button
+                      key={type}
+                      onClick={() => setActiveTab(type)}
+                      className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
+                        isActive
+                          ? `${colors.bg} text-white shadow-lg`
+                          : "text-textSecondary hover:text-textPrimary hover:bg-card"
+                      }`}
+                    >
+                      <TypeIcon className="w-5 h-5" />
+                      <span className="capitalize text-sm">{type}</span>
+                    </button>
+                  );
+                }
+              )}
             </div>
           </div>
 
@@ -144,17 +156,6 @@ const VisionMission: React.FC<VisionMissionProps> = ({ items }) => {
                           </p>
                         </blockquote>
                       </div>
-
-                      {/* Description complémentaire */}
-                      {/* {item.description.split(".").length > 1 && (
-                        <p className=" text-sm text-textSecondary leading-relaxed mb-8">
-                          {item.description
-                            .split(".")
-                            .slice(1)
-                            .join(".")
-                            .trim()}
-                        </p>
-                      )} */}
                     </div>
                   </div>
                 </div>

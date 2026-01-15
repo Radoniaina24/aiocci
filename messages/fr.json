@@ -51,6 +51,10 @@
       "mission": {
         "title": "Notre Mission",
         "description": "Promouvoir le commerce et l’investissement entre l’Afrique et la région de l’Océan Indien ; faciliter les connexions d’affaires et les partenariats transfrontaliers ; accompagner les entreprises dans leur expansion internationale ; organiser des événements économiques et corporatifs de haut niveau ; renforcer l’intégration régionale et la coopération du secteur privé."
+      },
+      "cadreJuridique": {
+        "title": "Notre Mission",
+        "description": "AIOCCI est régie par l’Ordonnance n° 60-133 du 03 octobre 1960 relative aux associations en République de Madagascar et exerce ses activités dans le strict respect des réglementations nationales et internationales en vigueur."
       }
     },
     "section": {
