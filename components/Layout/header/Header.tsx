@@ -194,12 +194,13 @@ const Header = () => {
             <LanguageSelector />
 
             {/* CTA Button - Marron */}
-            <div
-              onClick={() => scrollToSection("contact")}
+            <Link
+              href={"/membership"}
+              // onClick={() => scrollToSection("contact")}
               className="px-6 py-2.5 hover:cursor-pointer text-sm font-semibold bg-gradient-to-r from-amber-700 to-amber-800 text-amber-50 rounded-lg transition-all hover:shadow-lg hover:shadow-amber-800/30 hover:-translate-y-0.5 hover:from-amber-800 hover:to-amber-900"
             >
               {t("actions.joinNow")}
-            </div>
+            </Link>
           </div>
 
           {/* Mobile: Language Selector + Toggle - Thème Marron */}

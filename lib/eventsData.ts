@@ -2,6 +2,7 @@
 export type AccentColor = "blue" | "emerald" | "purple" | "amber";
 
 export interface EventData {
+  partnerUrl: string | undefined;
   id: number;
   translationKey: string;
   accentColor: AccentColor;
@@ -26,6 +27,7 @@ export const eventsData: EventData[] = [
     hasParticipants: false,
     hasDetails: true,
     objectivesCount: 3,
+    partnerUrl: "/membership",
   },
   {
     id: 2,
@@ -39,6 +41,7 @@ export const eventsData: EventData[] = [
     participantsCount: 4,
     objectivesCount: 4,
     externalUrl: "https://africabusinessexpo.aiocci.org",
+    partnerUrl: "/membership",
   },
   {
     id: 3,
@@ -52,6 +55,7 @@ export const eventsData: EventData[] = [
     participantsCount: 4,
     objectivesCount: 4,
     externalUrl: "https://www.aimeetsafricasummit.aiocci.org",
+    partnerUrl: "/membership",
   },
   {
     id: 4,
@@ -59,11 +63,12 @@ export const eventsData: EventData[] = [
     accentColor: "amber",
     logo: "/images/logos/africa-business-expo-dubai.png",
     image:
-      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767786460/5_4_itqjsp.jpg",
+      "https://res.cloudinary.com/dx3xhdaym/image/upload/v1767776044/4_4_f3hi12.jpg",
     hasParticipants: true,
     hasDetails: false,
     participantsCount: 4,
     objectivesCount: 4,
+    partnerUrl: "/membership",
   },
 ];
 

@@ -32,6 +32,10 @@ const bannerEventConfig: Record<number, BannerConfig> = {
     externalUrl: "https://votre-site-externe.com/evenement-2",
     isFullWidth: true,
   },
+  4: {
+    externalUrl: "https://votre-site-externe.com/evenement-2",
+    isFullWidth: true,
+  },
 };
 
 // ============================================
@@ -252,22 +256,6 @@ const ExternalLinkIcon: React.FC<{ className?: string }> = ({ className }) => (
       strokeLinejoin="round"
       strokeWidth={2}
       d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-    />
-  </svg>
-);
-
-const ArrowRightIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <svg
-    className={className || "w-5 h-5"}
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M17 8l4 4m0 0l-4 4m4-4H3"
     />
   </svg>
 );
@@ -500,6 +488,15 @@ const BannerEventCard: React.FC<BannerEventCardProps> = ({
     window.open(eventData?.externalUrl, "_blank", "noopener,noreferrer");
   };
 
+  const handlePartnerRedirect = () => {
+    // Vous pouvez modifier cette URL selon vos besoins
+    window.open(
+      eventData?.partnerUrl || eventData?.externalUrl,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <div
       className={`
@@ -572,31 +569,49 @@ const BannerEventCard: React.FC<BannerEventCardProps> = ({
         </div>
 
         {/* Description */}
-        <p className="text-base  text-gray-600 leading-relaxed mb-8">
+        <p className="text-base text-gray-600 leading-relaxed mb-8">
           {description}
         </p>
 
-        {/* CTA Button */}
-        <button
-          onClick={handleExternalRedirect}
-          className={`
-            group/btn inline-flex items-center
-            px-8 py-4 rounded-xl font-bold text-sm
-            ${buttonSolidClasses}
-            shadow-lg hover:shadow-xl
-            transform hover:-translate-y-1
-            transition-all duration-300
-          `}
-          aria-label={`${tButtons("learnMore")} - ${title}`}
-        >
-          {tButtons("learnMore")}
-          <ExternalLinkIcon className="w-5 h-5 ml-3 transition-transform group-hover/btn:translate-x-1" />
-        </button>
+        {/* CTA Buttons */}
+        <div className="flex flex-wrap gap-4">
+          <button
+            onClick={handleExternalRedirect}
+            className={`
+              group/btn inline-flex items-center
+              px-8 py-4 rounded-xl font-bold text-sm
+              ${buttonSolidClasses}
+              shadow-lg hover:shadow-xl
+              transform hover:-translate-y-1
+              transition-all duration-300
+            `}
+            aria-label={`${tButtons("learnMore")} - ${title}`}
+          >
+            {tButtons("learnMore")}
+            <ExternalLinkIcon className="w-5 h-5 ml-3 transition-transform group-hover/btn:translate-x-1" />
+          </button>
+
+          <button
+            onClick={handlePartnerRedirect}
+            className={`
+              group/btn inline-flex items-center
+              px-8 py-4 rounded-xl font-bold text-sm
+              bg-white ${textClasses} border-2 ${borderClasses}
+              shadow-lg hover:shadow-xl
+              transform hover:-translate-y-1
+              transition-all duration-300
+              hover:bg-gray-50
+            `}
+            aria-label={`Devenez exposant partenaire ou sponsor - ${title}`}
+          >
+            {tButtons("becomePartner")}
+            <ExternalLinkIcon className="w-5 h-5 ml-3 transition-transform group-hover/btn:translate-x-1" />
+          </button>
+        </div>
       </div>
     </div>
   );
 };
-
 // ============================================
 // STANDARD EVENT CARD COMPONENT
 // ============================================
