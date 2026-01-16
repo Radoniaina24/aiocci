@@ -13,6 +13,7 @@ import {
   Handshake,
   ChevronDown,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 // Composant pour les éléments flottants
 const FloatingElement = ({
@@ -32,45 +33,11 @@ const FloatingElement = ({
   </div>
 );
 
-// Composant pour le texte qui s'affiche lettre par lettre (effet machine à écrire)
-const TypewriterText = ({
-  text,
-  delay = 0,
-}: {
-  text: string;
-  delay?: number;
-}) => {
-  const [displayedText, setDisplayedText] = useState("");
-  const [started, setStarted] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setStarted(true), delay);
-    return () => clearTimeout(timer);
-  }, [delay]);
-
-  useEffect(() => {
-    if (!started) return;
-
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index <= text.length) {
-        setDisplayedText(text.slice(0, index));
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 50);
-
-    return () => clearInterval(interval);
-  }, [text, started]);
-
-  return <span>{displayedText}</span>;
-};
-
 export default function Hero() {
   const t = useTranslations("hero");
   const [isLoaded, setIsLoaded] = useState(false);
   const [activeFeature, setActiveFeature] = useState(0);
+  const router = useRouter();
 
   useEffect(() => {
     setIsLoaded(true);
@@ -201,7 +168,7 @@ export default function Hero() {
               }`}
             >
               <Button
-                onClick={() => scrollToSection("membership")}
+                onClick={() => router.push("/membership")}
                 size="lg"
                 className="group relative overflow-hidden bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white text-lg px-8 py-6 rounded-xl shadow-lg shadow-amber-700/25 transition-all duration-300 hover:shadow-xl hover:shadow-amber-600/40 hover:-translate-y-1"
               >

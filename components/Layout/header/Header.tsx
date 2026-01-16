@@ -129,12 +129,12 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navigationItems: NavigationItem[] = [
-    { key: "home", href: "home", icon: "HomeIcon" },
-    { key: "about", href: "about", icon: "InformationCircleIcon" },
-    { key: "services", href: "services", icon: "BriefcaseIcon" },
-    { key: "events", href: "events", icon: "CalendarIcon" },
-    { key: "membership", href: "membership", icon: "UserGroupIcon" },
-    { key: "contact", href: "contact", icon: "PhoneIcon" },
+    { key: "home", href: "/#home", icon: "HomeIcon" },
+    { key: "about", href: "/#about", icon: "InformationCircleIcon" },
+    { key: "services", href: "/#services", icon: "BriefcaseIcon" },
+    { key: "events", href: "/#events", icon: "CalendarIcon" },
+    { key: "membership", href: "/membership", icon: "UserGroupIcon" },
+    { key: "contact", href: "/#contact", icon: "PhoneIcon" },
   ];
 
   useEffect(() => {
@@ -176,16 +176,16 @@ const Header = () => {
           {/* Desktop navigation - Thème Marron */}
           <nav className="hidden lg:flex items-center space-x-1">
             {navigationItems.map((item) => (
-              <div
+              <Link
                 key={item.key}
-                onClick={() => scrollToSection(item.href)}
                 className="relative px-4 py-2 text-sm font-medium rounded-lg cursor-pointer transition-all group text-amber-800 hover:text-amber-950"
+                href={item.href}
               >
                 <span className="relative z-10">
                   {t(`navigation.${item.key}`)}
                 </span>
                 <span className="absolute inset-0 bg-amber-100 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity" />
-              </div>
+              </Link>
             ))}
           </nav>
 

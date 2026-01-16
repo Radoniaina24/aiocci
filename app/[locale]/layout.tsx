@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { Montserrat } from "next/font/google";
+import Header from "@/components/Layout/header/Header";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,7 +32,11 @@ export default function RootLayout({
       <body className={montserrat.className}>
         {" "}
         <NextIntlClientProvider>
-          <LanguageProvider>{children}</LanguageProvider>
+          <LanguageProvider>
+            {" "}
+            <Header />
+            {children}
+          </LanguageProvider>
         </NextIntlClientProvider>
       </body>
     </html>

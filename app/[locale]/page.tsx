@@ -23,7 +23,6 @@ import AIOCCIValues from "@/components/About/AIOCCIValues";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <main className="pt-20">
         <Banner />
         <Hero />
