@@ -20,6 +20,7 @@ import AboutAIOCCI from "@/components/About/AboutAIOCCI";
 import LegalFramework from "@/components/About/LegalFramework";
 import AIOCCIValues from "@/components/About/AIOCCIValues";
 import Partners from "@/components/section/Partners";
+import AfricaVisionaryAwards from "@/components/section/AfricaVisionaryAwards";
 
 export default function Home() {
   return (
@@ -37,6 +38,12 @@ export default function Home() {
         <UpcomingEvents />
 
         <Events />
+        <AfricaVisionaryAwards
+          imageSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1768825380/award_pnqlhd.jpg"
+          imageAlt="Africa Visionary Awards"
+          aiocciLogoSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1767782065/logo_ps4jlv.jpg"
+          ccimmLogoSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1768826246/cci_lkyyvd.jpg"
+        />
         <Membership />
         {/* <Partnerships /> */}
         <Partners />

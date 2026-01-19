@@ -871,5 +871,38 @@
     "badge": "Nos Partenaires",
     "title": "Ils nous font confiance",
     "cta": "Devenir Membre"
+  },
+  "africaVisionaryAwards": {
+    "badge": "En préparation",
+    "title": "Africa Visionary Awards",
+    "imageAlt": "Cérémonie des Africa Visionary Awards",
+    "organizedBy": "Organisé par",
+
+    "paragraphs": {
+      "p1": {
+        "highlight": "Africa Visionary Awards",
+        "text": "est une initiative panafricaine prestigieuse de reconnaissance, actuellement en phase de préparation, développée par la",
+        "aiocci": "African Indian Ocean Chamber of Commerce & Industry (AIOCCI)",
+        "with": "en partenariat avec la",
+        "ccimm": "Chambre de Commerce et d'Industrie Maurice–Madagascar (CCIMM)"
+      },
+      "p2": {
+        "before": "La cérémonie de remise des prix est prévue dans le cadre de l’",
+        "event": "Africa Business Expo",
+        "after": "qui se tiendra à Maurice au",
+        "venue": "Trianon Convention Center"
+      },
+      "p3": "Les Africa Visionary Awards ont pour vocation d’honorer des leaders visionnaires, entrepreneurs, innovateurs et institutions dont l’impact et le leadership contribuent à la transformation économique, à l’innovation et à l’intégration régionale de l’Afrique et de la région de l’océan Indien.",
+      "note": "Les détails officiels concernant le programme, le processus de nomination et la cérémonie seront communiqués prochainement."
+    },
+
+    "aiocci": {
+      "alt": "AIOCCI – African Indian Ocean Chamber of Commerce & Industry",
+      "label": "African Indian Ocean Chamber of Commerce & Industry"
+    },
+    "ccimm": {
+      "alt": "CCIMM – Chambre de Commerce et d'Industrie Maurice–Madagascar",
+      "label": "Chambre de Commerce et d'Industrie Maurice–Madagascar"
+    }
   }
 }
