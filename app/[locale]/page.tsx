@@ -32,18 +32,19 @@ export default function Home() {
         <About />
         {/* <AIOCCIValues /> */}
         <Services />
-        <AboutAIOCCI />
-        {/* <CardCarousel /> */}
-        {/* <LegalFramework /> */}
-        <UpcomingEvents />
-
-        <Events />
         <AfricaVisionaryAwards
           imageSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1768825380/award_pnqlhd.jpg"
           imageAlt="Africa Visionary Awards"
           aiocciLogoSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1767782065/logo_ps4jlv.jpg"
           ccimmLogoSrc="https://res.cloudinary.com/dx3xhdaym/image/upload/v1768826246/cci_lkyyvd.jpg"
         />
+        <AboutAIOCCI />
+        {/* <CardCarousel /> */}
+        {/* <LegalFramework /> */}
+        <UpcomingEvents />
+
+        <Events />
+
         <Membership />
         {/* <Partnerships /> */}
         <Partners />
