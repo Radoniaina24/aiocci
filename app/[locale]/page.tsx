@@ -19,6 +19,7 @@ import UpcomingEvents from "@/components/Event/UpcomingEvents";
 import AboutAIOCCI from "@/components/About/AboutAIOCCI";
 import LegalFramework from "@/components/About/LegalFramework";
 import AIOCCIValues from "@/components/About/AIOCCIValues";
+import Partners from "@/components/section/Partners";
 
 export default function Home() {
   return (
@@ -37,7 +38,8 @@ export default function Home() {
 
         <Events />
         <Membership />
-        <Partnerships />
+        {/* <Partnerships /> */}
+        <Partners />
         <Contact />
         <Footer />
       </main>
