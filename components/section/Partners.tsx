@@ -1,6 +1,9 @@
 // components/Partners.tsx
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { ArrowRight, Handshake, Sparkles } from "lucide-react";
+import Link from "next/link";
+
 interface Partner {
   id: number;
   name: string;
@@ -162,9 +165,16 @@ const partners: Partner[] = [
 
 const Partners = () => {
   const t = useTranslations("partners");
+
   return (
-    <section className="w-full py-20 px-4 bg-gradient-to-b from-slate-50 to-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="w-full py-20 px-4 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-100/50 rounded-full blur-3xl" />
+      </div>
+
+      <div className="max-w-7xl mx-auto relative">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full mb-4">
@@ -179,7 +189,7 @@ const Partners = () => {
         </div>
 
         {/* Logos Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6 mb-16">
           {partners.map((partner) => (
             <div
               key={partner.id}
@@ -194,6 +204,26 @@ const Partners = () => {
               />
             </div>
           ))}
+        </div>
+
+        {/* CTA Button Section */}
+        <div className="text-center">
+          <Link
+            href="/membership"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-lg rounded-full shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-500 hover:scale-105 overflow-hidden"
+          >
+            {/* Shine Effect */}
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
+
+            {/* Icon */}
+            <Handshake className="w-5 h-5 relative z-10" />
+
+            {/* Text */}
+            <span className="relative z-10">{t("cta")}</span>
+
+            {/* Arrow */}
+            <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
+          </Link>
         </div>
       </div>
     </section>
