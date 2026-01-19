@@ -869,6 +869,7 @@
   },
   "partners": {
     "badge": "Nos Partenaires",
-    "title": "Ils nous font confiance"
+    "title": "Ils nous font confiance",
+    "cta": "Devenir Membre"
   }
 }

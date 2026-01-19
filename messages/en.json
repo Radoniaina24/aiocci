@@ -813,6 +813,7 @@
   },
   "partners": {
     "badge": "Our Partners",
-    "title": "They Trust Us"
+    "title": "They Trust Us",
+    "cta": "Become a Member"
   }
 }
