@@ -1,7 +1,7 @@
 // components/Partners.tsx
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Handshake, Sparkles } from "lucide-react";
+import { ArrowRight, Handshake } from "lucide-react";
 import Link from "next/link";
 
 interface Partner {
@@ -167,50 +167,64 @@ const Partners = () => {
   const t = useTranslations("partners");
 
   return (
-    <section className="w-full py-20 px-4 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+    <section className="w-full py-16 md:py-20 px-4 bg-gradient-to-b from-slate-50 via-white to-slate-50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-100/50 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-blue-50/80 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-cyan-50/80 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-50/50 rounded-full blur-3xl" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full mb-4">
+        <div className="text-center mb-12">
+          <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 text-sm font-semibold rounded-full mb-4 border border-blue-200/50">
+            <Handshake className="w-4 h-4" />
             {t("badge")}
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
             {t("title")}
           </h2>
 
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto rounded-full" />
+          <div className="flex items-center justify-center gap-2">
+            <div className="w-12 h-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full" />
+            <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full" />
+            <div className="w-12 h-1 bg-gradient-to-l from-cyan-600 to-cyan-400 rounded-full" />
+          </div>
         </div>
 
-        {/* Logos Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6 mb-16">
-          {partners.map((partner) => (
-            <div
-              key={partner.id}
-              className="group relative flex items-center justify-center p-6 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-blue-200 transition-all duration-500 hover:-translate-y-1"
-            >
-              <Image
-                src={partner.logo}
-                alt={partner.name}
-                width={120}
-                height={80}
-                className="object-contain group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
-          ))}
+        {/* Logos Grid - Compact Version */}
+        <div className="bg-white/60 backdrop-blur-sm rounded-3xl border border-gray-100 shadow-sm p-6 md:p-8 mb-12">
+          <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-3 md:gap-4">
+            {partners.map((partner) => (
+              <div
+                key={partner.id}
+                className="group relative aspect-square flex items-center justify-center p-2 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:border-blue-300 hover:bg-blue-50/30 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+              >
+                {/* Hover Glow Effect */}
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-400/0 to-cyan-400/0 group-hover:from-blue-400/10 group-hover:to-cyan-400/10 transition-all duration-300" />
+
+                {/* Logo Image - Small Size */}
+                <div className="relative w-10 h-10 md:w-12 md:h-12">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    fill
+                    className="object-contain rounded-md group-hover:scale-110 transition-transform duration-300"
+                    sizes="48px"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA Button Section */}
         <div className="text-center">
           <Link
             href="/membership"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-lg rounded-full shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 transition-all duration-500 hover:scale-105 overflow-hidden"
+            className="group relative inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-base  rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 transition-all duration-300 hover:scale-105 overflow-hidden"
           >
             {/* Shine Effect */}
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
