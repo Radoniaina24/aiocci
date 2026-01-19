@@ -1,6 +1,6 @@
 // components/Partners.tsx
 import Image from "next/image";
-
+import { useTranslations } from "next-intl";
 interface Partner {
   id: number;
   name: string;
@@ -161,17 +161,20 @@ const partners: Partner[] = [
 ];
 
 const Partners = () => {
+  const t = useTranslations("partners");
   return (
     <section className="w-full py-20 px-4 bg-gradient-to-b from-slate-50 to-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full mb-4">
-            Nos Partenaires
+            {t("badge")}
           </span>
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            Ils nous font confiance
+            {t("title")}
           </h2>
+
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-cyan-500 mx-auto rounded-full" />
         </div>
 
@@ -187,7 +190,7 @@ const Partners = () => {
                 alt={partner.name}
                 width={120}
                 height={80}
-                className="object-contain  group-hover:opacity-100  group-hover:grayscale-0 transition-all duration-500"
+                className="object-contain group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
               />
             </div>
           ))}

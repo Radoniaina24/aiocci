@@ -866,5 +866,9 @@
 
     "signature": "Claudino Rojo",
     "footer": "Les 54 pays d’Afrique ainsi que plus de 20 pays de la région de l’océan Indien."
+  },
+  "partners": {
+    "badge": "Nos Partenaires",
+    "title": "Ils nous font confiance"
   }
 }
