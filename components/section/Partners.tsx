@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowRight, Handshake } from "lucide-react";
 import Link from "next/link";
-import InstitutionalPartners from "./InstitutionalPartners";
 
 interface Partner {
   id: number;
@@ -220,9 +219,9 @@ const Partners = () => {
             ))}
           </div>
         </div>
-        <InstitutionalPartners />
+
         {/* CTA Button Section */}
-        <div className="text-center mt-5">
+        <div className="text-center">
           <Link
             href="/membership"
             className="group relative inline-flex items-center gap-3 px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-base  rounded-full shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/35 transition-all duration-300 hover:scale-105 overflow-hidden"

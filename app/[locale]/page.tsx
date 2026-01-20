@@ -5,23 +5,20 @@ import Hero from "@/components/section/Hero";
 
 import Events from "@/components/section/Event";
 import Membership from "@/components/section/Membership";
-import Partnerships from "@/components/section/Partnerships";
+
 import Contact from "@/components/section/Contact";
-import Header from "@/components/Layout/header/Header";
+
 import About from "@/components/About";
 import Services from "@/components/Services";
 
 import PresidentMessages from "@/components/PresidentMessage";
 
-import CardCarousel from "@/components/CardCarousel/CardCarousel";
 import Banner from "@/components/Banner";
 import UpcomingEvents from "@/components/Event/UpcomingEvents";
 import AboutAIOCCI from "@/components/About/AboutAIOCCI";
-import LegalFramework from "@/components/About/LegalFramework";
-import AIOCCIValues from "@/components/About/AIOCCIValues";
-import Partners from "@/components/section/Partners";
+
 import AfricaVisionaryAwards from "@/components/section/AfricaVisionaryAwards";
-import InstitutionalPartners from "@/components/section/InstitutionalPartners";
+import Partners from "@/components/section/Partners";
 
 export default function Home() {
   return (
@@ -48,8 +45,7 @@ export default function Home() {
 
         <Membership />
         {/* <Partnerships /> */}
-        <Partners />
-
+        {/* <Partners /> */}
         <Contact />
         <Footer />
       </main>
