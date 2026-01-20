@@ -848,5 +848,12 @@
       "alt": "CCIMM - Chambre de Commerce et d'Industrie Maurice–Madagascar",
       "label": "Chambre de Commerce et d'Industrie Maurice–Madagascar"
     }
+  },
+  "institutionalPartners": {
+    "title": "Institutional Partners",
+    "partners": {
+      "partnerOne": "Federation of Chambers of Commerce",
+      "partnerTwo": "Chamber of Commerce and Industry"
+    }
   }
 }

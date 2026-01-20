@@ -21,6 +21,7 @@ import LegalFramework from "@/components/About/LegalFramework";
 import AIOCCIValues from "@/components/About/AIOCCIValues";
 import Partners from "@/components/section/Partners";
 import AfricaVisionaryAwards from "@/components/section/AfricaVisionaryAwards";
+import InstitutionalPartners from "@/components/section/InstitutionalPartners";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
         <Membership />
         {/* <Partnerships /> */}
         <Partners />
+
         <Contact />
         <Footer />
       </main>
