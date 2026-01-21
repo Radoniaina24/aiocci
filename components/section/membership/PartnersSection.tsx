@@ -13,8 +13,13 @@ const partnerCategories: PartnerCategory[] = [
     partners: [
       {
         name: "Gate Africa Group",
-        logo: "/partners/gate-africa-group.png",
+        logo: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768971476/Gate-africa-group_urfis8.jpg",
         website: "https://www.gateafricagroup.com",
+      },
+      {
+        name: "Gate Of Africa Magazine",
+        logo: "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1758020979/logo_m4cvpv.png",
+        website: "https://gateofafrica.com/",
       },
     ],
   },
@@ -188,6 +193,11 @@ const partnerCategories: PartnerCategory[] = [
         name: "Partner 30",
         logo: "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812155/31_nuvamo.jpg",
       },
+      // {
+      //   website: "#",
+      //   name: "Partner 30",
+      //   logo: "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1758020979/logo_m4cvpv.png",
+      // },
     ],
   },
 ];
