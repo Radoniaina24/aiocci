@@ -912,5 +912,401 @@
       "partnerOne": "Fédération des Chambres de Commerce",
       "partnerTwo": "Chambre de Commerce et d’Industrie"
     }
+  },
+  "member": {
+    "hero": {
+      "badge": "Rejoignez notre réseau mondial",
+      "titlePrefix": "Devenez membre de",
+      "description1": "Rejoindre l’AIOCCI – Chambre de Commerce et d’Industrie Afrique–Océan Indien, c’est intégrer une plateforme économique internationale de haut niveau reliant l’Afrique, la région de l’Océan Indien et les marchés mondiaux.",
+      "description2": "Les membres bénéficient d’une visibilité stratégique, d’un accès à des réseaux influents, d’une facilitation des affaires et d’une participation à des événements économiques majeurs façonnant la coopération régionale et internationale.",
+      "annual": "Toutes les adhésions sont annuelles",
+      "ctaSubscribe": "S’abonner et payer",
+      "ctaApply": "Postuler en ligne pour rejoindre l’AIOCCI"
+    },
+    "membership": {
+      "badge": "Choisissez votre parcours",
+      "title": "Types d’adhésion & avantages",
+      "subtitle": "Sélectionnez l’adhésion la plus adaptée à votre organisation et accédez à des avantages exclusifs",
+
+      "types": [
+        {
+          "id": "platinum",
+          "title": "Membre Stratégique Platine",
+          "description": "Conçue pour les grandes entreprises, investisseurs, groupes multinationaux et leaders stratégiques recherchant un positionnement de haut niveau et une influence renforcée au sein de l’écosystème de l’AIOCCI.",
+          "benefits": [
+            {
+              "text": "Visibilité prioritaire sur le site de l’AIOCCI, ses publications et ses communications officielles"
+            },
+            {
+              "text": "Valorisation stratégique de la marque lors des événements phares"
+            },
+            {
+              "text": "Accès VIP aux rencontres B2B, B2G et investisseurs"
+            },
+            {
+              "text": "Interaction directe avec les décideurs, institutions et partenaires stratégiques"
+            },
+            {
+              "text": "Opportunités d’intervention et de participation à des panels (selon sélection du programme)"
+            },
+            {
+              "text": "Invitations à des tables rondes exclusives et sessions stratégiques à huis clos"
+            }
+          ],
+          "isFree": false,
+          "isPremium": true,
+          "buttonText": "S’abonner et payer",
+          "buttonLink": "/subscribe/platinum",
+          "iconType": "crown"
+        },
+
+        {
+          "id": "corporate",
+          "title": "Membre Corporate & Entreprise",
+          "description": "Destinée aux entreprises et organisations établies souhaitant étendre leurs activités à l’échelle régionale ou internationale.",
+          "benefits": [
+            {
+              "text": "Visibilité sur les plateformes numériques de l’AIOCCI et dans l’annuaire des membres"
+            },
+            {
+              "text": "Accès aux programmes de mise en relation d’affaires (B2B / B2G)"
+            },
+            {
+              "text": "Participation aux événements, forums et expositions de l’AIOCCI"
+            },
+            {
+              "text": "Opportunités de réseautage avec investisseurs, institutions et partenaires stratégiques"
+            },
+            {
+              "text": "Accès à des analyses de marché et initiatives sectorielles"
+            }
+          ],
+          "isFree": false,
+          "isPremium": false,
+          "buttonText": "S’abonner et payer",
+          "buttonLink": "/subscribe/corporate",
+          "iconType": "building"
+        },
+
+        {
+          "id": "startup",
+          "title": "Membre Startups & PME",
+          "description": "Adaptée aux startups et petites et moyennes entreprises recherchant croissance, visibilité et opportunités internationales.",
+          "benefits": [
+            {
+              "text": "Accès à des plateformes économiques internationales à un niveau adapté"
+            },
+            {
+              "text": "Visibilité au sein de l’écosystème startups & PME de l’AIOCCI"
+            },
+            {
+              "text": "Participation à des sessions de réseautage et forums sélectionnés"
+            },
+            {
+              "text": "Accès à des programmes de mentorat, partenariats et connexions d’affaires"
+            },
+            {
+              "text": "Possibilités de présenter des solutions lors d’expositions et d’espaces d’innovation"
+            }
+          ],
+          "isFree": false,
+          "isPremium": false,
+          "buttonText": "S’abonner et payer",
+          "buttonLink": "/subscribe/startup",
+          "iconType": "rocket"
+        },
+
+        {
+          "id": "institutional",
+          "title": "Partenaire Institutionnel & Public",
+          "description": "Réservée aux institutions publiques, chambres de commerce, fédérations et organisations para-publiques soutenant la coopération et le développement économique.",
+          "benefits": [
+            {
+              "text": "Reconnaissance officielle en tant que partenaire institutionnel de l’AIOCCI"
+            },
+            {
+              "text": "Participation aux dialogues politiques et initiatives de coopération économique"
+            },
+            {
+              "text": "Accès aux plateformes et événements internationaux de l’AIOCCI"
+            },
+            {
+              "text": "Co-branding et visibilité institutionnelle sur des programmes sélectionnés"
+            }
+          ],
+          "isFree": true,
+          "isPremium": false,
+          "buttonText": "Candidature – Adhésion gratuite",
+          "buttonLink": "/apply/institutional",
+          "iconType": "institution"
+        },
+
+        {
+          "id": "honorary",
+          "title": "Membre Honoraire & Conseil",
+          "description": "Destinée aux dirigeants, experts et conseillers de haut niveau apportant une contribution stratégique et une vision éclairée.",
+          "benefits": [
+            {
+              "text": "Reconnaissance en tant que membre honoraire ou conseiller de l’AIOCCI"
+            },
+            {
+              "text": "Participation aux conseils consultatifs, panels et réflexions stratégiques"
+            },
+            {
+              "text": "Contribution à la vision, aux orientations politiques et aux initiatives de long terme"
+            }
+          ],
+          "isFree": true,
+          "isPremium": false,
+          "buttonText": "Candidature – Adhésion gratuite",
+          "buttonLink": "/apply/honorary",
+          "iconType": "award"
+        },
+
+        {
+          "id": "media",
+          "title": "Médias, Journalistes & Influenceurs",
+          "description": "Destinée aux professionnels des médias et aux acteurs du digital contribuant à la visibilité et au rayonnement des initiatives de l’AIOCCI.",
+          "benefits": [
+            {
+              "text": "Accès accrédité aux événements et communications officielles de l’AIOCCI"
+            },
+            {
+              "text": "Collaboration éditoriale et médiatique (contenus, couverture, storytelling)"
+            },
+            {
+              "text": "Visibilité via les canaux de communication officiels de l’AIOCCI"
+            },
+            {
+              "text": "Participation aux points presse et engagements médiatiques"
+            }
+          ],
+          "isFree": true,
+          "isPremium": false,
+          "buttonText": "Candidature – Adhésion gratuite",
+          "buttonLink": "/apply/media",
+          "iconType": "media"
+        }
+      ]
+    },
+    "importantNote": {
+      "title": "Note importante concernant la participation aux événements",
+      "subtitle": "Veuillez lire attentivement avant de vous engager",
+      "description": "L’adhésion donne accès à des opportunités, une visibilité accrue et des conditions préférentielles. Toutefois, la participation aux événements (expositions, sommets, forums) fait l’objet d’une inscription distincte, applicable à l’ensemble des participants.",
+      "benefitsTitle": "Les membres bénéficient de :",
+      "benefits": [
+        {
+          "icon": "dollar",
+          "title": "Conditions préférentielles",
+          "description": "Tarifs avantageux et offres exclusives réservés aux membres"
+        },
+        {
+          "icon": "priority",
+          "title": "Accès prioritaire",
+          "description": "Accès en avant-première aux événements et opportunités"
+        },
+        {
+          "icon": "visibility",
+          "title": "Visibilité renforcée",
+          "description": "Exposition accrue par rapport aux non-membres"
+        }
+      ]
+    },
+    "partners": {
+      "badge": "Notre réseau",
+      "title": "Nos partenaires & membres",
+      "subtitle": "Rejoignez un réseau d’organisations prestigieuses à travers l’Afrique et la région de l’océan Indien",
+
+      "categories": [
+        {
+          "title": "Membres stratégiques Platine",
+          "type": "platinum",
+          "partners": [
+            {
+              "name": "Gate Africa Group",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768971476/Gate-africa-group_urfis8.jpg",
+              "website": "https://www.gateafricagroup.com"
+            },
+            {
+              "name": "Gate Of Africa Magazine",
+              "logo": "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1758020979/logo_m4cvpv.png",
+              "website": "https://gateofafrica.com/"
+            }
+          ]
+        },
+        {
+          "title": "Partenaires institutionnels & publics",
+          "type": "institutional",
+          "partners": [
+            {
+              "name": "FCCIM",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768826246/fcc_suvb9u.jpg",
+              "website": "https://www.fccim.org"
+            },
+            {
+              "name": "CCIMM",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768826246/cci_lkyyvd.jpg",
+              "website": "https://www.ccimm.mg"
+            }
+          ]
+        },
+        {
+          "title": "Partenaires",
+          "type": "standard",
+          "partners": [
+            {
+              "website": "#",
+              "name": "Partner 1",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/1_fstvmg.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 2",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/2_rzyjrw.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 3",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/3_yblauo.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 4",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/4_bpphko.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 5",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/5_mpb0xw.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 6",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/6_uhxtpx.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 7",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/8_oirhzl.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 8",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/9_cier4o.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 9",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/10_wfzcfz.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 10",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/11_o0bgob.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 11",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/12_ilktfl.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 12",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/13_qyg6lm.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 13",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811861/14_ysjkup.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 14",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/15_rx8hmb.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 15",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/16_f4n1cg.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 16",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/17_qnz3aa.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 17",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/18_mhbb1v.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 18",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/19_e1zcyp.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 19",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/20_gwaral.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 20",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/21_gqdadx.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 21",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/22_udmjch.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 22",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/23_mrjkyj.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 23",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811914/24_rsjufb.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 24",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/25_tapkjj.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 25",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/26_ukejod.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 26",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/27_v6dpvr.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 27",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/28_jixzvy.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 28",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/29_kdzylf.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 29",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/30_x0grvi.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 30",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812155/31_nuvamo.jpg"
+            }
+          ]
+        }
+      ]
+    }
   }
 }

@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { Icons } from "../MembershipPage";
+import { useTranslations } from "next-intl";
 
 export const HeroSection: React.FC = () => {
+  const t = useTranslations("member.hero");
+
   return (
     <section className="relative overflow-hidden">
       {/* Background */}
@@ -32,13 +35,13 @@ export const HeroSection: React.FC = () => {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-400"></span>
             </span>
             <span className="text-amber-200 text-sm font-medium tracking-wide">
-              Join Our Global Network
+              {t("badge")}
             </span>
           </div>
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-8 leading-tight tracking-tight">
-            Become a Member of{" "}
+            {t("titlePrefix")}{" "}
             <span className="relative">
               <span className="bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 bg-clip-text text-transparent">
                 AIOCCI
@@ -49,24 +52,17 @@ export const HeroSection: React.FC = () => {
 
           {/* Description */}
           <p className="text-lg sm:text-xl lg:text-2xl text-amber-100/90 mb-6 leading-relaxed max-w-3xl mx-auto">
-            Joining AIOCCI – African Indian Ocean Chamber of Commerce & Industry
-            means becoming part of a high-level international economic platform
-            connecting Africa, the Indian Ocean region, and global markets.
+            {t("description1")}
           </p>
 
           <p className="text-base lg:text-lg text-amber-100/70 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Members benefit from strategic visibility, access to influential
-            networks, business facilitation, and participation in flagship
-            economic events and initiatives shaping regional and international
-            cooperation.
+            {t("description2")}
           </p>
 
           {/* Annual Badge */}
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-amber-900/60 to-amber-800/60 backdrop-blur-sm rounded-xl px-6 py-3 mb-12 border border-amber-700/40">
             <Icons.Calendar className="w-5 h-5 text-amber-400" />
-            <span className="text-amber-100 font-semibold">
-              All memberships are annual
-            </span>
+            <span className="text-amber-100 font-semibold">{t("annual")}</span>
           </div>
 
           {/* CTA Buttons */}
@@ -79,7 +75,7 @@ export const HeroSection: React.FC = () => {
               <span className="absolute inset-0 bg-gradient-to-r from-amber-300 to-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
               <span className="relative flex items-center text-amber-900">
                 <Icons.CreditCard className="w-5 h-5 mr-2" />
-                Click to Subscribe & Pay
+                {t("ctaSubscribe")}
                 <Icons.ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
               </span>
             </Link>
@@ -89,7 +85,7 @@ export const HeroSection: React.FC = () => {
               className="group inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300"
             >
               <Icons.Document className="w-5 h-5 mr-2" />
-              Apply Online to Join AIOCCI
+              {t("ctaApply")}
               <Icons.ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </div>

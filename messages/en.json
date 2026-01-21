@@ -855,5 +855,381 @@
       "partnerOne": "Federation of Chambers of Commerce",
       "partnerTwo": "Chamber of Commerce and Industry"
     }
+  },
+  "member": {
+    "hero": {
+      "badge": "Join Our Global Network",
+      "titlePrefix": "Become a Member of",
+      "description1": "Joining AIOCCI – African Indian Ocean Chamber of Commerce & Industry means becoming part of a high-level international economic platform connecting Africa, the Indian Ocean region, and global markets.",
+      "description2": "Members benefit from strategic visibility, access to influential networks, business facilitation, and participation in flagship economic events and initiatives shaping regional and international cooperation.",
+      "annual": "All memberships are annual",
+      "ctaSubscribe": "Click to Subscribe & Pay",
+      "ctaApply": "Apply Online to Join AIOCCI"
+    },
+    "membership": {
+      "badge": "Choose Your Path",
+      "title": "Types of Membership & Benefits",
+      "subtitle": "Select the membership that best fits your organization and unlock exclusive benefits",
+
+      "types": [
+        {
+          "id": "platinum",
+          "title": "Platinum Strategic Member",
+          "description": "Designed for major corporations, investors, multinational groups, and strategic leaders seeking top-level positioning and influence within AIOCCI's ecosystem.",
+          "benefits": [
+            {
+              "text": "Priority visibility on AIOCCI website, publications, and official communications"
+            },
+            { "text": "Strategic branding at flagship events" },
+            { "text": "VIP access to B2B, B2G, and investor meetings" },
+            {
+              "text": "Direct engagement with decision-makers, institutions, and partners"
+            },
+            {
+              "text": "Speaking and panel participation opportunities (subject to program selection)"
+            },
+            {
+              "text": "Invitations to exclusive roundtables and closed-door strategic sessions"
+            }
+          ],
+          "isFree": false,
+          "isPremium": true,
+          "buttonText": "Subscribe & Pay",
+          "buttonLink": "/subscribe/platinum",
+          "iconType": "crown"
+        },
+
+        {
+          "id": "corporate",
+          "title": "Corporate & Enterprise Member",
+          "description": "For established companies and organizations looking to expand regionally or internationally.",
+          "benefits": [
+            {
+              "text": "Visibility on AIOCCI digital platforms and member directory"
+            },
+            { "text": "Access to business matchmaking (B2B / B2G)" },
+            {
+              "text": "Participation in AIOCCI events, forums, and exhibitions"
+            },
+            {
+              "text": "Networking with investors, institutions, and strategic partners"
+            },
+            { "text": "Access to market insights and sector-based initiatives" }
+          ],
+          "isFree": false,
+          "isPremium": false,
+          "buttonText": "Subscribe & Pay",
+          "buttonLink": "/subscribe/corporate",
+          "iconType": "building"
+        },
+
+        {
+          "id": "startup",
+          "title": "Startups & SMEs Member",
+          "description": "Tailored for startups and small & medium-sized enterprises seeking growth, exposure, and international opportunities.",
+          "benefits": [
+            {
+              "text": "Access to international economic platforms at an adapted level"
+            },
+            { "text": "Visibility within the AIOCCI startup & SME ecosystem" },
+            {
+              "text": "Participation in networking sessions and selected forums"
+            },
+            {
+              "text": "Access to mentorship, partnerships, and business connections"
+            },
+            {
+              "text": "Opportunities to showcase solutions during exhibitions and innovation spaces"
+            }
+          ],
+          "isFree": false,
+          "isPremium": false,
+          "buttonText": "Subscribe & Pay",
+          "buttonLink": "/subscribe/startup",
+          "iconType": "rocket"
+        },
+
+        {
+          "id": "institutional",
+          "title": "Institutional & Public Partner",
+          "description": "Reserved for public institutions, chambers of commerce, federations, and para-public organizations supporting economic cooperation and development.",
+          "benefits": [
+            { "text": "Recognition as an official institutional partner" },
+            {
+              "text": "Participation in policy dialogue and economic cooperation initiatives"
+            },
+            { "text": "Access to AIOCCI international platforms and events" },
+            {
+              "text": "Co-branding and institutional visibility on selected programs"
+            }
+          ],
+          "isFree": true,
+          "isPremium": false,
+          "buttonText": "Apply – Free Membership",
+          "buttonLink": "/apply/institutional",
+          "iconType": "institution"
+        },
+
+        {
+          "id": "honorary",
+          "title": "Honorary & Advisory Member",
+          "description": "For distinguished leaders, experts, and advisors contributing strategic guidance and thought leadership.",
+          "benefits": [
+            {
+              "text": "Recognition as an Honorary or Advisory Member of AIOCCI"
+            },
+            {
+              "text": "Participation in advisory boards, panels, and strategic discussions"
+            },
+            {
+              "text": "Contribution to vision, policy orientation, and long-term initiatives"
+            }
+          ],
+          "isFree": true,
+          "isPremium": false,
+          "buttonText": "Apply – Free Membership",
+          "buttonLink": "/apply/honorary",
+          "iconType": "award"
+        },
+
+        {
+          "id": "media",
+          "title": "Media, Journalists & Influencers",
+          "description": "For media professionals and digital voices supporting visibility and outreach of AIOCCI initiatives.",
+          "benefits": [
+            { "text": "Accredited access to AIOCCI events and announcements" },
+            { "text": "Collaboration on content, coverage, and storytelling" },
+            {
+              "text": "Visibility through official AIOCCI communication channels"
+            },
+            { "text": "Participation in press briefings and media engagements" }
+          ],
+          "isFree": true,
+          "isPremium": false,
+          "buttonText": "Apply – Free Membership",
+          "buttonLink": "/apply/media",
+          "iconType": "media"
+        }
+      ]
+    },
+    "importantNote": {
+      "title": "Important Note on Events Participation",
+      "subtitle": "Please read carefully before joining",
+      "description": "Membership provides access, enhanced visibility, and preferential conditions. Participation in events (exhibitions, summits, forums) requires separate registration and applies to all participants.",
+      "benefitsTitle": "Members benefit from:",
+      "benefits": [
+        {
+          "icon": "dollar",
+          "title": "Preferential Conditions",
+          "description": "Special rates and exclusive offers for members"
+        },
+        {
+          "icon": "priority",
+          "title": "Priority Access",
+          "description": "Early access to events and business opportunities"
+        },
+        {
+          "icon": "visibility",
+          "title": "Enhanced Visibility",
+          "description": "Greater exposure compared to non-members"
+        }
+      ]
+    },
+    "partners": {
+      "badge": "Our network",
+      "title": "Our partners & members",
+      "subtitle": "Join a network of prestigious organizations across Africa and the Indian Ocean region",
+
+      "categories": [
+        {
+          "title": "Platinum Strategic Members",
+          "type": "platinum",
+          "partners": [
+            {
+              "name": "Gate Africa Group",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768971476/Gate-africa-group_urfis8.jpg",
+              "website": "https://www.gateafricagroup.com"
+            },
+            {
+              "name": "Gate Of Africa Magazine",
+              "logo": "https://res.cloudinary.com/dbpoyo4gw/image/upload/v1758020979/logo_m4cvpv.png",
+              "website": "https://gateofafrica.com/"
+            }
+          ]
+        },
+        {
+          "title": "Institutional & Public Partners",
+          "type": "institutional",
+          "partners": [
+            {
+              "name": "FCCIM",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768826246/fcc_suvb9u.jpg",
+              "website": "https://www.fccim.org"
+            },
+            {
+              "name": "CCIMM",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768826246/cci_lkyyvd.jpg",
+              "website": "https://www.ccimm.mg"
+            }
+          ]
+        },
+        {
+          "title": "Partners",
+          "type": "standard",
+          "partners": [
+            {
+              "website": "#",
+              "name": "Partner 1",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/1_fstvmg.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 2",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/2_rzyjrw.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 3",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/3_yblauo.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 4",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/4_bpphko.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 5",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/5_mpb0xw.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 6",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/6_uhxtpx.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 7",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/8_oirhzl.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 8",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/9_cier4o.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 9",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/10_wfzcfz.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 10",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/11_o0bgob.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 11",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/12_ilktfl.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 12",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/13_qyg6lm.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 13",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811861/14_ysjkup.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 14",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/15_rx8hmb.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 15",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811862/16_f4n1cg.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 16",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/17_qnz3aa.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 17",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/18_mhbb1v.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 18",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/19_e1zcyp.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 19",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811863/20_gwaral.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 20",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/21_gqdadx.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 21",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/22_udmjch.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 22",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811864/23_mrjkyj.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 23",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768811914/24_rsjufb.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 24",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/25_tapkjj.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 25",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/26_ukejod.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 26",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/27_v6dpvr.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 27",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/28_jixzvy.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 28",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/29_kdzylf.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 29",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812154/30_x0grvi.jpg"
+            },
+            {
+              "website": "#",
+              "name": "Partner 30",
+              "logo": "https://res.cloudinary.com/dx3xhdaym/image/upload/v1768812155/31_nuvamo.jpg"
+            }
+          ]
+        }
+      ]
+    }
   }
 }
